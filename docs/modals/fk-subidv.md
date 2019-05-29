@@ -3,6 +3,9 @@ The Florida keys are often split into sub-areas.
 
 ## examples
 Below are some examples subdivisions of the FK region.
+![rvc raw data](assets/img/fk-subdiv_rvc-raw.png)
+Plot of region labels in RVC data used by @mhepner90 in her [dissertation RVC analysis](https://github.com/mhepner90/RVC/blob/master/map_regions.Rmd) and presented in the [info-fk corals infographic](https://marinebon.github.io/info-fk/corals.html).
+
 ![rvc](assets/img/fk-subdiv_rvc.png)
 "One Fish, Two Fish, Red Fish, Blue Fish" presentation by Kenneth Hicks
 
