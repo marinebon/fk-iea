@@ -1,16 +1,22 @@
 in the keys - habitat & living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
 
 In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson
- 1999](https://link.springer.com/article/10.1007/s003380050210)]. 
-The regional subdivision of the reef tract is not well standardized, however. 
+ 1999](https://link.springer.com/article/10.1007/s003380050210)].
+The regional subdivision of the reef tract is not well standardized, however.
 The definition of the subregions used here and an explaination of this choice is discussed on the [fk-subdiv page](fk-subidv.md).
 
 ## Fish and Lobster inside/outside of MPAs (Aug)
 TODO: BB and TM rework existing MBON/RVC data
-TODO: LM will send formatted Tom Matthews Lobster data to BB and TM 
+TODO: LM will send formatted Tom Matthews Lobster data to BB and TM
 
 ## Benthic Community Composition has changed (After Aug)
 TODO: TBD. Should be straightforward to rework existing MBON data
+
+Benthic habitats in 2007 from [USGS's "*Benthic Ecosystems map and pie chart*"](https://pubs.usgs.gov/pp/2007/1751/professional-paper/figures/benthic-ecosystems.html)
+
+![USGS map](https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif)
+
+
 
 # Indicators:
 ## Fish abundance, diversity, size and species
