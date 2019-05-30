@@ -1,0 +1,37 @@
+in the keys - habitat & living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
+
+## Fish abundance, diversity, size and species
+TODO: Data: RVC data already available to FKNMS infographics
+
+TODO: Snapper/grouper vs parrotfish (targeted/non-targeted)
+
+TODO: Lobster size structure study [Not RVC data; not continuing to be collected so not for automation]
+
+RVC fish in/out MPAs: MPAs work. ***Key Story for Aug***
+Eg info-fk/corals -> Exploited Reef Fish (focal)
+
+TODO: So consolidate time-series into snapper-grouper complex?
+TODO: Alternative infographic data representation?
+
+TODO: Lobster study: MPAs can cover a range of life history reqs/habitat
+TODO: Tom Matthews (FWC) data
+
+
+## Habitat metrics, by taxa, over time, by reef type (i.e., patch, bank),
+in one graph:
+[9B-Ruzicka WQPP Presentation_ May 2019.pptx](https://drive.google.com/open?id=181OYdxt0sXZYVNqz41f6m9KZQMdS2Ex0)
+
+TODO: Tech note: Can use [Annotation & Shading](https://rstudio.github.io/dygraphs/gallery-annotations.html)
+
+benthic community composition is changing.
+disease and bleaching are influential.
+
+TODO: CREMP (LM will categorize sites by reef type):
+
+TODO:
+* Coral cover by species (Coral decreased)
+* Macro-algae cover (Algae increased)
+* Gorgonian cover (Gorgonian increased)
+* Sponge (in flux)
+* Mangrove. data: [Global Mangrove Watch (1996 - 2016)](http://data.unep-wcmc.org/datasets/4)
+* Seagrass
