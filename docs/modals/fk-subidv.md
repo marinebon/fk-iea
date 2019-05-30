@@ -3,6 +3,10 @@ The Florida keys are often split into sub-areas.
 
 ## examples
 Below are some examples subdivisions of the FK region.
+![rvc raw data](assets/img/fk-subdiv_coral-assemblages.png)
+Coral reefs and their subregional classification defined by [T. J. T. MurdochR. B. Aronson's *"Scale-dependent spatial variability of coral assemblages along the Florida Reef Tract"*, published
+ 1999](https://link.springer.com/article/10.1007/s003380050210).
+
 ![rvc raw data](assets/img/fk-subdiv_rvc-raw.png)
 Plot of region labels in RVC data used by @mhepner90 in her [dissertation RVC analysis](https://github.com/mhepner90/RVC/blob/master/map_regions.Rmd) and presented in the [info-fk corals infographic](https://marinebon.github.io/info-fk/corals.html).
 
