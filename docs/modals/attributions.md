@@ -1,3 +1,11 @@
+## Bathymetric data
+https://maps.ngdc.noaa.gov/viewers/bathymetry/NCEI provides a global, seamless bathymetry/topography mosaic that includes NCEI-stewarded DEMs along with global and regional grids such as GEBCO_2014, IBCAO, IBCSO, and the Hawaiian Island Multibeam Synthesis (University of Hawaii). A separate mosaic displaying only the newer "tiled" DEMs is also available.
+
+Please see the corresponding DEM Footprints map service for polygon footprints and more information about the individual DEMs used to create this composite view.
+
+More information about these layers on NOAA's GeoPlatform:
+DEM Mosaic (Individual DEMs)
+
 ## Images from [University of Maryland Integration & Application Network](http://ian.umces.edu)
 * scuba diver: Dieter Tracey - Marine Botany UQ [[ref](http://ian.umces.edu/imagelibrary/displayimage-5410.html)]
 * sewage plant: Tracey Saxby - Integration and Application Network [[ref](http://ian.umces.edu/imagelibrary/displayimage-search-0-6866.html)]
@@ -10,7 +18,7 @@
 * Sargassum spp. : Tracey Saxby - Integration and Application Network [[ref](http://ian.umces.edu/imagelibrary/displayimage-search-0-4529.html)]
 * Dead fish (red tide) : Jane Hawkey - Integration and Application Network [[ref](http://ian.umces.edu/imagelibrary/displayimage-search-0-8754.html)]
 
-## other (unused) resources
+### other (unused) images
 These images were not used but may be useful in the future:
 * [IAN brain coral](http://ian.umces.edu/imagelibrary/displayimage-search-0-4004.html)
 * [IAN soft coral](http://ian.umces.edu/imagelibrary/displayimage-search-0-4112.html)
