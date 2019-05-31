@@ -1,3 +1,21 @@
++++
+title = "(Hu)go Template Primer"
+description = ""
+tags = [
+    "go",
+    "golang",
+    "templates",
+    "themes",
+    "development",
+]
+date = "2014-04-02"
+categories = [
+    "Development",
+    "golang",
+]
+menu = "main"
++++
+
 in the keys - habitat & living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
 
 In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson
