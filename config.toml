@@ -2,9 +2,25 @@ baseurl = "https://marinebon.github.io/fk-iea/"
 languageCode = "en-us"
 title = "FKNMS MBON and IEA Webinized Infographic"
 theme = "book"
+relativeURLs = false
+enableEmoji = true
+publishDir = "public"  # TODO: change to docs?
 
+# ignore .Rmd files bc blogdown compiles them to .html,
+# and it suffices for Hugo to use the .html files.
+# There is no need for Hugo to build .Rmd files,
+# and actually Hugo does not know how.
+# Directories with suffixes _files and _cache should be ignored bc
+# they contain auxiliary files after an Rmd file is compiled,
+# and blogdown will store them.
+# Hugo should not copy them again to the public/ directory.
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+# =========================================================================
 # === "book" [theme settings](https://themes.gohugo.io/hugo-book/)
-# # (Warnings) Theme is intended for documentation use, therefor it doesn't render taxonomy.
+# =========================================================================
+# # (Warnings) Theme is intended for documentation use,
+# therefore it doesn't render taxonomy.
 # # You can hide related warning with config below
 # disableKinds = ["taxonomy", "taxonomyTerm"]
 
