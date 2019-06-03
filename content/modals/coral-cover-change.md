@@ -1,3 +1,8 @@
+---
+title: Introduction
+type: docs
+---
+
 # Two years of coral cover change in Florida Keys (2017-2019): Effects of Hurricane Irma?
 
 Has the coral cover changed over two years and after the direct impact of Irma in Sept 2017?
