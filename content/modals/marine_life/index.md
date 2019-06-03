@@ -1,20 +1,9 @@
-+++
-title = "(Hu)go Template Primer"
-description = ""
-tags = [
-    "go",
-    "golang",
-    "templates",
-    "themes",
-    "development",
-]
-date = "2014-04-02"
-categories = [
-    "Development",
-    "golang",
-]
-menu = "main"
-+++
+---
+author: ~
+date: '2019-06-03'
+categories: []
+tags: []
+---
 
 in the keys - habitat & living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
 

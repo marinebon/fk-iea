@@ -1,6 +1,8 @@
 ---
-title: Introduction
-type: docs
+author: ~
+date: '2019-06-03'
+categories: []
+tags: []
 ---
 
 # Two years of coral cover change in Florida Keys (2017-2019): Effects of Hurricane Irma?
@@ -8,19 +10,19 @@ type: docs
 Has the coral cover changed over two years and after the direct impact of Irma in Sept 2017?
 
 ## study area:
-![study area](assets/img/coral-cover-change_area.png)
+![study area](area.png)
 
 ## methods:
-![methods](assets/img/coral-cover-change_pipeline.png)
+![methods](change_pipeline.png)
 
 Classification is confounded by turbid waters.
 To improve classification, a depth filter was applied.
-![depth-filter](assets/img/coral-cover-change_depth-limit.png)
+![depth-filter](depth-limit.png)
 
 
 ## Results:
-![result](assets/img/coral-cover-change_reef-cover-change.png)
-![result w true color](assets/img/coral-cover-change_reef-cover-change-w-rgb.png)
+![result](reef-cover-change.png)
+![result w true color](reef-cover-change-w-rgb.png)
 
 * FEB 2017: 77.33 km2
 * FEB 2019: 58.85 km2 (13.83 km2 new)

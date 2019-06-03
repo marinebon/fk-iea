@@ -1,3 +1,9 @@
+---
+author: ~
+date: '2019-06-03'
+categories: []
+tags: []
+---
 Tourism and recreational use has increased, but resident pop has stabilized: TDC data. ND contact.
 [Resident population trends. Population & growth rate.](https://docs.google.com/spreadsheets/d/18k0Y9sSLSZjxbl_uWdAZnzqAdcKk_y32Xh1DWSDb3WM/edit?usp=sharing)
 
