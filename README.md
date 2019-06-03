@@ -41,7 +41,7 @@ Values in the `modal_id` column must match to the element id property in the `.s
 ### Main Menu Links & Other Global Config
 `config.toml` contains the main menu and other global config info.
 
-## Advanced Dev Workflow
+## Advanced Dev
 This site is built with bookdown and deployed as a static file website.
 
 ### Install blogdown & hugo [[ref](https://bookdown.org/yihui/blogdown/installation.html)]
@@ -53,6 +53,9 @@ blogdown::install_hugo()
 blogdown::hugo_version()
 ```
 
+### Workflow
+1. edit files
+2. test build of the site using [blogdown's RStudio addins](https://bookdown.org/yihui/blogdown/rstudio-ide.html) or by running `blogdown::serve_site()`
 
 ## additional links
 Based on the example at https://github.com/ioos-eco/cinms.
