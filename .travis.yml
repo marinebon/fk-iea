@@ -1,0 +1,27 @@
+# based on https://bookdown.org/yihui/blogdown/travis-github.html
+language: r
+dist: xenial
+latex: false
+
+branches:
+  only:
+    - master
+
+cache:
+  packages: yes
+  directories:
+    - $HOME/bin
+
+script:
+  - Rscript -e 'blogdown::install_hugo()'
+  # TODO: add custom infographiq build step here
+  - Rscript -e 'blogdown::build_site()'
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: public
+  # fqdn: travis-blogdown.yihui.name  # this sets CNAME for custom DN
