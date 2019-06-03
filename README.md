@@ -38,8 +38,11 @@ The only special thing about this `.svg` file is the element id property of clic
 `./modal_plots.csv` connects image elements from `/docs/svg/` to modal content in `./docs/modals/` using the `modal_id` column.
 Values in the `modal_id` column must match to the element id property in the `.svg`.
 
-### Main Menu Links & Other Global Config
-`config.toml` contains the main menu and other global config info.
+### Main Menu Links
+Main menu is configured in `/content/menu/`
+
+### Other Global Config
+`config.toml` contains global config info for hugo, bookdown, and the theme.
 
 ## Advanced Dev
 This site is built with bookdown and deployed as a static file website.
