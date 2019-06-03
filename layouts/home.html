@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{{- partial "docs/shared" -}}
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+  {{ partial "docs/html-head" . }}
+  {{ partial "docs/inject/head" . }}
+</head>
+{{ $content := `
+# FKNMS MBON and IEA Webinized Infographic
+
+This is a placeholder for home page.
+An infographic will go here with clickable elements to the following pages:
+
+ - <a href="modals/externalities/">Externalities</a>
+ - <a href="modals/people/">People</a>
+ - <a href="modals/marine_life/">Marine Life</a>
+ - <a href="modals/info">Info</a>
+` }}
+<body>
+  <main class="flex justify-center">
+    <div class="book-home markdown">
+      {{ replace $content "&#96;" "`" | markdownify }}
+    </div>
+  </main>
+
+  {{ partial "docs/inject/body" . }}
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+
+</html>
