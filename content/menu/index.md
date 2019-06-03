@@ -10,3 +10,6 @@ ___________________________________________________________________
   - [Coral Change]({{< relref "/modals/coral-cover-change" >}})
 - **`.Rmd` Examples**
   - Coming Soon!
+___________________________________________________________________
+- **External Links**
+  - [Source code](https://github.com/marinebon/fk-iea)
