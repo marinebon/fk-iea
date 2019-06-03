@@ -3,6 +3,9 @@ author: ~
 date: '2019-06-03'
 categories: []
 tags: []
+title: "Coral Cover Change"
+slug: "coral-cover-change"
+description: ""
 ---
 
 # Two years of coral cover change in Florida Keys (2017-2019): Effects of Hurricane Irma?
@@ -13,7 +16,7 @@ Has the coral cover changed over two years and after the direct impact of Irma i
 ![study area](area.png)
 
 ## methods:
-![methods](change_pipeline.png)
+![methods](pipeline.png)
 
 Classification is confounded by turbid waters.
 To improve classification, a depth filter was applied.
