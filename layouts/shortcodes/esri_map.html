@@ -26,16 +26,19 @@
     <style>
         /* body { margin:0; padding:0; } */
         /* #map { position: absolute; top:0; bottom:0; right:0; left:0; } */
-        #map {
+        #{{ if .Get "map_id" }}{{ .Get "map_id" }}{{ else }}esri_map{{ end }} {
             margin:0; padding:0;  width : 100%; height : 400px; position: relative;
         }
     </style>
 </head>
 <body>
-    <div id="map"></div>
+    <div id='{{ if .Get "map_id" }}{{ .Get "map_id" }}{{ else }}esri_map{{ end }}'>
+    </div>
 
     <script>
-      var map = L.map("map").setView(
+      var map = L.map(
+        '{{ if .Get "map_id" }}{{ .Get "map_id" }}{{ else }}esri_map{{ end }}'
+      ).setView(
         [{{.Get "lat" }}, {{.Get "lon" }}], {{.Get "zoom" }}
       );
 
