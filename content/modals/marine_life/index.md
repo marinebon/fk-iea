@@ -5,7 +5,7 @@ date: '2019-06-03'
 categories: []
 tags: []
 ---
-
+Florida Fish and Wildlife Conservation Commission's richness of potential habitat for selected focal species in Florida [[ref]](https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8):
 {{< esri_map
     lat="24.8" lon="-81" zoom="8"
     basemap="Gray"
@@ -30,9 +30,9 @@ TODO: TBD. Should be straightforward to rework existing MBON data
 
 Benthic habitats in 2007 from [USGS's "*Benthic Ecosystems map and pie chart*"](https://pubs.usgs.gov/pp/2007/1751/professional-paper/figures/benthic-ecosystems.html)
 
-![USGS map](https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif)
-
-
+{{< imgcap
+    title="USGS map" src="https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif"
+>}}
 
 # Indicators:
 ## Fish abundance, diversity, size and species

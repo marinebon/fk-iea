@@ -1,0 +1,38 @@
+<!--
+Loosely based on Parsia Hakimian's https://github.com/parsiya/Hugo-Shortcodes
+  imitates the imgcap plugin from Octopress
+  see readme or the above repository for usage
+-->
+
+<style>
+    .caption-wrapper {
+        text-align: center;
+        border: 1px solid grey;
+    }
+    .caption-text {
+        font-style: italic
+    }
+    .caption-img {
+        -webkit-transition: all 1s ease; /* Safari and Chrome */
+        -moz-transition: all 1s ease; /* Firefox */
+        -ms-transition: all 1s ease; /* IE 9 */
+        -o-transition: all 1s ease; /* Opera */
+        transition: all 1s ease;
+    }
+    .caption-img:hover {
+        -webkit-transform:scale(1.8); /* Safari and Chrome */
+        -moz-transform:scale(1.8); /* Firefox */
+        -ms-transform:scale(1.8); /* IE 9 */
+        -o-transform:scale(1.8); /* Opera */
+         transform:scale(1.8);
+    }
+</style>
+
+<div class="caption-wrapper">
+    <img width="100%" class="caption-img"
+        src="{{ .Get "src" }}"
+        title="{{ .Get "title" }}" alt="{{ .Get "title" }}"
+    >
+    <span class="caption-text">{{ .Get "title" }}</span>
+
+</div>
