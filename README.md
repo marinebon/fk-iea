@@ -65,4 +65,6 @@ Travis CI is used to deploy the website to github pages via the gh-pages branch.
 The github personal access token(s) used by travis can be accessed (only by authorized accounts) [here](https://drive.google.com/drive/folders/168X9drMc_eFdZ6eCesgwR56Ek3m_OrZg?usp=sharing).
 
 ## additional links
-Based on the example at https://github.com/ioos-eco/cinms.
+* Based on the example at https://github.com/ioos-eco/cinms.
+* List of [hugo-powered IOOS websites on github](https://github.com/ioos?utf8=%E2%9C%93&q=&type=&language=html)
+* List of [hugo-powered GSA websites on github](https://github.com/gsa?utf8=%E2%9C%93&q=&type=&language=html)
