@@ -26,6 +26,15 @@ TODO: Turbidity map; Dan Otis contact.
 TODO: Sponge mortality, SG-Sanctuaries contact has map ready to go
 
 ## Sea Level Rise
+University of Florida Geoplan Center [Sea Level Rise Projections ](https://flcpa.databasin.org/datasets/dd54d301894f4322a7a30832572c4a7e):
+{{< esri_map
+    lat="24.8" lon="-81" zoom="8"
+    basemap="Gray"
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564c8ab3e4b0ebfbef0d34b8/MapServer/"
+>}}
+
+---------------------------------------------------------------------------
+
 https://tidesandcurrents.noaa.gov/sltrends/sltrends.html
 
 * [Florida Sea Level Rise Projections in Meters | Florida CPA](https://flcpa.databasin.org/datasets/dd54d301894f4322a7a30832572c4a7e)

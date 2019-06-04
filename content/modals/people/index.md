@@ -51,6 +51,14 @@ download: [NOAA: C-CAP FTP](https://coast.noaa.gov/ccapftp/#/)
 See also:
 * [Coral Cover Change](coral-cover-change.md)
 
+### Development Forecasts
+University of Florida GeoPlan Center [2060 Development Projections](https://flcpa.databasin.org/datasets/4a1340791089437dae38593f0ef39439):
+{{< esri_map
+    lat="24.8" lon="-81" zoom="8"
+    basemap="Gray"
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564cb9c8e4b0ebfbef0d3575/MapServer/"
+>}}
+
 ## Number of EDUs (wastewater treatment)
 lower septic use by  90-95%!
 

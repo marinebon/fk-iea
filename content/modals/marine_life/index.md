@@ -5,21 +5,15 @@ date: '2019-06-03'
 categories: []
 tags: []
 ---
-Florida Fish and Wildlife Conservation Commission's richness of potential habitat for selected focal species in Florida [[ref]](https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8):
-{{< esri_map
-    lat="24.8" lon="-81" zoom="8"
-    basemap="Gray"
-    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564f49fde4b064dd1d095637/MapServer/"
->}}
-
-----------------------------------------------------------------------------
 
 in the keys - habitat and living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
 
+
+### FKNMS Sub-regions
 In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson
  1999](https://link.springer.com/article/10.1007/s003380050210)].
 The regional subdivision of the reef tract is not well standardized, however.
-The definition of the subregions used here and an explaination of this choice is discussed on the [fk-subdiv page](fk-subidv.md).
+The definition of the subregions used here and an explanation of this choice is discussed on the [fk-subdiv page](fk-subidv.md).
 
 ## Fish and Lobster inside/outside of MPAs (Aug)
 TODO: BB and TM rework existing MBON/RVC data
@@ -70,3 +64,33 @@ TODO:
 * Sponge (in flux)
 * Mangrove. data: [Global Mangrove Watch (1996 - 2016)](http://data.unep-wcmc.org/datasets/4)
 * Seagrass
+
+# extra stuff
+
+Florida Fish and Wildlife Conservation Commission's richness of potential habitat for selected focal species in Florida [[ref]](https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8):
+{{< esri_map
+    lat="24.8" lon="-81" zoom="8"
+    basemap="Gray"
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564f49fde4b064dd1d095637/MapServer/"
+>}}
+
+----------------------------------------------------------------------------
+
+Most of FKNMS was classified as "highest priority" by the 2006 [Florida Critical Lands and Waters Identification Project Database](Florida Critical Lands and Waters Identification Project Database)
+
+{{< esri_map
+    map_id="clip-map"
+    lat="24.8" lon="-81" zoom="8"
+    basemap="Gray"
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564b4250e4b0ebfbef0d31c1/MapServer/"
+>}}
+
+----------------------------------------------------------------------------
+
+FWC's [Landcover classes for CLIP 1-2 levels](https://flcpa.databasin.org/datasets/4befbffb3ec0492aa890297c4b4abc33):
+{{< esri_map
+    map_id="landcover-map"
+    lat="24.8" lon="-81" zoom="8"
+    basemap="Gray"
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/57039d72e4b0328dcb81dddf/MapServer/"
+    >}}
