@@ -60,5 +60,9 @@ blogdown::hugo_version()
 1. edit files
 2. test build of the site using [blogdown's RStudio addins](https://bookdown.org/yihui/blogdown/rstudio-ide.html) or by running `blogdown::serve_site()`
 
+## Deployment configuration
+Travis CI is used to deploy the website to github pages via the gh-pages branch.
+The github personal access token(s) used by travis can be accessed (only by authorized accounts) [here](https://drive.google.com/drive/folders/168X9drMc_eFdZ6eCesgwR56Ek3m_OrZg?usp=sharing).
+
 ## additional links
 Based on the example at https://github.com/ioos-eco/cinms.
