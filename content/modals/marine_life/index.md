@@ -6,14 +6,8 @@ categories: []
 tags: []
 ---
 
-in the keys - habitat and living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
-
-
-### FKNMS Sub-regions
-In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson
- 1999](https://link.springer.com/article/10.1007/s003380050210)].
-The regional subdivision of the reef tract is not well standardized, however.
-The definition of the subregions used here and an explanation of this choice is discussed on the [fk-subdiv page](fk-subidv.md).
+Habitat and living resources in the Keys are undergoing unprecedented changes.
+These changes are apparent in abundances of coral, invertebrates, seagrass, mangrove, disease, bleaching, and algae.
 
 ## Fish and Lobster inside/outside of MPAs (Aug)
 TODO: BB and TM rework existing MBON/RVC data
@@ -22,10 +16,9 @@ TODO: LM will send formatted Tom Matthews Lobster data to BB and TM
 ## Benthic Community Composition has changed (After Aug)
 TODO: TBD. Should be straightforward to rework existing MBON data
 
-Benthic habitats in 2007 from [USGS's "*Benthic Ecosystems map and pie chart*"](https://pubs.usgs.gov/pp/2007/1751/professional-paper/figures/benthic-ecosystems.html)
-
+Benthic habitats in 2007 from [USGS's "*Benthic Ecosystems*"](https://pubs.usgs.gov/pp/2007/1751/professional-paper/figures/benthic-ecosystems.html):
 {{< imgcap
-    title="USGS map" src="https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif"
+    title="Benthic Ecosystems map and pie chart" src="https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif"
 >}}
 
 # Indicators:
@@ -45,25 +38,49 @@ TODO: Alternative infographic data representation?
 TODO: Lobster study: MPAs can cover a range of life history reqs/habitat
 TODO: Tom Matthews (FWC) data
 
+## Habitat
+Benthic community composition is changing.
+Disease and bleaching are influential.
 
-## Habitat metrics, by taxa, over time, by reef type (i.e., patch, bank),
-in one graph:
-[9B-Ruzicka WQPP Presentation_ May 2019.pptx](https://drive.google.com/open?id=181OYdxt0sXZYVNqz41f6m9KZQMdS2Ex0)
+TODO: metrics, by taxa, over time, by reef type (i.e., patch, bank)
 
-TODO: Tech note: Can use [Annotation and Shading](https://rstudio.github.io/dygraphs/gallery-annotations.html)
+### Coral Cover
+Coral Cover has been decreasing due to events and is unable to recover due to continuous stressors.
+This decline over recent decades is easily visible in the following graphs from
+[9B-Ruzicka WQPP Presentation_ May 2019.pptx](https://drive.google.com/open?id=181OYdxt0sXZYVNqz41f6m9KZQMdS2Ex0):
 
-benthic community composition is changing.
-disease and bleaching are influential.
+{{< imgcap
+    title="Overall CREMP Benthic Cover in the Florida Keys – IRMA Effect" src="cremp_cover_irma.png"
+>}}
 
+{{< imgcap
+    title="CREMP & SECREMP Coral Cover" src="cremp_cover_events.png"
+>}}
+
+#### By Reef Type
 TODO: CREMP (LM will categorize sites by reef type):
 
-TODO:
-* Coral cover by species (Coral decreased)
-* Macro-algae cover (Algae increased)
-* Gorgonian cover (Gorgonian increased)
-* Sponge (in flux)
-* Mangrove. data: [Global Mangrove Watch (1996 - 2016)](http://data.unep-wcmc.org/datasets/4)
-* Seagrass
+#### By Coral Type
+TODO: Coral cover by species (Coral decreased)
+
+### Macro-algae
+TODO: Macro-algae cover (Algae increased)
+
+### Gorgonian
+TODO: Gorgonian cover (Gorgonian increased)
+### Sponge
+TODO: Sponge (in flux)
+### Mangrove
+TODO: Mangrove. data: [Global Mangrove Watch (1996 - 2016)](http://data.unep-wcmc.org/datasets/4)
+### Seagrass
+TODO: Seagrass
+
+
+# FKNMS Sub-regions
+In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson
+ 1999](https://link.springer.com/article/10.1007/s003380050210)].
+The regional subdivision of the reef tract is not well standardized, however.
+The definition of the subregions used here and an explanation of this choice is discussed on the [fk-subdiv page](fk-subidv.md).
 
 # extra stuff
 
