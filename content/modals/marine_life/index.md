@@ -6,7 +6,11 @@ categories: []
 tags: []
 ---
 
-{{< esri_map >}}
+{{< esri_map
+    lat="24.8" lon="-81" zoom="8"
+    basemap="Gray"
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564f49fde4b064dd1d095637/MapServer/"
+>}}
 
 ----------------------------------------------------------------------------
 

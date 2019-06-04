@@ -1,7 +1,6 @@
-<!-- TODO: put this in an iframe like:
-iframe src="modals/marine_life/esri_example.html"
-    width="300" height="300"
-/iframe
+<!--
+    ESRI map with basemap Layer and feature layer.
+    Uses esri_leaflet from https://github.com/Esri/esri-leaflet
 -->
 <!DOCTYPE html>
 <html>
@@ -36,9 +35,46 @@ iframe src="modals/marine_life/esri_example.html"
     <div id="map"></div>
 
     <script>
-      var map = L.map("map").setView([37.75, -122.23], 10);
+      var map = L.map("map").setView(
+        [{{.Get "lat" }}, {{.Get "lon" }}], {{.Get "zoom" }}
+      );
 
-      L.esri.basemapLayer("Topographic").addTo(map);
+      L.esri.basemapLayer('{{.Get "basemap" }}').addTo(map);
+
+      // === feature layers:
+      // arcgis/rest/services/Heritage_Trees_Portland/FeatureServer/0
+      // var parks = L.esri.featureLayer({
+      //     url: '{{.Get "feature_url" }}',
+      //     style: function () {
+      //       return { color: "#70ca49", weight: 2 };
+      //     }
+      // }).addTo(map);
+      //
+      // var popupTemplate = "<h3>{NAME}</h3>{ACRES} Acres<br><small>Property ID: {PROPERTYID}<small>";
+      //
+      // parks.bindPopup(function(e){
+      //     return L.Util.template(popupTemplate, e.feature.properties)
+      // });
+
+      // === tiled layers
+      // ArcGIS/rest/services/USA_Topo_Maps/MapServer
+      // L.esri.tiledMapLayer({
+      //     url: '{{.Get "feature_url" }}'
+      // }).addTo(map);
+
+      // === dynamic map layers
+      // arcgis/rest/services/Specialty/Soil_Survey_Map/MapServer
+      L.esri.dynamicMapLayer({
+          url: '{{.Get "feature_url" }}',
+          opacity: 1.0
+      }).addTo(map);
+
+      // === image map layer
+      // arcgis/rest/services/Landsat/PS/ImageServer
+      // L.esri.imageMapLayer({
+      //     url: '{{.Get "feature_url" }}',
+      //     // attribution: 'United States Geological Survey (USGS), National Aeronautics and Space Administration (NASA)'
+      // }).addTo(map);
     </script>
 </body>
 </html>
