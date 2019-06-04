@@ -1,11 +1,16 @@
 ---
+title: "Marine Life"
 author: ~
 date: '2019-06-03'
 categories: []
 tags: []
 ---
 
-in the keys - habitat & living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
+{{< esri_map >}}
+
+----------------------------------------------------------------------------
+
+in the keys - habitat and living resources: abundances in protected zones, coral, invertebrates, seagrass, mangrove, disease, bleaching, algae)
 
 In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson
  1999](https://link.springer.com/article/10.1007/s003380050210)].
@@ -47,7 +52,7 @@ TODO: Tom Matthews (FWC) data
 in one graph:
 [9B-Ruzicka WQPP Presentation_ May 2019.pptx](https://drive.google.com/open?id=181OYdxt0sXZYVNqz41f6m9KZQMdS2Ex0)
 
-TODO: Tech note: Can use [Annotation & Shading](https://rstudio.github.io/dygraphs/gallery-annotations.html)
+TODO: Tech note: Can use [Annotation and Shading](https://rstudio.github.io/dygraphs/gallery-annotations.html)
 
 benthic community composition is changing.
 disease and bleaching are influential.
