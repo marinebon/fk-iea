@@ -15,7 +15,7 @@ ___________________________________________________________________
   - [Coral Change]({{< relref "/posts/coral-cover-change" >}})
   - [FK Subdivision]({{< relref "/posts/fk-subdiv" >}})
 - **`.Rmd` Examples**
-  - Coming Soon!
+  - [Basic knitr Chunks]({{< relref "/posts/basic_knitr_chunks" >}})
 ___________________________________________________________________
 - **External Links**
   - [Source code](https://github.com/marinebon/fk-iea)
