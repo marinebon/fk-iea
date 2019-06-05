@@ -47,13 +47,15 @@ Main menu is configured in `/content/menu/`
 ## Advanced Dev
 This site is built with bookdown and deployed as a static file website.
 
-### Install blogdown & hugo [[ref](https://bookdown.org/yihui/blogdown/installation.html)]
-```r
-if (!requireNamespace("devtools")) install.packages("devtools")
-devtools::install_github("rstudio/blogdown")
-blogdown::install_hugo()
-# verify installation:
-blogdown::hugo_version()
+### Install Dependencies
+Firstly, the latest [R](http://cran.revolutionanalytics.com/) and [python](https://docs.python-guide.org/starting/installation/) should be installed.
+These instructions assume you are using a unix-based operating system (linux/OSX).
+
+```bash
+./install_R_deps.sh
+
+# verify blogdown installation:
+Rscript -e 'blogdown::hugo_version()'
 ```
 
 ### Workflow
