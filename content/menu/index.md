@@ -16,6 +16,7 @@ ___________________________________________________________________
   - [FK Subdivision]({{< relref "/posts/fk-subdiv" >}})
 - **`.Rmd` Examples**
   - [Basic knitr Chunks]({{< relref "/posts/basic_knitr_chunks" >}})
+  - [RVC Biodiversity Analysis]({{< relref "/posts/rvc_mhepner" >}})
 ___________________________________________________________________
 - **External Links**
   - [Source code](https://github.com/marinebon/fk-iea)
