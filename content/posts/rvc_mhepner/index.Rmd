@@ -159,3 +159,114 @@ TODO: fix & include trait_matrix chunk
 ## Trait matrix visualization
 ```{r child = 'trait_matrix_viz.Rmd'}
 ```
+
+### Fetch the RVC data from
+[NOAA's Southeast Fisheries Science Center server](https://grunt.sefsc.noaa.gov/rvc_analysis20/) using the [RVC package](https://github.com/jeremiaheb/rvc)
+- Fetched weighted abundance and biomass data by domain, strata, and primary sampling units
+
+### Sample Data Variables
+- PRIMARY_SAMPLE_UNIT: A code indicating the primary sample unit in which a sample was collected.
+- YEAR: A number indicating the calendar year.
+- MONTH: A number indicating the month of the year.
+- DAY: A number indicating the day of the month (EST).
+- STATION_NR: A number indicating the secondary sampling unit within a given primary sample unit.
+- LAT_DEGREES: Latitude of secondary sampling unit in decimal degrees).
+- LON_DEGREES: Longitude of secondary sampling unit in decimal degrees).
+- DEPTH: Average depth, in meters, of secondary sampling unit).
+- UNDERWATER_VISIBILITY: visibility, in meters, at secondary sampling unit.
+- MAPGRID_NR: A number indicating the primary sample unit.  
+- HABITAT_CD: A code indicating the habitat type.
+- ZONE_NR: A code indicating the distance offshore:
++ 1 - Inshore
++ 2 - Midchannel
++ 3 - Offshore
++ 4 - Fore-reef
+- SUBREGION_NR: A number indicating the subregion.
+- MPA_NR: A number identifying the marine protected area in which the sample was collected. Zero indicates unprotected status)
+- SPECIES_NR: A number indicating the species for a sample
+- SPECIES_CD: A code indicating the species for a sample. Consists of the first three letters of the generic name and the first four of the specific name   
+- LEN: The length, in cm, of a sample.      
+- NUM: The number of individuals of a given species and length observed in a secondary sampling unit
+- TIME_SEEN: A number indicating when, during sampling, an individual was observed. 1: In the first five minutes, 2: From 5-10 minutes, 3: After 10 minutes.
+- PROT: A boolean value indicating whether a sample was in a protected area or not
++ 1 - protected area
++ 0 - not protected
+- STRAT: A code indicating the stratum in which a sample was taken. Differs by region.   
++ FMLR
++ FSLR
++ HRRF
++ INPR
++ MCPR
++ OFPR
+- REGION: A code indicating the region in which a sample was taken.
++ FLA KEYS (florida keys)
++ DRY TORT (dry tortugas)
+
+### Stratum Data Variables
+- REGION
+- YEAR
+- PROT
+- STRAT
+- NTOT: The number of possible primary sample units for a given year, region, stratum, and protected status
+- GRID_SIZE: The length (in meters) to a side of a primary sample unit for a given year, region, stratum, and protected status.
+
+### Taxonomic Data Variables
+- SPECIES_CD
+- FAMILY
+- SCINAME
+- COMNAME
+- LC: Minimum length at capture, in centimeters
+- LM: Median length at maturity, in centimeters.
+- WLEN_A: The linear coefficient of the allometric growth equation in grams per millimeter (g/mm)
+- WLEN_B: The exponential coefficient of the allometric growth equation
+
+### Benthic Data Variables
+- REGION: A code indicating the region.
+- YEAR: A number indicating the calendar year.
+- PRIMARY_SAMPLE_UNIT: A code indicating the primary sample unit in which a sample was collected.
+- STATION_NR: A number indicating the secondary sampling unit within a given primary sample unit.
+- DEPTH: Average depth, in meters, of secondary sampling unit.
+- MAX_HARD_RELIEF: The maximum height, in meters, of hard relief (e.g. hard corals, rock).
+- MAX_SOFT_RELIEF: The maximum height, in meters, of soft relief (e.g. soft corals, sponges).
+- AVG_HARD_RELIEF: The average height, in meters, of hard relief.
+- HARD_REL_PCT_0: Percentage of hard relief less than 0.2 meters.
+- HARD_REL_PCT_1: Percentage of hard relief between 0.2 and 0.5 meters.
+- HARD_REL_PCT_2: Percentage of hard relief between 0.5 and 1.0 meters.
+- HARD_REL_PCT_3: Percentage of hard relief between 1.0 and 1.5 meters.
+- HARD_REL_PCT_4: Percentage of hard relief greater than 1.5 meters.
+- PCT_SAND: Percentage of abiotic cover that is sand.
+- PCT_HARD_BOTTOM: Percentage of abiotic cover that is hard bottom.
+- PCT_RUBBLE: Percentage of abiotic cover that is rubble.
+- PCT_CORAL: Percentage of biotic hardbottom that is coral.
+- PCT_OCTO: Percentage of biotic hardbottom that is octocoral.
+- PCT_SPONGE: Percentage of biotic hardbottom that is sponge.
+
+### Function: getDomainDensity
+- YEAR
+- REGION
+- SPECIES_CD
+- density: Domain-wide mean density for a stratified random survey  
+- var: Variance in average density per secondary sampling unit
+- n: Number of primary sampling units sampled
+- nm: Number of secondary sampling units sampled
+- N: Number of total possible primary sample units
+- NM: Number of possible secondary sampling units
+- length_class: The length class or bin. Only present if length_bins is not NULL. The notation, [lower, upper), is inclusive of the lower bound, but exclusive of the upper bound
+- protected_status: The protected status. Only present if merge_protected is FALSE
+
+### Florida Keys Strata
+1. FSLR - Forereef Shallow Linear Reef (<6m)
+2. FMLR - Forereef Midchannel Linear Reef (6-18m)
+3. FDLR - Forereef Deep Linear Reef (18-33m)
+4. INPR - Inshore patch reef
+5. MCPR - Midchannel Patch Reef
+6. OFPR - Offshore Patch Reef
+7. HRRF - High Relief Reef (Spur and Groove)
+
+```{r child = 'strata_by_year.Rmd'}
+```
+
+
+### Florida Keys Primary Sampling Unit
+```{r child = 'fk_psu.Rmd'}
+```

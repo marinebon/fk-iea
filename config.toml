@@ -6,15 +6,23 @@ relativeURLs = false
 enableEmoji = true
 publishDir = "public"  # TODO: change to docs?
 
-# ignore .Rmd files bc blogdown compiles them to .html,
-# and it suffices for Hugo to use the .html files.
-# There is no need for Hugo to build .Rmd files,
-# and actually Hugo does not know how.
-# Directories with suffixes _files and _cache should be ignored bc
-# they contain auxiliary files after an Rmd file is compiled,
-# and blogdown will store them.
-# Hugo should not copy them again to the public/ directory.
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = [
+    # ignore .Rmd files bc blogdown compiles them to .html,
+    # and it suffices for Hugo to use the .html files.
+    # There is no need for Hugo to build .Rmd files,
+    # and actually Hugo does not know how.
+    "\\.Rmd$", "\\.Rmarkdown$",
+
+    # Directories with suffixes _files and _cache should be ignored bc
+    # they contain auxiliary files after an Rmd file is compiled,
+    # and blogdown will store them.
+    # Hugo should not copy them again to the public/ directory.
+    "_files$", "_cache$",
+
+    # rds data files do not need to be copied and attempting to do so
+    # may cause hugo to throw errors.
+    "\\.rds$"
+]
 
 # =========================================================================
 # === "book" [theme settings](https://themes.gohugo.io/hugo-book/)

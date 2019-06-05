@@ -2,3 +2,6 @@
 public/
 resources/_gen
 site_libs/
+
+# data files
+*.rds
