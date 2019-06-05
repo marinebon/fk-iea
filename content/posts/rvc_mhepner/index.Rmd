@@ -119,7 +119,9 @@ group_by =  dplyr::group_by #override plotly::group_by
 summarise = dplyr::summarise #override plotly::summarise
 ```
 
-## Functional distance trait based matrix (from Lefcheck et al., 2014 ChessMap.Rmd)
+## Functional distance trait based matrix
+from Lefcheck et al., 2014 ChessMap.Rmd
+
 TODO: fix & include this chunk
 ```{r child = 'func_dist_trait_matrix.Rmd', eval=FALSE, include=FALSE}
 ```
@@ -149,3 +151,7 @@ Top 23 species = 80% of species
 * Creole Wrasse
 * Gray Snapper
 * Doctorfish
+
+TODO: fix & include this chunk
+```{r child = 'trait_matrix.Rmd', eval=FALSE, echo=FALSE}
+```
