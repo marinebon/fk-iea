@@ -12,8 +12,8 @@ ___________________________________________________________________
         - [Marine Life]({{< relref "/modals/marine_life" >}})
         - [Info]({{< relref "/modals/info" >}})
 - **`.md` Examples**
-  - [Coral Change]({{< relref "/modals/coral-cover-change" >}})
-  - [FK Subdivision]({{< relref "/modals/fk-subdiv" >}})
+  - [Coral Change]({{< relref "/posts/coral-cover-change" >}})
+  - [FK Subdivision]({{< relref "/posts/fk-subdiv" >}})
 - **`.Rmd` Examples**
   - Coming Soon!
 ___________________________________________________________________
