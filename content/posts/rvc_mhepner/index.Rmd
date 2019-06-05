@@ -122,7 +122,7 @@ summarise = dplyr::summarise #override plotly::summarise
 ## Functional distance trait based matrix
 from Lefcheck et al., 2014 ChessMap.Rmd
 
-TODO: fix & include this chunk
+TODO: fix & include func_dist_trait_matrix chunk
 ```{r child = 'func_dist_trait_matrix.Rmd', eval=FALSE, include=FALSE}
 ```
 
@@ -152,6 +152,10 @@ Top 23 species = 80% of species
 * Gray Snapper
 * Doctorfish
 
-TODO: fix & include this chunk
+TODO: fix & include trait_matrix chunk
 ```{r child = 'trait_matrix.Rmd', eval=FALSE, echo=FALSE}
+```
+
+## Trait matrix visualization
+```{r child = 'trait_matrix_viz.Rmd'}
 ```
