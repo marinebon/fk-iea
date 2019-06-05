@@ -26,7 +26,17 @@ TODO: Turbidity map; Dan Otis contact.
 TODO: Sponge mortality, SG-Sanctuaries contact has map ready to go
 
 ## Sea Level Rise
-University of Florida Geoplan Center [Sea Level Rise Projections ](https://flcpa.databasin.org/datasets/dd54d301894f4322a7a30832572c4a7e):
+NOAA Tide and Currents reports the relative sea level trend for the [Key West Tide Gauge #8724580](https://tidesandcurrents.noaa.gov/sltrends/sltrends_station.shtml?id=8724580) is 2.42 millimeters/year with a 95% confidence interval of +/- 0.14 mm/yr based on monthly mean sea level data from 1913 to 2018 which is equivalent to a change of 0.79 feet in 100 years.
+
+{{< imgcap
+    title="Relative Sea Level Trend | tide gauge 8724580 | Key West, Florida" src="https://tidesandcurrents.noaa.gov/sltrends/plots/8724580_meantrend.png"
+>}}
+
+Current relative sea level trends are available from NOAA Tide and Currents ["Sea Level Trends" product](https://tidesandcurrents.noaa.gov/sltrends/sltrends.html):
+
+---------------------------------------------------------------------------
+
+University of Florida Geoplan Center [Sea Level Rise Projections ](https://flcpa.databasin.org/datasets/dd54d301894f4322a7a30832572c4a7e) shows the FL Keys are expected to be severely impacted by sea level rise:
 {{< esri_map
     lat="24.8" lon="-81" zoom="8"
     basemap="Gray"
@@ -34,8 +44,6 @@ University of Florida Geoplan Center [Sea Level Rise Projections ](https://flcpa
 >}}
 
 ---------------------------------------------------------------------------
-
-https://tidesandcurrents.noaa.gov/sltrends/sltrends.html
 
 * [Florida Sea Level Rise Projections in Meters | Florida CPA](https://flcpa.databasin.org/datasets/dd54d301894f4322a7a30832572c4a7e)
 * [Florida's Sea Level Rise - Sea Level Rise](https://sealevelrise.org/states/florida/)
