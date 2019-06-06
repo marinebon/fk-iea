@@ -15,7 +15,7 @@ TODO: LM will send formatted Tom Matthews Lobster data to BB and TM
 ## Benthic Community Composition has changed (After Aug)
 
 Benthic habitats in 2007 from [USGS's "*Benthic Ecosystems*"](https://pubs.usgs.gov/pp/2007/1751/professional-paper/figures/benthic-ecosystems.html):
-```{r usgs_ecos}
+```{r usgs_ecos, echo=FALSE}
 blogdown::shortcode("imgcap",
     title="Benthic Ecosystems map and pie chart", src="https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif"
 )
@@ -23,21 +23,18 @@ blogdown::shortcode("imgcap",
 
 ### How has this changed?
 #### Coral Cover
-Relevant analysis from @luislizcano: [Coral Cover Change]({{< relref "/posts/coral-cover-change" >}}).
+Relevant analysis from @luislizcano: [Coral Cover Change](/posts/coral-cover-change").
 
 #### Seascapes
-Annual Spring SeaScapes Descending:
+Spring SeaScapes Descending 2019-2009:
 ![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2019-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
-![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2018-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
 ![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2017-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
-![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2016-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
 ![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2015-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
-![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2014-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
 ![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2013-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
-![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2012-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
 ![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2011-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
-![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2010-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
-![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2019-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2009-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+
+For more see relevant section on the [IMaRS Gulf of Mexico Grafana Dashboard](http://grafana.marine.usf.edu:3000/dashboard/db/gulf-of-mexico?orgId=2&from=now-10y&to=now)
 
 # Indicators:
 ## Fish abundance, diversity, size and species
@@ -74,13 +71,17 @@ Coral Cover has been decreasing due to events and is unable to recover due to co
 This decline over recent decades is easily visible in the following graphs from
 [9B-Ruzicka WQPP Presentation_ May 2019.pptx](https://drive.google.com/open?id=181OYdxt0sXZYVNqz41f6m9KZQMdS2Ex0):
 
-{{< imgcap
-    title="Overall CREMP Benthic Cover in the Florida Keys – IRMA Effect" src="cremp_cover_irma.png"
->}}
+```{r cremp cover irma, echo=FALSE}
+blogdown::shortcode("imgcap",
+    title="Overall CREMP Benthic Cover in the Florida Keys – IRMA Effect", src="cremp_cover_irma.png"
+)
+```
 
-{{< imgcap
-    title="CREMP & SECREMP Coral Cover" src="cremp_cover_events.png"
->}}
+```{r cremp cover events, echo=FALSE}
+blogdown::shortcode("imgcap",
+    title="CREMP & SECREMP Coral Cover", src="cremp_cover_events.png"
+)
+```
 
 #### By Reef Type
 TODO: CREMP (LM will categorize sites by reef type):
@@ -112,29 +113,38 @@ The definition of the subregions used here and an explanation of this choice is 
 # extra stuff
 
 Florida Fish and Wildlife Conservation Commission's richness of potential habitat for selected focal species in Florida [[ref]](https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8):
-{{< esri_map
-    lat="24.8" lon="-81" zoom="8"
-    basemap="Gray"
+
+```{r FWC richness potential, echo=FALSE}
+blogdown::shortcode("esri_map",
+    map_id="fwc-map",
+    lat="24.8", lon="-81", zoom="8",
+    basemap="Gray",
     feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564f49fde4b064dd1d095637/MapServer/"
->}}
+)
+```
 
 ----------------------------------------------------------------------------
 
 Most of FKNMS was classified as "highest priority" by the 2006 [Florida Critical Lands and Waters Identification Project Database](Florida Critical Lands and Waters Identification Project Database)
 
-{{< esri_map
-    map_id="clip-map"
-    lat="24.8" lon="-81" zoom="8"
-    basemap="Gray"
+```{r FCLIP map, echo=FALSE}
+blogdown::shortcode("esri_map",
+    map_id="clip-map",
+    lat="24.8", lon="-81", zoom="8",
+    basemap="Gray",
     feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564b4250e4b0ebfbef0d31c1/MapServer/"
->}}
+)
+```
 
 ----------------------------------------------------------------------------
 
 FWC's [Landcover classes for CLIP 1-2 levels](https://flcpa.databasin.org/datasets/4befbffb3ec0492aa890297c4b4abc33):
-{{< esri_map
-    map_id="landcover-map"
-    lat="24.8" lon="-81" zoom="8"
-    basemap="Gray"
+
+```{r Landcover classes map, echo=FALSE}
+blogdown::shortcode("esri_map",
+    map_id="landcover-map",
+    lat="24.8", lon="-81", zoom="8",
+    basemap="Gray",
     feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/57039d72e4b0328dcb81dddf/MapServer/"
-    >}}
+)
+```

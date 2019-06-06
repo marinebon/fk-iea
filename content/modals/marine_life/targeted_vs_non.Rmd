@@ -1,7 +1,7 @@
 
-TODO: Snapper/grouper vs parrotfish (targeted/non-targeted)
+Snapper/grouper vs parrotfish (targeted/non-targeted)
 
-```{r imports}
+```{r imports for targeted vs non, include=FALSE}
 library(tidyverse)
 library(leaflet)
 ```
@@ -22,14 +22,14 @@ lutjanidae_occurrence <- robis::occurrence(
 ```
 
 
-```{r map the data}
+```{r map the data, echo=FALSE}
 # TODO: how to make this one map?
 # temp disabled b/c there are too many points
 #robis::map_leaflet(scaridae_occurrence)
 #robis::map_leaflet(lutjanidae_occurrence)
 ```
 
-```{r timeseries}
+```{r timeseries, echo=FALSE}
 # TODO: how to make this one plot?
 ggplot2::ggplot(scaridae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
 ggplot2::ggplot(lutjanidae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)

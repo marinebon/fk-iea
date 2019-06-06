@@ -1,4 +1,4 @@
-```{r mpa compare imports}
+```{r mpa compare imports, include=FALSE}
 library(glue)
 # also uses robis
 ```
@@ -38,7 +38,7 @@ outside_occurrence <- robis::occurrence(
 )
 ```
 
-```{r mpa compare timeseries}
+```{r mpa compare timeseries, echo=FALSE}
 # TODO: how to make this one plot?
 ggplot2::ggplot(inside_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
 ggplot2::ggplot(outside_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
