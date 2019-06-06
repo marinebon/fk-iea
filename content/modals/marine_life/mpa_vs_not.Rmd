@@ -1,4 +1,4 @@
-```{r imports}
+```{r mpa compare imports}
 library(glue)
 # also uses robis
 ```
@@ -25,7 +25,7 @@ inside_mpas <- glue("MULTIPOLYGON (({eastern_sambo}))")
 outside_mpas <- glue("MULTIPOLYGON (({fknms},{eastern_sambo}))")
 ```
 
-```{r fetch data}
+```{r fetch mpa compare data}
 species_name <- "Ocyurus chrysurus"
 inside_occurrence <- robis::occurrence(
     species_name,
@@ -34,11 +34,11 @@ inside_occurrence <- robis::occurrence(
 outside_occurrence <- robis::occurrence(
     species_name,
     geometry = outside_mpas
-    
+
 )
 ```
 
-```{r timeseries}
+```{r mpa compare timeseries}
 # TODO: how to make this one plot?
 ggplot2::ggplot(inside_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
 ggplot2::ggplot(outside_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)

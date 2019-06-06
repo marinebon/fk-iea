@@ -21,9 +21,23 @@ blogdown::shortcode("imgcap",
 )
 ```
 
-How has this changed?
-
+### How has this changed?
+#### Coral Cover
 Relevant analysis from @luislizcano: [Coral Cover Change]({{< relref "/posts/coral-cover-change" >}}).
+
+#### Seascapes
+Annual Spring SeaScapes Descending:
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2019-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2018-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2017-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2016-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2015-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2014-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2013-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2012-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2011-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2010-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2019-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
 
 # Indicators:
 ## Fish abundance, diversity, size and species
