@@ -6,10 +6,13 @@ Rscript -e 'if (!requireNamespace("devtools")) install.packages("devtools")'
 Rscript -e 'devtools::install()'
 
 # install Imports for each content page
-echo "installing dependencies for content pages. DESCRIPTION files found in:"
-find ./content -type f -name 'DESCRIPTION' -print0 | xargs -0 echo "$(sed -r 's|/[^/]+$||' )"
-find ./content -type f -name 'DESCRIPTION' -print0 | \
-    xargs -0 Rscript -e "devtools::install( \"$(sed -r 's|/[^/]+$||')\")"
+echo "\n\ninstalling dependencies for content pages with DESCRIPTION files..."
+find ./content -type f -name 'DESCRIPTION' -printf '%h\n' |
+    while read line; do
+        printf "\n=== === ===\n\t$line\n=== === ===\n";
+        Rscript -e "devtools::install( \"$line\")";
+    done
+
 
 # blogdown setup [[ref](https://bookdown.org/yihui/blogdown/installation.html)]
 # Rscript -e 'devtools::install_github("rstudio/blogdown")'
