@@ -10,32 +10,41 @@ Habitat and living resources in the Keys are undergoing unprecedented changes.
 These changes are apparent in abundances of coral, invertebrates, seagrass, mangrove, disease, bleaching, and algae.
 
 ## Fish and Lobster inside/outside of MPAs (Aug)
-TODO: BB and TM rework existing MBON/RVC data
 TODO: LM will send formatted Tom Matthews Lobster data to BB and TM
 
 ## Benthic Community Composition has changed (After Aug)
-TODO: TBD. Should be straightforward to rework existing MBON data
 
 Benthic habitats in 2007 from [USGS's "*Benthic Ecosystems*"](https://pubs.usgs.gov/pp/2007/1751/professional-paper/figures/benthic-ecosystems.html):
-{{< imgcap
-    title="Benthic Ecosystems map and pie chart" src="https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif"
->}}
+```{r usgs_ecos}
+blogdown::shortcode("imgcap",
+    title="Benthic Ecosystems map and pie chart", src="https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif"
+)
+```
+
+How has this changed?
+
+Relevant analysis from @luislizcano: [Coral Cover Change]({{< relref "/posts/coral-cover-change" >}}).
 
 # Indicators:
 ## Fish abundance, diversity, size and species
-TODO: Data: RVC data already available to FKNMS infographics
+Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](https://marinebon.github.io/info-fk/corals.html).
 
-TODO: Snapper/grouper vs parrotfish (targeted/non-targeted)
+### Targeted vs non-targeted
+```{r child="targeted_vs_non.Rmd"}
+```
 
 TODO: Lobster size structure study [Not RVC data; not continuing to be collected so not for automation]
 
 RVC fish in/out MPAs: MPAs work. ***Key Story for Aug***
+
 Eg info-fk/corals -> Exploited Reef Fish (focal)
 
 TODO: So consolidate time-series into snapper-grouper complex?
+
 TODO: Alternative infographic data representation?
 
 TODO: Lobster study: MPAs can cover a range of life history reqs/habitat
+
 TODO: Tom Matthews (FWC) data
 
 ## Habitat
@@ -68,13 +77,15 @@ TODO: Macro-algae cover (Algae increased)
 
 ### Gorgonian
 TODO: Gorgonian cover (Gorgonian increased)
+
 ### Sponge
 TODO: Sponge (in flux)
+
 ### Mangrove
 TODO: Mangrove. data: [Global Mangrove Watch (1996 - 2016)](http://data.unep-wcmc.org/datasets/4)
+
 ### Seagrass
 TODO: Seagrass
-
 
 # FKNMS Sub-regions
 In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson

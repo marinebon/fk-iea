@@ -49,7 +49,7 @@ C-CAP Land Cover Atlas
 download: [NOAA: C-CAP FTP](https://coast.noaa.gov/ccapftp/#/)
 
 See also:
-* [Coral Cover Change](coral-cover-change.md)
+* [Coral Cover Change]({{< relref "/posts/coral-cover-change" >}})
 
 ### Development Forecasts
 University of Florida GeoPlan Center [2060 Development Projections](https://flcpa.databasin.org/datasets/4a1340791089437dae38593f0ef39439):

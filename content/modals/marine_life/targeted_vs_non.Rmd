@@ -1,0 +1,36 @@
+
+TODO: Snapper/grouper vs parrotfish (targeted/non-targeted)
+
+```{r imports}
+library(tidyverse)
+library(leaflet)
+```
+
+```{r region vars}
+fk_nms_wkt <- "POLYGON ((-83.15 25.65, -80.066667 25.65, -80.066667 24.3, -83.15 24.3, -83.15 25.65))"
+```
+
+```{r fetch scaridae and lutjanidae data}
+scaridae_occurrence <- robis::occurrence(
+    "Scarus iseri",
+    geometry = fk_nms_wkt
+)
+lutjanidae_occurrence <- robis::occurrence(
+    "Ocyurus chrysurus",
+    geometry = fk_nms_wkt
+)
+```
+
+
+```{r map the data}
+# TODO: how to make this one map?
+# temp disabled b/c there are too many points
+#robis::map_leaflet(scaridae_occurrence)
+#robis::map_leaflet(lutjanidae_occurrence)
+```
+
+```{r lionfish timeseries}
+# TODO: how to make this one plot?
+ggplot2::ggplot(scaridae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
+ggplot2::ggplot(lutjanidae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
+```
