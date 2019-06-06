@@ -1,12 +1,17 @@
 
+```{r imports, include=FALSE}
+library(tidyverse)  # magrittr for >%>, tibble for as.tibble
+library(readr) #saveRDS, read_rds, readRDS
+library(treemap) #treemap
+# === also required (used with namespace prefix):
+# d3treeR
+```
+
 [http://jkunst.com/r/pokemon-visualize-em-all/]
 [https://d3js.org/]
 [http://www.buildingwidgets.com/blog/2015/7/22/week-29-d3treer-v2]
 
 ```{r trait visualization, echo=FALSE}
-library(tidyverse)  # magrittr for >%>, tibble for as.tibble
-library(readr) #saveRDS, read_rds, readRDS
-library(treemap) #treemap
 
 trait_matrix = read_csv('https://raw.githubusercontent.com/mhepner90/RVC/master/functional_diversity/species_trait_matrix_316_spp.csv')
 
