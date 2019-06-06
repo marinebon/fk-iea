@@ -1,5 +1,11 @@
 ```{r libs, include=FALSE}
 library(readr)
+library(cowplot)
+library(gridExtra)
+library(grid)
+library(ggplot2)
+library(lattice)
+library(tidyverse)
 source("read_rds_remote.R")
 ```
 
@@ -36,14 +42,6 @@ fd_evenness = read_rds_remote(
 - Are diversity values and protection level related?
 
 ```{r Plot by 7 strata and year in 1 line graph}
-
-library(cowplot)
-library(gridExtra)
-library(grid)
-library(ggplot2)
-library(lattice)
-library(tidyverse)
-
 all_matrices_data = read_rds_remote(
     "https://raw.github.com/mhepner90/RVC/master/psu_matrices_data_rds",
     "all_matrices_data.rds"

@@ -5,7 +5,35 @@ date: '2017-04-28'
 categories: []
 tags: []
 ---
+```{r setup, include=FALSE, exec=FALSE}
+# NOTE: these were libraries previously used,
+#   but these imports have been moved elsewhere.
+#   They are retained here for organizational purposes only.
+#   Once added to the DESCRIPTION file they can be removed.
+library(FD)  # gowdis
+library(ape) #read.tree, as.phylo
+library(clue) #cl_consensus, cl_ultrametric, cl_dissimilarity,cl_ultrametric
+library(d3treeR) #d3treeR interactive traitmap | timelyportfolio/d3treeR
+library(devtools) #install_github
+library(fpc) #pamk
+library(htmlwidgets) #save interactive treemap and pie chart
+library(mgcv) #gam
+library(parallel) #clusterEvalQ,clusterExport,detectCores,makeCluster,parLapply
+library(plotrix) #std.error
+library(purrr) #map
+library(readr) #saveRDS, read_rds, readRDS
+library(reshape2) #melt
+library(rvc) #getPSUAbundance, getStrataAbundance, getDomainAbundance | jeremiaheb/rvc
+library(vegan) #spec, diversity
+library(webshot) #screenshot of interactive treemap and pie chart
+# talgalili/dendextendRcpp
 
+# TODO: move these overrides into the relevant sub-chunks
+map = purrr::map # override maps::map
+select = dplyr::select #override MASS::select
+group_by =  dplyr::group_by #override plotly::group_by
+summarise = dplyr::summarise #override plotly::summarise
+```
 
 Chunks based on original analysis by Megan Hepner from [github.com/mhepner90/RVC](https://github.com/mhepner90/RVC/blob/master/RVC_diversity_analysis.Rmd).
 
@@ -86,38 +114,6 @@ $Shannon = - \sum_{i=1}^S p_i \log_b p_i$
 - Functional diversity (Rao's Q) is a measure of pairwise functional differences between species weighted by their relative abundances   
 
 $Rao Q = \sum_{i=1}^S-1 \sum_{j=i+1}^S d_i p_i p_j$
-
-```{r setup, include=FALSE}
-library(tidyverse)  # magrittr for >%>, tibble for as.tibble
-library(FD)  # gowdis
-library(ape) #read.tree, as.phylo
-library(clue) #cl_consensus, cl_ultrametric, cl_dissimilarity,cl_ultrametric
-library(cowplot) #get_legend
-library(d3treeR) #d3treeR interactive traitmap
-library(devtools) #install_github
-library(fpc) #pamk
-library(ggplot2) #ggplot
-library(grid)
-library(gridExtra) #grid.arrange
-library(htmlwidgets) #save interactive treemap and pie chart
-library(lattice)
-library(mgcv) #gam
-library(parallel) #clusterEvalQ,clusterExport,detectCores,makeCluster,parLapply
-library(plotrix) #std.error
-library(purrr) #map
-library(readr) #saveRDS, read_rds, readRDS
-library(reshape2) #melt
-library(rvc) #getPSUAbundance, getStrataAbundance, getDomainAbundance
-library(tidyverse) #select, filter, mutate, group_by, summarize
-library(treemap) #treemap
-library(vegan) #spec, diversity
-library(webshot) #screenshot of interactive treemap and pie chart
-
-map = purrr::map # override maps::map
-select = dplyr::select #override MASS::select
-group_by =  dplyr::group_by #override plotly::group_by
-summarise = dplyr::summarise #override plotly::summarise
-```
 
 ## Functional distance trait based matrix
 from Lefcheck et al., 2014 ChessMap.Rmd

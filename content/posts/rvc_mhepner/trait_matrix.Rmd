@@ -1,5 +1,8 @@
 
-
+```{r imports, include=FALSE, eval=FALSE}
+library("dendextend")
+library("colorspace")
+```
 ```{r trait matrix for 23 species, eval=FALSE}
 
 trait_matrix = read_csv('https://raw.githubusercontent.com/mhepner90/RVC/master/functional_diversity/species_trait_matrix_316_spp.csv') #316 species
@@ -80,12 +83,6 @@ dev.off()
 plot(func.dist.23, label.offset=0.2, edge.width = 2, type = "cladogram")  
 nodelabels() #add node numbers
 tiplabels()
-
-library(dendextend)
-#set(object, what, value)
-
-devtools::install_github('talgalili/dendextendRcpp')
-library("colorspace")
 
 dend5 %>% nnodes # 45 #get the number of nodes in the tree (including leaves)
 dend5 %>% nleaves #23 #get the number of leaves of the tree
