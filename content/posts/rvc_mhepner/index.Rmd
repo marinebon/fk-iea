@@ -5,7 +5,7 @@ date: '2017-04-28'
 categories: []
 tags: []
 ---
-```{r setup, include=FALSE, exec=FALSE}
+```{r setup, include=FALSE, eval=FALSE}
 # NOTE: these were libraries previously used,
 #   but these imports have been moved elsewhere.
 #   They are retained here for organizational purposes only.
