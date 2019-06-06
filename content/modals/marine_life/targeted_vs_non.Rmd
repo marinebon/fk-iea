@@ -29,7 +29,7 @@ lutjanidae_occurrence <- robis::occurrence(
 #robis::map_leaflet(lutjanidae_occurrence)
 ```
 
-```{r lionfish timeseries}
+```{r timeseries}
 # TODO: how to make this one plot?
 ggplot2::ggplot(scaridae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
 ggplot2::ggplot(lutjanidae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)

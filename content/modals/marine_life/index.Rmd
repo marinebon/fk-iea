@@ -35,7 +35,9 @@ Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](htt
 
 TODO: Lobster size structure study [Not RVC data; not continuing to be collected so not for automation]
 
-RVC fish in/out MPAs: MPAs work. ***Key Story for Aug***
+### fish in vs out of MPA
+```{r child="mpa_vs_not.Rmd"}
+```
 
 Eg info-fk/corals -> Exploited Reef Fish (focal)
 
