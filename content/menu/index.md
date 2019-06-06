@@ -17,6 +17,7 @@ ___________________________________________________________________
 - **`.Rmd` Examples**
   - [Basic knitr Chunks]({{< relref "/posts/basic_knitr_chunks" >}})
   - [RVC Biodiversity Analysis]({{< relref "/posts/rvc_mhepner" >}})
+  - [RVC Biodiversity Data Access]({{< relref "/posts/rvc_data_loading" >}})
 ___________________________________________________________________
 - **External Links**
   - [Source code](https://github.com/marinebon/fk-iea)
