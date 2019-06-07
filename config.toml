@@ -26,16 +26,28 @@ ignoreFiles = [
 
 # =========================================================================
 # === "book" [theme settings](https://themes.gohugo.io/hugo-book/)
+# see also: 
+# [example cfg](https://github.com/alex-shpak/hugo-book/blob/master/exampleSite/config.toml) 
 # =========================================================================
 # # (Warnings) Theme is intended for documentation use,
 # therefore it doesn't render taxonomy.
 # # You can hide related warning with config below
 # disableKinds = ["taxonomy", "taxonomyTerm"]
+# disablePathToLower = true
+enableGitInfo = true
+# # Code highlight
+# # pygmentsStyle = 'monokailight'
+# pygmentsCodeFences = true
 
 [params]
 # (Optional, default true) Show or hide table of contents globally
 # You can also specify this parameter per page in front matter
 BookShowToC = true
+
+# (Optional, default 6) Set how many table of contents levels to be showed on page.
+# Use false to hide ToC, note that 0 will default to 6 (https://gohugo.io/functions/default/)
+# You can also specify this parameter per page in front matter
+# BookToC = 3
 
 # (Optional, default none) Set leaf bundle to render as side menu
 # When not specified file structure and weights will be used
@@ -59,7 +71,7 @@ BookRepo = "https://github.com/marinebon/fk-iea"
 # Enable "Edit this page" links for 'doc' page type.
 # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
 # Path must point to 'content' directory of repo.
-# BookEditPath = "edit/master/exampleSite/content"
+BookEditPath = "edit/master/content"
 
 # (Optional, default January 2, 2006) Configure the date format used on the pages
 # - In git information
