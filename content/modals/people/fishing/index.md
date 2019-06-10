@@ -13,5 +13,5 @@ https://drive.google.com/open?id=19It75Ex9YXYpnYLIY1MwGVjlfRbYc23O
 
 https://drive.google.com/open?id=1a5v0kYGFQPwm4T9UzeD3E4AEEuz0O0X0
 
-# Pounds landed of idenitifed economically important species
+# Pounds landed of identified economically important species
  These are: all grouper, all snapper, all lobster, all stone crab

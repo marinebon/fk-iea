@@ -6,6 +6,7 @@ categories: []
 tags: []
 ---
 
+![pollution diagram](iil_diagram_pollution_FloridaKeys.png)
 
 ## Number of Housing Units with Wastewater Connection
 https://drive.google.com/open?id=1xrGz0LS0LydjnynlOJdp-65pfaH2bXcC
