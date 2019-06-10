@@ -8,6 +8,12 @@ https://drive.google.com/open?id=1kBPiE-negL5hqL-1VLhZdt9gYoOP4q14
 # Recreational Vessels by Registration
 https://drive.google.com/open?id=1ZSmy7yT9i5cVVAbWyjSMjBSEcpX4N7f5
 
+TODO: Prop scar intensity 1995 vs ~2012; talking point only
+
+[Total registered vessels Monroe County 2000-2018](https://docs.google.com/spreadsheets/d/15-YCU9pG9dyvZy4kXjHRjHwURxzc84BVgTxuc7q7280/edit?usp=sharing)
+
+DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
+
 # Number of Commercial Fishing Trips
 https://drive.google.com/open?id=19It75Ex9YXYpnYLIY1MwGVjlfRbYc23O
 
