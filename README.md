@@ -66,6 +66,23 @@ Rscript -e 'blogdown::hugo_version()'
 Travis CI is used to deploy the website to github pages via the gh-pages branch.
 The github personal access token(s) used by travis can be accessed (only by authorized accounts) [here](https://drive.google.com/drive/folders/168X9drMc_eFdZ6eCesgwR56Ek3m_OrZg?usp=sharing).
 
+### Manual Deployment
+Follow these instructions to manually deploy locally-built html to the gh-pages branch.
+This is needed if Travis breaks (eg if the build is taking too long).
+
+```bash
+rm -rf public
+Rscript -e 'blogdown::build_site()'
+cd public
+git init
+git remote add origin https://github.com/marinebon/fk-iea
+git branch gh-pages
+git checkout gh-pages
+git add *
+git commit -m 'manual site build'
+git push -f origin gh-pages
+```
+
 ## additional links
 * Based on the example at https://github.com/ioos-eco/cinms.
 * List of [hugo-powered IOOS websites on github](https://github.com/ioos?utf8=%E2%9C%93&q=&type=&language=html)
