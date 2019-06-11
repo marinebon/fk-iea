@@ -1,12 +1,23 @@
 
 
 # Recreation fishing effort (NOAA NMFS MRIP, smallest scale available is East Florida)
-https://drive.google.com/open?id=1O_3tpD6mlhFVHKSTeTTLvsxQ3thD3K6w
+<iframe
+    src="https://drive.google.com/file/d/1O_3tpD6mlhFVHKSTeTTLvsxQ3thD3K6w/preview"
+    width="100%" height="480">
+</iframe>
 
-https://drive.google.com/open?id=1kBPiE-negL5hqL-1VLhZdt9gYoOP4q14
+<iframe
+    src="https://drive.google.com/file/d/1kBPiE-negL5hqL-1VLhZdt9gYoOP4q14/preview"
+    width="100%" height="480">
+</iframe>
+
 
 # Recreational Vessels by Registration
-https://drive.google.com/open?id=1ZSmy7yT9i5cVVAbWyjSMjBSEcpX4N7f5
+<iframe
+    src="https://drive.google.com/file/d/1ZSmy7yT9i5cVVAbWyjSMjBSEcpX4N7f5/preview"
+    width="100%" height="480">
+</iframe>
+
 
 TODO: Prop scar intensity 1995 vs ~2012; talking point only
 
@@ -15,9 +26,17 @@ TODO: Prop scar intensity 1995 vs ~2012; talking point only
 DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
 
 # Number of Commercial Fishing Trips
-https://drive.google.com/open?id=19It75Ex9YXYpnYLIY1MwGVjlfRbYc23O
+<iframe
+    src="https://drive.google.com/file/d/19It75Ex9YXYpnYLIY1MwGVjlfRbYc23O/preview"
+    width="100%" height="480">
+</iframe>
 
-https://drive.google.com/open?id=1a5v0kYGFQPwm4T9UzeD3E4AEEuz0O0X0
+
+<iframe
+    src="https://drive.google.com/file/d/1a5v0kYGFQPwm4T9UzeD3E4AEEuz0O0X0/preview"
+    width="100%" height="480">
+</iframe>
+
 
 # Pounds landed of identified economically important species
  These are: all grouper, all snapper, all lobster, all stone crab

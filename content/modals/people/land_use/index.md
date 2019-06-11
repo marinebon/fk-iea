@@ -7,7 +7,12 @@ tags: []
 ---
 
 Tourism and recreational use has increased, but resident pop has stabilized: TDC data. ND contact.
-[Resident population trends. Population & growth rate.](https://docs.google.com/spreadsheets/d/18k0Y9sSLSZjxbl_uWdAZnzqAdcKk_y32Xh1DWSDb3WM/edit?usp=sharing)
+
+Resident population trends. Population & growth rate:
+<iframe
+    src="https://docs.google.com/file/d/18k0Y9sSLSZjxbl_uWdAZnzqAdcKk_y32Xh1DWSDb3WM/preview"
+    width="100%" height="480">
+</iframe>
 
 TODO: Beth: classify big increase in snowbird population.
 
@@ -27,7 +32,11 @@ census.gov/quickfacts/fl
 # Resident Population Trends
 TODO: [Could use Demographics Data from ArcGIS to get 2018 and 2023](https://developers.arcgis.com/features/demographics/)
 
-https://drive.google.com/open?id=1ZMUBWDbXPHNzhoIUTxyKh9rChZ-A5OK0
+<iframe
+    src="https://drive.google.com/file/d/1ZMUBWDbXPHNzhoIUTxyKh9rChZ-A5OK0/preview"
+    width="100%" height="480">
+</iframe>
+
 
 # Tourism Population Trends
 
@@ -35,9 +44,17 @@ TODO: [TDC tourism in Monroe county](https://www.monroecounty-fl.gov/328/Tourist
 
 TODO: [visitor estimates](https://www.monroecounty-fl.gov/DocumentView.aspx?DID=14535)
 
-https://drive.google.com/open?id=1vmmIHy3PvUqnq9vZKdIKNJLQMzNpkDvW
+<iframe
+    src="https://drive.google.com/file/d/1vmmIHy3PvUqnq9vZKdIKNJLQMzNpkDvW/preview"
+    width="100%" height="480">
+</iframe>
 
-https://drive.google.com/open?id=1g_axFmjSDo7RAuVMmXw4216OQxmUG6pK
+
+<iframe
+    src="https://drive.google.com/file/d/1g_axFmjSDo7RAuVMmXw4216OQxmUG6pK/preview"
+    width="100%" height="480">
+</iframe>
+
 
 # Land Cover Changes
 Coastal development/ land use change

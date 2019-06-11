@@ -11,7 +11,12 @@ tags: []
 ![eutrophic diagram](iil_diagram_healthy_vs_eutrophic_ecosystem_tropical_connections.png)
 
 ## Number of Housing Units with Wastewater Connection
-https://drive.google.com/open?id=1xrGz0LS0LydjnynlOJdp-65pfaH2bXcC
+<iframe
+    src="https://drive.google.com/file/d/1xrGz0LS0LydjnynlOJdp-65pfaH2bXcC/preview"
+    width="100%" height="480">
+</iframe>
+
+
 
 Number of EDUs (wastewater treatment)
 
@@ -25,6 +30,14 @@ TODO: dissolved inorganic N nearshore levels ([FIU SERC](https://sercweb.fiu.edu
 
 
 ## Beach Closures due to Fecal Indicator Level
-https://drive.google.com/open?id=1lk_RXsGzg0z0lyeoIA5YRDTn_KwX8pJM
+<iframe
+    src="https://drive.google.com/file/d/1lk_RXsGzg0z0lyeoIA5YRDTn_KwX8pJM/preview"
+    width="100%" height="480">
+</iframe>
 
-https://drive.google.com/open?id=1dD0yiSW9ApvaqwEbwr00ovbCCfC2_P-H
+
+
+<iframe
+    src="https://drive.google.com/file/d/1dD0yiSW9ApvaqwEbwr00ovbCCfC2_P-H/preview"
+    width="100%" height="480">
+</iframe>
