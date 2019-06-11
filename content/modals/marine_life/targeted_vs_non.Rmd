@@ -28,7 +28,7 @@ if (has_cache(scaridae_name_safe)){
 lutjanidae_species <- "Ocyurus chrysurus"
 lutjanidae_name_safe <- sanitize_query_id(lutjanidae_species)
 if (has_cache(lutjanidae_name_safe)){
-    inside_occurrence <- load_cache(lutjanidae_name_safe)
+    lutjanidae_occurrence <- load_cache(lutjanidae_name_safe)
 } else {
     lutjanidae_occurrence <- robis::occurrence(
         lutjanidae_species,
