@@ -9,7 +9,11 @@ ___________________________________________________________________
 
   - **modal pages**:
         - [Externalities]({{< relref "/modals/externalities" >}})
-        - [People]({{< relref "/modals/people" >}})
+        - People
+           - [fishing]({{< relref "/modals/people/fishing" >}})
+           - [land_use]({{< relref "/modals/people/land_use" >}})
+           - [wastewater]({{< relref "/modals/people/wastewater" >}})
+           - [info]({{< relref "/modals/people/info" >}})
         - [Marine Life]({{< relref "/modals/marine_life" >}})
         - [Info]({{< relref "/modals/info" >}})
 ___________________________________________________________________
