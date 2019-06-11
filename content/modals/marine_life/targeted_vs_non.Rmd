@@ -4,6 +4,8 @@ Snapper/grouper vs parrotfish (targeted/non-targeted)
 ```{r imports for targeted vs non, include=FALSE}
 library(tidyverse)
 library(leaflet)
+
+source("../../obis_cache.R")
 ```
 
 ```{r region vars}
@@ -11,14 +13,30 @@ fk_nms_wkt <- "POLYGON ((-83.15 25.65, -80.066667 25.65, -80.066667 24.3, -83.15
 ```
 
 ```{r fetch scaridae and lutjanidae data}
-scaridae_occurrence <- robis::occurrence(
-    "Scarus iseri",
-    geometry = fk_nms_wkt
-)
-lutjanidae_occurrence <- robis::occurrence(
-    "Ocyurus chrysurus",
-    geometry = fk_nms_wkt
-)
+scaridae_species <- "Scarus iseri"
+scaridae_name_safe <- sanitize_query_id(scaridae_species)
+if (has_cache(scaridae_name_safe)){
+    scaridae_occurrence <- load_cache(scaridae_name_safe)
+} else {
+    scaridae_occurrence <- robis::occurrence(
+        scaridae_species,
+        geometry = fk_nms_wkt
+    )
+    save_cache(scaridae_name_safe, scaridae_occurrence)
+}
+
+lutjanidae_species <- "Ocyurus chrysurus"
+lutjanidae_name_safe <- sanitize_query_id(lutjanidae_species)
+if (has_cache(lutjanidae_name_safe)){
+    inside_occurrence <- load_cache(lutjanidae_name_safe)
+} else {
+    lutjanidae_occurrence <- robis::occurrence(
+        lutjanidae_species,
+        geometry = fk_nms_wkt
+    )
+    save_cache(lutjanidae_name_safe, lutjanidae_occurrence)
+}
+
 ```
 
 
