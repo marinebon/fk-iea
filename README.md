@@ -76,10 +76,10 @@ Rscript -e 'blogdown::build_site()'
 cd public
 git init
 git remote add origin https://github.com/marinebon/fk-iea
-git branch gh-pages
-git checkout gh-pages
 git add *
 git commit -m 'manual site build'
+git branch gh-pages
+git checkout gh-pages
 git push -f origin gh-pages
 ```
 
