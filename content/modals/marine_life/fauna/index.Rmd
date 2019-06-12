@@ -10,23 +10,7 @@ tags: []
 library(tidyverse)
 library(leaflet)
 
-# https://stackoverflow.com/questions/41555827/source-function-in-r-error-cannot-find-file-do-i-have-to-change-working-direc
-# setwd(dirname(getwd()))
-#
-# library(here)
-# source(here("obis_cache.R"))
-
-# source("obis_cache.R")
-# source("./obis_cache.R")
-# source("/obis_cache.R")
-# source("/modals/marine_life/fauna/obis_cache.R")
-# source("modals/marine_life/fauna/obis_cache.R")
-# source("content/modals/marine_life/fauna/obis_cache.R")
-# source("/content/modals/marine_life/fauna/obis_cache.R")
-# source("/home/tylar/fk-iea/content/modals/marine_life/fauna/obis_cache.R")
-
 source("./../obis_cache.R")
-
 ```
 
 # Indicators:
