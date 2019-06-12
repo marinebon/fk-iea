@@ -47,7 +47,15 @@ Main menu is configured in `/content/menu/`
 ## Advanced Dev
 This site is built with bookdown and deployed as a static file website.
 
-### Install Dependencies
+### Get the Code
+You should clone this repo using the `--recursive` param [[ref](https://www.vogella.com/tutorials/GitSubmodules/article.html#cloning-a-repository-that-contains-submodules)].
+This also clones the git submodules (needed for hugo theme at a minimum).
+
+```bash
+git clone --recursive https://github.com/marinebon/fk-iea
+```
+
+### Install R Dependencies
 Firstly, the latest [R](http://cran.revolutionanalytics.com/) and [python](https://docs.python-guide.org/starting/installation/) should be installed.
 These instructions assume you are using a unix-based operating system (linux/OSX).
 
