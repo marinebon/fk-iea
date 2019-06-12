@@ -11,6 +11,7 @@ Acidification, what it does, organisms impacted.
 TODO: CK will follow-up.
 
 highlight one study
+
 * pH
 * OA
 * calcification
@@ -18,6 +19,7 @@ highlight one study
 Climate change impacts: acidification is poorly understood by public, loss of ecosystem services due to combined impacts.
 
 Story of acidification impacts:
+
 * [Ocean Acidification | Smithsonian Ocean]( https://ocean.si.edu/ocean-life/invertebrates/ocean-acidification )
 * [What is Ocean Acidification? | pmel.noaa.gov]( https://www.pmel.noaa.gov/co2/story/What+is+Ocean+Acidification%3F )
 * [What is Ocean Acidification? | oceanservice.noaa.gov](https://oceanservice.noaa.gov/facts/acidification.html  )
@@ -32,6 +34,7 @@ https://snappartnership.net/teams/coastal-defenses/
 TODO: Reef calcification (erosion-accretion): Ilsa Kuffner data (USGS)
 
 Buffers are provided by seagrass, mangrove.
+
 * [Indirect effects may buffer negative responses of seagrass invertebrate communities to ocean acidification - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022098114001993)
 * [Expected limits on the ocean acidification buffering potential of a temperate seagrass meadow - Koweek - 2018 - Ecological Applications - Wiley Online Library](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.1771)
 * [Biophysical feedbacks mediate carbonate chemistry in coastal ecosystems across spatiotemporal gradients | Scientific Reports](https://www.nature.com/articles/s41598-017-18736-6)
