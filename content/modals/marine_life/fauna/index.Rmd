@@ -1,0 +1,85 @@
+---
+title: "Fauna"
+author: ~
+date: '2019-06-12'
+categories: []
+tags: []
+---
+
+```{r imports for targeted vs non, include=FALSE}
+library(tidyverse)
+library(leaflet)
+
+# https://stackoverflow.com/questions/41555827/source-function-in-r-error-cannot-find-file-do-i-have-to-change-working-direc
+# setwd(dirname(getwd()))
+#
+# library(here)
+# source(here("obis_cache.R"))
+
+# source("obis_cache.R")
+# source("./obis_cache.R")
+# source("/obis_cache.R")
+# source("/modals/marine_life/fauna/obis_cache.R")
+# source("modals/marine_life/fauna/obis_cache.R")
+# source("content/modals/marine_life/fauna/obis_cache.R")
+# source("/content/modals/marine_life/fauna/obis_cache.R")
+# source("/home/tylar/fk-iea/content/modals/marine_life/fauna/obis_cache.R")
+
+source("./../obis_cache.R")
+
+```
+
+# Indicators:
+## Fish abundance, diversity, size and species
+Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](https://marinebon.github.io/info-fk/corals.html).
+
+
+Snapper/grouper vs parrotfish (targeted/non-targeted)
+
+
+```{r region vars}
+fk_nms_wkt <- "POLYGON ((-83.15 25.65, -80.066667 25.65, -80.066667 24.3, -83.15 24.3, -83.15 25.65))"
+```
+
+```{r fetch scaridae and lutjanidae data}
+scaridae_species <- "Scarus iseri"
+scaridae_name_safe <- sanitize_query_id(scaridae_species)
+if (has_cache(scaridae_name_safe)){
+    scaridae_occurrence <- load_cache(scaridae_name_safe)
+} else {
+    scaridae_occurrence <- robis::occurrence(
+        scaridae_species,
+        geometry = fk_nms_wkt
+    )
+    save_cache(scaridae_name_safe, scaridae_occurrence)
+}
+
+lutjanidae_species <- "Ocyurus chrysurus"
+lutjanidae_name_safe <- sanitize_query_id(lutjanidae_species)
+if (has_cache(lutjanidae_name_safe)){
+    lutjanidae_occurrence <- load_cache(lutjanidae_name_safe)
+} else {
+    lutjanidae_occurrence <- robis::occurrence(
+        lutjanidae_species,
+        geometry = fk_nms_wkt
+    )
+    save_cache(lutjanidae_name_safe, lutjanidae_occurrence)
+}
+
+```
+
+
+```{r map the data, echo=FALSE}
+# TODO: how to make this one map?
+# temp disabled b/c there are too many points
+#robis::map_leaflet(scaridae_occurrence)
+#robis::map_leaflet(lutjanidae_occurrence)
+```
+
+```{r timeseries, echo=FALSE}
+# TODO: how to make this one plot?
+ggplot2::ggplot(scaridae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
+ggplot2::ggplot(lutjanidae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
+```
+
+TODO: Lobster size structure study [Not RVC data; not continuing to be collected so not for automation]
