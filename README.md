@@ -1,8 +1,11 @@
 # fk-iea
 Infographic created via collaboration between the Florida Keys National Marine Sanctuary (FKNMS), the Florida Keys Integrated Ecosystem Assessment (IEA), and the Marine Biodiversity Observation Network (MBON).
 
-An overview map of the FL Keys (mockup below) is used as a landing page.
-![overview](assets/img/readme_overview-mockup.png)
+An overview map of the FL Keys (mockup below) is used as a landing page:
+![overview](content/svg/fl-keys.svg)
+
+Clicking on the elements in that graphic leads to a zoomed-in sub-infographic with relevant elements highlighted from the following mockup:
+![overview](extra_files/fk_zoomed.svg)
 
 Each region "box" in this graphic will be a clickable element which leads to an infographic representing that region.
 
