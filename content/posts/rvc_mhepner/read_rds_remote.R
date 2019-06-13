@@ -6,8 +6,7 @@ read_rds_remote = function(
     if (!all(file.exists(fname))){
         download.file(
             remote_url,
-            fname,
-            method="wget"
+            fname
         )
     }
     return(read_rds(fname))
