@@ -11,6 +11,7 @@ library(tidyverse)
 library(leaflet)
 
 source("./../obis_cache.R")
+source("./../obis_plot_comparison.R")
 ```
 
 # Indicators:
@@ -61,9 +62,7 @@ if (has_cache(lutjanidae_name_safe)){
 ```
 
 ```{r timeseries, echo=FALSE}
-# TODO: how to make this one plot?
-ggplot2::ggplot(scaridae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
-ggplot2::ggplot(lutjanidae_occurrence) + ggplot2::geom_bar(ggplot2::aes(date_year), width = 1)
+obis_plot_comparison(scaridae_occurrence, lutjanidae_occurrence)
 ```
 
 TODO: Lobster size structure study [Not RVC data; not continuing to be collected so not for automation]
