@@ -6,13 +6,26 @@ categories: []
 tags: []
 ---
 
-## Temperature
 TODO: (might be bottom?). Andy has this.
+
+---------------------------------------------------------------------------
+
+Gulf of Mexico Time Series & maps from [ClimateReanalyzer](https://climatereanalyzer.org/):
+
+![sst anom animation](https://climatereanalyzer.org/clim/animations/scycle/World_ERAI_T2_2001-2012_minus_1979-2000_scycle.gif)
+
+<iframe width="100%" height="2000px"
+    src="https://climatereanalyzer.org/clim/sst/">
+</iframe
+
+---------------------------------------------------------------------------
 
 GHRSST anomalies from PO.DAAC SotO:
 
 <iframe width="100%" height="600px" src="https://podaac-tools.jpl.nasa.gov/soto/#b=BlueMarble_ShadedRelief_Bathymetry&l=jpl_l4_mur_ssta___ssta___36000_x_18000___daynight(la=true)&ve=-83.30656167871041,23.689378578859035,-79.08781167871041,25.763597328859035">
 </iframe>
+
+---------------------------------------------------------------------------
 
 MUR SST Anomalies from ERDDAP:
 
