@@ -9,6 +9,7 @@ tags: []
 ```{r imports for targeted vs non, include=FALSE}
 library(tidyverse)
 library(leaflet)
+library(plyr)
 
 source("./../obis_cache.R")
 source("./../obis_plot_comparison.R")
@@ -21,12 +22,11 @@ Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](htt
 
 Snapper/grouper vs parrotfish (targeted/non-targeted)
 
-
 ```{r region vars}
 fk_nms_wkt <- "POLYGON ((-83.15 25.65, -80.066667 25.65, -80.066667 24.3, -83.15 24.3, -83.15 25.65))"
 ```
 
-```{r fetch scaridae and lutjanidae data}
+```{r fetch scaridae data}
 scaridae_species <- "Scarus iseri"
 scaridae_name_safe <- sanitize_query_id(scaridae_species)
 if (has_cache(scaridae_name_safe)){
@@ -35,10 +35,13 @@ if (has_cache(scaridae_name_safe)){
     scaridae_occurrence <- robis::occurrence(
         scaridae_species,
         geometry = fk_nms_wkt
-    )
+    )[c('eventDate', 'species', 'occurrenceStatus')]
     save_cache(scaridae_name_safe, scaridae_occurrence)
 }
+# write.csv(scaridae_occurrence, "scaridae_occurrence.csv")
+```
 
+```{r fetch lutjanidae data}
 lutjanidae_species <- "Ocyurus chrysurus"
 lutjanidae_name_safe <- sanitize_query_id(lutjanidae_species)
 if (has_cache(lutjanidae_name_safe)){
@@ -47,12 +50,22 @@ if (has_cache(lutjanidae_name_safe)){
     lutjanidae_occurrence <- robis::occurrence(
         lutjanidae_species,
         geometry = fk_nms_wkt
-    )
+    )[c('eventDate', 'species', 'occurrenceStatus')]
     save_cache(lutjanidae_name_safe, lutjanidae_occurrence)
 }
-
 ```
 
+```{r merge occurrences and save}
+# write.csv(lutjanidae_occurrence, "lutjanidae_occurrence.csv")
+occurrences <- rbind(
+    scaridae_occurrence, lutjanidae_occurrence
+)
+occurrences$occurrenceStatus <- plyr::revalue(
+    occurrences$occurrenceStatus,
+    c("present"=1)
+)
+write.csv(occurrences, "occurrences.csv")
+```
 
 ```{r map the data, echo=FALSE}
 # TODO: how to make this one map?
@@ -63,6 +76,16 @@ if (has_cache(lutjanidae_name_safe)){
 
 ```{r timeseries, echo=FALSE}
 obis_plot_comparison(scaridae_occurrence, lutjanidae_occurrence)
+```
+
+```{python compare occurrence data}
+from plo7y.ts_compare.ts_compare import ts_compare
+ts_compare(
+    "occurrences.csv",
+    x_key="eventDate",
+    y_key="occurrenceStatus",
+    y_group_by_key="species",
+)
 ```
 
 TODO: Lobster size structure study [Not RVC data; not continuing to be collected so not for automation]
