@@ -39,5 +39,3 @@ University of Florida Geoplan Center [Sea Level Rise Projections ](https://flcpa
 Sea level rise, tide gauge data referenced in indicators above. King tide pictures of Miami Beach and Florida Keys.
 
 TODO: USFWS salt water intrusion study in Big Pine
-
-test
