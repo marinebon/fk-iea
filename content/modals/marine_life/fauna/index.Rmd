@@ -1,7 +1,7 @@
 ---
 title: "Fauna"
 author: ~
-date: '2019-06-12'
+date: '2019-06-19'
 categories: []
 tags: []
 ---
@@ -19,9 +19,16 @@ source("./../obis_plot_comparison.R")
 ## Fish abundance, diversity, size and species
 Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](https://marinebon.github.io/info-fk/corals.html).
 
+### Snapper/grouper vs parrotfish (targeted/non-targeted)
+#### MBON IOOS Portal
+The [MBON IOOS Portal](https://mbon.ioos.us) was used to create a data view comparing [Reef Visual Census data](https://mbon.ioos.us/#metadata/53cb8d58-ae4d-43e1-aea3-640db9491db2/875de156-d933-4373-bb09-486c25eccfb2) for grouper and parrotfish.
+A screenshot of the resulting view updated last on 2019-06-19 is below:
 
-Snapper/grouper vs parrotfish (targeted/non-targeted)
+![axiom portal ](mbon_ioos_portal_grouper_vs_snapper.png)
 
+TODO: How to link, share, or embed this data view?
+
+#### R and python plots data directly from OBIS
 ```{r region vars}
 fk_nms_wkt <- "POLYGON ((-83.15 25.65, -80.066667 25.65, -80.066667 24.3, -83.15 24.3, -83.15 25.65))"
 ```
