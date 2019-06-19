@@ -17,6 +17,7 @@ before_install:
 
 install:
   - ./install_R_deps.sh
+  - ./install_python_deps.sh
 
 script:
   - Rscript -e 'blogdown::install_hugo()'
