@@ -47,3 +47,10 @@ deploy:
     branch: master
   local_dir: public
   # fqdn: travis-blogdown.yihui.name  # this sets CNAME for custom DN
+
+notifications:
+  email:
+    recipients:
+    - tylarmurray@mail.usf.edu.com
+    on_success: never
+    on_failure: change
