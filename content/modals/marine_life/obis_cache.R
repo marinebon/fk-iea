@@ -23,8 +23,9 @@ get_query_id_fpath = function(
 ){
     # TODO: check query_id_string is ok:
     #    assert query_id_string == sanitize_query_id(query_id_string)
-    prefix = "/tmp/robis_query_cache"
-    return(glue("{prefix}_{query_id_string}.rds"))
+    cache_dir = "~/.cache/robis_query_cache"
+    dir.create(file.path(cache_dir), showWarnings = FALSE)  # ensure dir exists
+    return(file.path(cache_dir, glue("{query_id_string}.rds")))
 }
 
 
