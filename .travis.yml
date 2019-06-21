@@ -12,18 +12,35 @@ cache:
   packages: yes
   directories:
     - $HOME/bin
+    # python
     - $HOME/.cache/pip
+    # robis
     - $HOME/.cache/robis_query_cache
+    # site
     - $TRAVIS_BUILD_DIR/src
     - $TRAVIS_BUILD_DIR/static
-
+    # R
+    - /usr/local/lib/R/site-library
+    - /usr/lib/R/site-library
+    - /usr/lib/R/library
+    # python
+    - /usr/lib/python3.5/dist-packages
+    - $HOME/.local/lib/python3.5/site-packages
 before_cache:
   - rm -f $HOME/.cache/pip/log/debug.log
-
+  # TODO: assert these dirs are in the cached directory list:
+  - Rscript -e '.libPaths()'
+  - python3 -c "import site; print(site.getsitepackages())"
+  - python3 -m site --user-site
 
 before_install:
+  # ubuntu system package dependencies:
   - sudo apt-get install -y r-cran-ncdf4 libudunits2-dev libudunits2-dev libgdal-dev libgeos-dev libproj-dev python3 python3-pip
+  # python package manager updates:
   - python3 -m pip install --upgrade pip setuptools wheel
+  # log extra info to help debug:
+  - python3 --version
+  - R --version
 
 install:
   - travis_wait 40 ./install_R_deps.sh
