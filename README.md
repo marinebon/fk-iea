@@ -1,13 +1,7 @@
 # fk-iea
 Infographic created via collaboration between the Florida Keys National Marine Sanctuary (FKNMS), the Florida Keys Integrated Ecosystem Assessment (IEA), and the Marine Biodiversity Observation Network (MBON).
 
-An overview map of the FL Keys (mockup below) is used as a landing page:
-![overview](content/svg/fl-keys.svg)
-
-Clicking on the elements in that graphic leads to a zoomed-in sub-infographic with relevant elements highlighted from the following mockup:
 ![overview](extra_files/fk_zoomed.svg)
-
-Each region "box" in this graphic will be a clickable element which leads to an infographic representing that region.
 
 ## Basic Development Workflow
 Edits can be made directly on the github website so no setup is required.
@@ -16,6 +10,7 @@ The basic development workflow is:
 
 1. edit files
 2. wait for your changes to be built and deployed to the website
+    * NOTE: See the status of recent builds (:heavy_check_mark:, :x:, :full_moon:) on the [commit history page](https://github.com/marinebon/fk-iea/commits/master)
 
 This easily-accessible workflow has some drawbacks though:
 * waiting for the site to build can be tedious
