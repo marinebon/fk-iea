@@ -8,16 +8,18 @@ Edits can be made directly on the github website so no setup is required.
 
 The basic development workflow is:
 
-1. edit files
+1. edit `.Rmd` (or `.md`) files in `./content/modals/`.
 2. wait for your changes to be built and deployed to the website
     * NOTE: See the status of recent builds (:heavy_check_mark:, :x:, :full_moon:) on the [commit history page](https://github.com/marinebon/fk-iea/commits/master)
 
-This easily-accessible workflow has some drawbacks though:
+This easily-accessible workflow has some drawbacks:
 * waiting for the site to build can be tedious
 * typos and other tiny errors won't be caught until the site builds
 * only one file can be edited per commit, and the github editor isn't perfect.
 
 For these and other reasons, you may want to consider the "advanced dev workflow" in `./documentation/advanced_dev.md`.
+
+Alternatively: for an even more WYSiWYG-style content editor (e.g. google docs) edits can be made using the [prose.io](http://prose.io/) web application.
 
 ## Directory Layout
 Wondering which files to edit?
@@ -32,12 +34,12 @@ The `./content/posts/` directory contains examples to help newcomers.
 The `./content/modals/` directory contains the files connected to the infographics.
 
 ### Editing the infographic image
-The infographic image is a `.svg` image and can be edited with Inkscape.
+The infographic image is a `.svg` image and can be edited with [Inkscape](https://inkscape.org/).
 The only special thing about this `.svg` file is the element id property of clickable items.
 
 ### Connecting content to infographic
-`./modal_plots.csv` connects image elements from `/docs/svg/` to modal content in `./docs/modals/` using the `modal_id` column.
-Values in the `modal_id` column must match to the element id property in the `.svg`.
+`./content/svg-links.csv` connects image elements from `/content/svg/` to modal content in `./content/modals/` using the `modal_id` column.
+Values in the `modal_id` column **must** match the element id property in the `.svg` exactly.
 
 ### Main Menu Links
 Main menu is configured in `/content/menu/`.
