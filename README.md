@@ -16,13 +16,13 @@ The basic development workflow is:
     * NOTE: See the status of recent builds (:heavy_check_mark:, :x:, :full_moon:) on the [commit history page](https://github.com/marinebon/fk-iea/commits/master)
 
 This easily-accessible workflow has some drawbacks:
-* waiting for the site to build can be tedious
-* typos and other tiny errors won't be caught until the site builds
-* only one file can be edited per commit, and the github editor isn't perfect.
+* :sleepy: waiting for the site to build can be boring 
+* :poop: typos and other tiny errors won't be caught until the site builds
+* :octocat: only one file can be edited per commit and the github editor isn't perfect.
 
 For these and other reasons, you may want to consider the "advanced dev workflow" in `./documentation/advanced_dev.md`.
 
-Alternatively: for an even more WYSiWYG-style content editor (e.g. google docs) edits can be made using the [prose.io](http://prose.io/) web application.
+Alternatively: for an even more [WYSiWYG](https://en.wikipedia.org/wiki/WYSIWYG)-style content editor (e.g. google docs) edits can be made using the [prose.io](http://prose.io/) web application.
 
 Additional documentation can be found in the `./documentation/` directory.
 
