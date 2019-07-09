@@ -4,90 +4,29 @@ Infographic created via collaboration between the Florida Keys National Marine S
 ![overview](extra_files/fk_zoomed.svg)
 
 ## Basic Development Workflow
+Don't be afraid to edit!!! 
+Git saves *everything* and the github+travis+blogdown stack is very hard to break.
+
 Edits can be made directly on the github website so no setup is required.
 
 The basic development workflow is:
 
-1. edit files
+1. edit `.Rmd` (or `.md`) files in `./content/modals/`.
 2. wait for your changes to be built and deployed to the website
     * NOTE: See the status of recent builds (:heavy_check_mark:, :x:, :full_moon:) on the [commit history page](https://github.com/marinebon/fk-iea/commits/master)
 
-This easily-accessible workflow has some drawbacks though:
-* waiting for the site to build can be tedious
-* typos and other tiny errors won't be caught until the site builds
-* only one file can be edited per commit, and the github editor isn't perfect.
+This easily-accessible workflow has some drawbacks:
+* :sleepy: waiting for the site to build can be boring 
+* :poop: typos and other tiny errors won't be caught until the site builds
+* :octocat: only one file can be edited per commit and the github editor isn't perfect.
 
-For these and other reasons, you may want to consider the "advanced dev workflow" below.
+For these and other reasons, you may want to consider the "advanced dev workflow" in `./documentation/advanced_dev.md`.
 
-## Directory Layout
-Wondering which files to edit?
-This section explains which files are most important and how to make specific changes.
+Alternatively: for an even more [WYSiWYG](https://en.wikipedia.org/wiki/WYSIWYG)-style content editor (e.g. google docs) edits can be made using the [prose.io](http://prose.io/) web application.
 
-### Basic Content
-Firstly: `.md` and `.Rmd` files are the basic building block of the site.
-These files are in the `./content` directory and editing them is a great way to get started.
-These files use markdown syntax with embedded, executed R and python chunks.
+Additional documentation can be found in the `./documentation/` directory.
 
-### Editing the infographic image
-The infographic image is a `.svg` image and can be edited with Inkscape.
-The only special thing about this `.svg` file is the element id property of clickable items.
-
-### Connecting content to infographic
-`./modal_plots.csv` connects image elements from `/docs/svg/` to modal content in `./docs/modals/` using the `modal_id` column.
-Values in the `modal_id` column must match to the element id property in the `.svg`.
-
-### Main Menu Links
-Main menu is configured in `/content/menu/`
-
-### Other Global Config
-`config.toml` contains global config info for hugo, bookdown, and the theme.
-
-## Advanced Dev
-This site is built with bookdown and deployed as a static file website.
-
-### Get the Code
-You should clone this repo using the `--recursive` param [[ref](https://www.vogella.com/tutorials/GitSubmodules/article.html#cloning-a-repository-that-contains-submodules)].
-This also clones the git submodules (needed for hugo theme at a minimum).
-
-```bash
-git clone --recursive https://github.com/marinebon/fk-iea
-```
-
-### Install R Dependencies
-Firstly, the latest [R](http://cran.revolutionanalytics.com/) and [python](https://docs.python-guide.org/starting/installation/) should be installed.
-These instructions assume you are using a unix-based operating system (linux/OSX).
-
-```bash
-./install_R_deps.sh
-
-# verify blogdown installation:
-Rscript -e 'blogdown::hugo_version()'
-```
-
-### Workflow
-1. edit files
-2. test build of the site using [blogdown's RStudio addins](https://bookdown.org/yihui/blogdown/rstudio-ide.html) or by running `blogdown::serve_site()`
-
-## Deployment configuration
-Travis CI is used to deploy the website to github pages via the gh-pages branch.
-The github personal access token(s) used by travis can be accessed (only by authorized accounts) [here](https://drive.google.com/drive/folders/168X9drMc_eFdZ6eCesgwR56Ek3m_OrZg?usp=sharing).
-
-### Manual Deployment
-Follow these instructions to manually deploy locally-built html to the gh-pages branch.
-This is needed if Travis breaks (eg if the build is taking too long).
-
-```bash
-rm -rf public
-Rscript -e 'blogdown::build_site()'
-cd public
-git init
-git remote add origin https://github.com/marinebon/fk-iea
-git add *
-git commit -m 'manual site build'
-git branch gh-pages
-git checkout gh-pages
-git push -f origin gh-pages
-```
+If you are still afraid to edit or have other questions/comments please start a discussion by opening an "issue" in [the fk-iea github issue tracker](https://github.com/marinebon/fk-iea/issues).
 
 ### Develop
 
