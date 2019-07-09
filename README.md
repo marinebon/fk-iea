@@ -89,6 +89,15 @@ git checkout gh-pages
 git push -f origin gh-pages
 ```
 
+### Develop
+
+Because of CORS, need local web server to debug:
+
+```r
+setwd(here::here("docs"))
+servr::httw()
+```
+
 ## additional links
 * Based on the example at https://github.com/ioos-eco/cinms.
 * List of [hugo-powered IOOS websites on github](https://github.com/ioos?utf8=%E2%9C%93&q=&type=&language=html)

@@ -13,7 +13,7 @@ tags: []
 library(FD)  # gowdis
 library(ape) #read.tree, as.phylo
 library(clue) #cl_consensus, cl_ultrametric, cl_dissimilarity,cl_ultrametric
-library(d3treeR) #d3treeR interactive traitmap | timelyportfolio/d3treeR
+library(d3treeR) #d3treeR interactive traitmap | remotes::install_github("timelyportfolio/d3treeR")
 library(devtools) #install_github
 library(fpc) #pamk
 library(htmlwidgets) #save interactive treemap and pie chart

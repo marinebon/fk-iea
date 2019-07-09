@@ -2,6 +2,8 @@
 public/
 resources/_gen
 site_libs/
-
 # data files
 *.rds
+.Rproj.user
+.DS_Store
+static

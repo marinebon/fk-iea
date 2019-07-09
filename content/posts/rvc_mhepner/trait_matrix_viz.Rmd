@@ -4,7 +4,7 @@ library(tidyverse)  # magrittr for >%>, tibble for as.tibble
 library(readr) #saveRDS, read_rds, readRDS
 library(treemap) #treemap
 # === also required (used with namespace prefix):
-# d3treeR
+# d3treeR # remotes::install_github("d3treeR/d3treeR"); remotes::install_github("cran/gridSVG")
 ```
 
 [http://jkunst.com/r/pokemon-visualize-em-all/]
