@@ -1,7 +1,7 @@
 baseurl = "https://marinebon.github.io/fk-iea/"
 languageCode = "en-us"
 title = "FKNMS MBON and IEA Webinized Infographic"
-theme = "book"
+theme = "hugo-universal-theme"
 relativeURLs = false
 enableEmoji = true
 publishDir = "public"  # TODO: change to docs?

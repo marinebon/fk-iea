@@ -37,6 +37,25 @@ setwd(here::here("docs"))
 servr::httw()
 ```
 
+#### Change Themes
+
+Install theme using Github owner/repo to update `config.toml`:
+
+```r
+blogdown::install_theme("devcows/hugo-universal-theme")
+```
+
+Then remove theme and install as a git submodule to be able to easily update to the latest version of the theme:
+
+```bash
+# remove existing non-versioned theme
+rm -rf themes/hugo-universal-theme
+# add theme back in as versioned git submodule
+git submodule add \
+  https://github.com/devcows/hugo-universal-theme.git \
+  themes/hugo-universal-theme
+```
+
 ## additional links
 * Based on the example at https://github.com/ioos-eco/cinms.
 * List of [hugo-powered IOOS websites on github](https://github.com/ioos?utf8=%E2%9C%93&q=&type=&language=html)
