@@ -6,17 +6,6 @@ categories: []
 tags: []
 ---
 
-# Recreation fishing effort (NOAA NMFS MRIP, smallest scale available is East Florida)
-<iframe
-    src="https://drive.google.com/file/d/1O_3tpD6mlhFVHKSTeTTLvsxQ3thD3K6w/preview"
-    width="100%" height="480">
-</iframe>
-
-<iframe
-    src="https://drive.google.com/file/d/1kBPiE-negL5hqL-1VLhZdt9gYoOP4q14/preview"
-    width="100%" height="480">
-</iframe>
-
 
 # Recreational Vessels by Registration
 <iframe
@@ -46,3 +35,9 @@ DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
 
 # Pounds landed of identified economically important species
  These are: all grouper, all snapper, all lobster, all stone crab
+
+# Recreation fishing effort (NOAA NMFS MRIP, smallest scale available is East Florida)
+
+The only known data for this analysis is from NOAA's "Marine Recreational Information Program" (MRIP).
+A preliminary analysis of this data has been done in [this google spreadsheet](https://drive.google.com/file/d/1O_3tpD6mlhFVHKSTeTTLvsxQ3thD3K6w), but is not at the right scale.
+
