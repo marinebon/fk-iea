@@ -6,7 +6,7 @@ categories: []
 tags: []
 ---
 
-Acidification, what it does, organisms impacted.
+Acidification (again), what it does, organisms impacted.
 [Derek Manzello](https://www.aoml.noaa.gov/about_us/staff/index.html?lname=MANZELLO&fname=Derek) studies.
 TODO: CK will follow-up.
 

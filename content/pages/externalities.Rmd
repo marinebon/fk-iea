@@ -1,7 +1,7 @@
 ---
 title: "Externalities"
 author: ~
-date: '2019-06-12'
+date: '2019-07-16b'
 categories: []
 tags: []
 output:
@@ -23,8 +23,8 @@ The infographic here will have clickable elements to the following pages:
 - [Acidification]({{< relref "/modals/externalities/acidification" >}})
  
 ```{r}
-#library(infographiq) # remotes::install_github("marinebon/infographiq")
-devtools::load_all("~/github/infographiq")
+library(infographiq) # remotes::install_github("marinebon/infographiq")
+#devtools::load_all("~/github/infographiq")
 library(here)
 library(dplyr)
 library(readr)
