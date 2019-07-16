@@ -34,6 +34,7 @@ library(readr)
 # r2d3-script-532:56 Uncaught ReferenceError: $ is not defined
 # at SVGGElement.<anonymous> (r2d3-script-532:56)
 # at SVGGElement.<anonymous> (d3.min.js:2)
+
 library(r2d3)
 library(htmltools)
 library(bsplus)
@@ -42,7 +43,7 @@ csv <- here("content/svg_links.csv")
 svg <- "/svg/externalities.svg"
 
 read_csv(csv) %>% 
-  filter(svg == "externalities.svg") %>% 
+  filter(svg == !!svg) %>% 
   info_svg(svg)
 ```
  

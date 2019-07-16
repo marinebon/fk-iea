@@ -33,8 +33,8 @@ If you are still afraid to edit or have other questions/comments please start a 
 Because of CORS, need local web server to debug:
 
 ```r
-setwd(here::here("docs"))
-servr::httw()
+#setwd(here::here("public"))
+servr::httw("public", baseurl="/fk-iea")
 ```
 
 #### Change Themes
@@ -54,6 +54,17 @@ rm -rf themes/hugo-universal-theme
 git submodule add \
   https://github.com/devcows/hugo-universal-theme.git \
   themes/hugo-universal-theme
+
+rm -rf public
+Rscript -e 'blogdown::build_site()'
+cd public
+git init
+git remote add origin https://github.com/marinebon/fk-iea
+git add *
+git commit -m 'manual site build'
+git branch gh-pages
+git checkout gh-pages
+git push -f origin gh-pages
 ```
 
 ## additional links
