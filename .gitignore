@@ -2,9 +2,12 @@
 public/
 resources/_gen
 site_libs/
+static
+
 # data files
 *.rds
+
+# other
 .DS_Store
 .Rproj.user
 .Rhistory
-static
