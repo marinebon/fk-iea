@@ -2,7 +2,5 @@ Package: placeholder
 Type: Website
 Title: Does not matter.
 Version: 0.0.1
-Imports: blogdown
-Remotes: 
-  - rstudio/blogdown
-  - marinebon/infographiq
+Imports: blogdown, infographiq
+Remotes: rstudio/blogdown, marinebon/infographiq
