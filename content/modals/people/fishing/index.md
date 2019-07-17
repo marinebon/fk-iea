@@ -32,6 +32,8 @@ DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
     width="100%" height="480">
 </iframe>
 
+# commercial fishing total number of trips rplot
+<img src="content/modals/people/fishing/Rplot commercial fishing trips.png">
 
 # Pounds landed of identified economically important species
  These are: all grouper, all snapper, all lobster, all stone crab
