@@ -33,7 +33,7 @@ DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
 </iframe>
 
 # commercial fishing total number of trips rplot
-<img src="content/modals/people/fishing/Rplot commercial fishing trips.png">
+<img src="./Rplot commercial fishing trips.png">
 
 # Pounds landed of identified economically important species
  These are: all grouper, all snapper, all lobster, all stone crab
@@ -42,4 +42,3 @@ DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
 
 The only known data for this analysis is from NOAA's "Marine Recreational Information Program" (MRIP).
 A preliminary analysis of this data has been done in [this google spreadsheet](https://drive.google.com/file/d/1O_3tpD6mlhFVHKSTeTTLvsxQ3thD3K6w), but is not at the right scale.
-
