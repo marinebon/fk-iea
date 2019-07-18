@@ -12,6 +12,11 @@ Edits can be made directly on the github website so no setup is required.
 The basic development workflow is:
 
 1. edit `.Rmd` (or `.md`) files in `./content/modals/`.
+    1. find the right file. Example: edit [`people/fishing/index.md`](https://github.com/marinebon/fk-iea/blob/master/content/modals/people/fishing/index.md) to change the content of the "People" infographic's [fishing modal popup](https://marinebon.github.io/fk-iea/modals/people/fishing/).
+    1. click the edit button to view the "source code"
+    1. edit the text or copy and paste code from examples
+    1. use "preview" tab at top to review your edits
+    1. click "commit" button at the bottom to save & create a new version
 2. wait for your changes to be built and deployed to the website
     * NOTE: See the status of recent builds (:heavy_check_mark:, :x:, :full_moon:) on the [commit history page](https://github.com/marinebon/fk-iea/commits/master)
 
