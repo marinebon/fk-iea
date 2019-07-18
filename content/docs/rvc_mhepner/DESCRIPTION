@@ -1,0 +1,6 @@
+Package: placeholder
+Type: Website
+Title: Does not matter.
+Version: 0.0.1
+Imports: colorspace, cowplot, d3treeR, dendextend, ggplot2, grid, gridExtra, lattice, readr, tidyverse, treemap
+Remotes: timelyportfolio/d3treeR

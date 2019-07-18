@@ -1,0 +1,39 @@
+---
+author: ~
+date: '2019-06-03'
+categories: []
+tags: []
+title: "Coral Cover Change"
+slug: "coral-cover-change"
+description: ""
+---
+
+# Two years of coral cover change in Florida Keys (2017-2019): Effects of Hurricane Irma?
+
+Has the coral cover changed over two years and after the direct impact of Irma in Sept 2017?
+
+## study area:
+![study area](area.png)
+
+## methods:
+![methods](pipeline.png)
+
+Classification is confounded by turbid waters.
+To improve classification, a depth filter was applied.
+![depth-filter](depth-limit.png)
+
+
+## Results:
+![result](reef-cover-change.png)
+![result w true color](reef-cover-change-w-rgb.png)
+
+* FEB 2017: 77.33 km2
+* FEB 2019: 58.85 km2 (13.83 km2 new)
+* Total loss:18.48 km2  (23.9%); equals to 5.4 Central Parks NY
+* Coral reef cover showed an important decrease, but not attributable to the hurricane only
+
+# Conclusions
+
+Benthic mapping can help us to measure and visualize changes in ecosystems
+Classifications are not perfect, it require clean satellite images (free of clouds, turbidity and sun glint). Some spectral signatures can be confused.
+In situ data (bathymetry, observations, cover) greatly improve benthic mapping

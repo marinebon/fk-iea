@@ -10,7 +10,7 @@ tags: []
 This is a placeholder for home page.
 An overview infographic will go here with clickable elements to the following pages:
 
-- [Externalities]({{< relref "/posts/externalities" >}})
-- [People]({{< relref "/posts/people" >}})
-- [Marine Life]({{< relref "/posts/marine_life" >}})
-- [Info]({{< relref "/modals/info" >}})
+- [Externalities]({{< relref "/docs/externalities" >}})
+- [People]({{< relref "/docs/people" >}})
+- [Marine Life]({{< relref "/docs/marine_life" >}})
+- [Info]({{< relref "/posts/info" >}})

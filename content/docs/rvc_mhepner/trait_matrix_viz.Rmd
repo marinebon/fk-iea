@@ -1,0 +1,78 @@
+
+```{r imports, include=FALSE}
+library(tidyverse)  # magrittr for >%>, tibble for as.tibble
+library(readr) #saveRDS, read_rds, readRDS
+library(treemap) #treemap
+# === also required (used with namespace prefix):
+# d3treeR
+```
+
+[http://jkunst.com/r/pokemon-visualize-em-all/]
+[https://d3js.org/]
+[http://www.buildingwidgets.com/blog/2015/7/22/week-29-d3treer-v2]
+
+```{r trait visualization, echo=FALSE}
+
+trait_matrix = read_csv('https://raw.githubusercontent.com/mhepner90/RVC/master/functional_diversity/species_trait_matrix_316_spp.csv')
+
+trait_matrix_treemap = trait_matrix %>%
+  select(Common_name, Maxlength, Trophic_level, Trophic_group, Water_column,Diel_activity,Substrate_type,Complexity, Gregariousness) %>%
+  group_by(Maxlength,
+           Trophic_level,
+           Trophic_group,
+           Water_column,
+           Diel_activity,
+           Substrate_type,
+           Complexity,
+           Gregariousness) %>%
+  summarise(n = n())%>%
+  ungroup() %>%
+  as.data.frame()
+
+treemap2 =
+  d3treeR::d3tree2(
+    treemap(
+      dtf = trait_matrix_treemap,
+      index = c("Trophic_group", "Diel_activity", "Substrate_type", "Trophic_level", "Water_column","Maxlength","Complexity","Gregariousness"),
+      vSize = "n",
+      vColor = "Trophic_group",
+      type = "index"),
+    #title = "Reef Fish Traits",
+    #fontsize.title = 14,
+    #algorithm = "squarified"
+    rootname = "Species Traits")
+
+treemap2
+
+# htm = "./htmlwidget_treemap2.html"
+# saveWidget(treemap2, htm)
+#
+# png = "./htmlwidget_treemap2.png"
+# webshot(htm, png)
+
+trait_matrix_treemap3 = trait_matrix %>%
+  select(Common_name, Maxlength, Trophic_level, Trophic_group, Water_column,Diel_activity,Substrate_type,Complexity, Gregariousness) %>%
+  group_by(
+           Trophic_group,
+           Water_column,
+           Diel_activity,
+           Substrate_type
+           ) %>%
+  summarise(n = n())%>%
+  ungroup() %>%
+  as.data.frame()
+
+treemap3 =
+  d3treeR::d3tree2(
+    treemap(
+      dtf = trait_matrix_treemap3,
+      index = c("Trophic_group", "Diel_activity", "Substrate_type", "Water_column"),#"Trophic_level" #"Diel_activity", "Substrate_type", "Water_column", "Complexity", "Substrate_type", "Trophic_level"),
+      vSize = "n",
+      vColor = "Trophic_group",
+      type = "index"),
+    #title = "Reef Fish Traits",
+    #fontsize.title = 14,
+    #algorithm = "squarified"
+    rootname = "Species Traits")
+
+```

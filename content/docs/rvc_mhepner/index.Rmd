@@ -1,0 +1,268 @@
+---
+title: "Florida Keys Reef Fish Biodiversity"
+author: "Megan Hepner"
+date: '2017-04-28'
+categories: []
+tags: []
+---
+```{r setup, include=FALSE, eval=FALSE}
+# NOTE: these were libraries previously used,
+#   but these imports have been moved elsewhere.
+#   They are retained here for organizational purposes only.
+#   Once added to the DESCRIPTION file they can be removed.
+library(FD)  # gowdis
+library(ape) #read.tree, as.phylo
+library(clue) #cl_consensus, cl_ultrametric, cl_dissimilarity,cl_ultrametric
+library(d3treeR) #d3treeR interactive traitmap | timelyportfolio/d3treeR
+library(devtools) #install_github
+library(fpc) #pamk
+library(htmlwidgets) #save interactive treemap and pie chart
+library(mgcv) #gam
+library(parallel) #clusterEvalQ,clusterExport,detectCores,makeCluster,parLapply
+library(plotrix) #std.error
+library(purrr) #map
+library(readr) #saveRDS, read_rds, readRDS
+library(reshape2) #melt
+library(rvc) #getPSUAbundance, getStrataAbundance, getDomainAbundance | jeremiaheb/rvc
+library(vegan) #spec, diversity
+library(webshot) #screenshot of interactive treemap and pie chart
+# talgalili/dendextendRcpp
+
+# TODO: move these overrides into the relevant sub-chunks
+map = purrr::map # override maps::map
+select = dplyr::select #override MASS::select
+group_by =  dplyr::group_by #override plotly::group_by
+summarise = dplyr::summarise #override plotly::summarise
+```
+
+Chunks based on original analysis by Megan Hepner from [github.com/mhepner90/RVC](https://github.com/mhepner90/RVC/blob/master/RVC_diversity_analysis.Rmd).
+
+### Inputs
+1. species-trait matrix
+1. psu abundance dataframe
+1. psu biomass dataframe
+
+### Outputs
+1.  Functional dendogram (Fig: The final ultrametric functional dendrogram for 348 reef fish in the Florida Keys obtained using hierarchial agglometric clustering.)
++ Trait-matrix visualization
+
+1.  By *strata* for each sampling year (using PSU data)  
++ Mean abundance and plot
++ Mean biomass and plot
++ Richness and plot
++ Simpson diversity as effective number of species and plot
++ Shannon diversity as effective number of species and plot
++ Functional diversity as effective number of species and plot
++ Pielou's evenness and plot
+
+1. By *strata grouped and subregion* for each sampling year (using PSU data)
++ Mean abundance and plot
++ Mean biomass and plot
++ Richness and plot
++ Simpson diversity as effective number of species and plot
++ Shannon diversity as effective number of species and plot
++ Functional diversity as effective number of species and plot
++ Pielou's evenness and plot
+
+1. By *NTMR* for each sampling year (using PSU data)
++ Mean abundance and plot
++ Mean biomass and plot
++ Richness and plot
++ Simpson diversity as effective number of species and plot
++ Shannon diversity as effective number of species and plot
++ Functional diversity as effective number of species and plot
++ Pielou's evenness and plot
+
+1. Figure of the FKNMS coral reef tract with strata, subregions, and NTMR
+
+1. Statistics
+- Interpolate diversity for each year and strata using kriging
++ Figure. Spatial distribution of each matrices over time.
+- Extract and interpolate the residuals of each index fitted against each other using GAM
++ temporal variable: YEAR
++ spatial variable: Latitude, longitude
++ environmental variable: STRAT, habitat_cd, depth, bottom temperature
++ management variable: NTMR
+- Calculate partial deviances
+
+### Reef Visual Census Background
+
+Reef fish community data used in this study were collected as part of the multi-agency Reef Visual Census (RVC) [Brandt et al., 2009](https://www.coris.noaa.gov/activities/fish_monitoring_protocol/). Fish communities were visually surveyed underwater annually in the mainland FKNMS (Lower Keys, Middle Keys and Upper Keys) from 1999 to 2012, and biennially from 2012 to 2016. The Dry Tortugas region was surveyed from 1999 to 2000 and biennially from 2004 to 2016.     
+
+The RVC uses a stationary point count method within a randomly selected 7.5 m radius circular plot with a 200m map grid from 1999 to 2012 and 100m map grid from 2014 to 2016 to optimize the observation of conspicuous and diurnally active reef fish, specifically economically and ecologically important reef fish species [Bohnsack and Bannerot, 1986](https://docs.lib.noaa.gov/noaa_documents/NMFS/TR_NMFS/TR_NMFS_41.pdf).
+
+### Objective
+
+To analyze and compare changes in species richness, Simpson diversity, Shannon diversity and functional diversity in the Florida Keys National Marine Sanctuary (FKNMS) to reveal changes in temporal and spatial variability from 1999 – 2016. The indices were assessed throughout the Florida Keys, between the upper and lower keys, between habitat types, and for different levels of management (Ecological Reserves (ER), Sanctuary Preservations Areas (SPA), and Special Use/Research Only Areas (SU/RO)).
+
+## Diversity indicse as effective number of species
+
+All indices were computed as effective number of species. Effective number of species is the number of equally abundance species needed to produce the observed value of a diversity index (Jost, 2006; Jost et al., 2010; MacArthur, 1965). Jost, 2006 refers to these as true measures of diversity, where prior to the conversion the diversity indices are simply measures of entropy.
+
+- Species Richness is the number of species in a habitat sampled  
+
+$Richness = \sum_{i=1}^S p_i^0$  
+
+- Simpson diversity measures the probability that two individuals randomly selected from a sample will belong to different species.   
+
+$Simpson = 1 - \sum_{i=1}^S p_i^2$  
+
+- Shannon diveristy is a measure of entropy, it is the uncertainty in the species identity of a sample  
+
+$Shannon = - \sum_{i=1}^S p_i \log_b p_i$  
+
+- Functional diversity (Rao's Q) is a measure of pairwise functional differences between species weighted by their relative abundances   
+
+$Rao Q = \sum_{i=1}^S-1 \sum_{j=i+1}^S d_i p_i p_j$
+
+## Functional distance trait based matrix
+from Lefcheck et al., 2014 ChessMap.Rmd
+
+TODO: fix & include func_dist_trait_matrix chunk
+```{r child = 'func_dist_trait_matrix.Rmd', eval=FALSE, include=FALSE}
+```
+
+Top 23 species = 80% of species
+
+* Bicolor Damselfish
+* Bluehead
+* Masked Goby
+* Tomtate
+* White Grunt
+* Striped Parrotfish
+* Reef Silverside
+* Slippery Dick
+* Yellowtail Snapper
+* Redband Parrotfish
+* French Grunt
+* Bluestriped Grunt
+* Yellowhead Wrasse
+* Ocean Surgeon
+* Hardhead Silverside
+* Clown Wrasse
+* Sergeant Major
+* Bar Jack
+* Blue Tang
+* Brown Chromis
+* Creole Wrasse
+* Gray Snapper
+* Doctorfish
+
+TODO: fix & include trait_matrix chunk
+```{r child = 'trait_matrix.Rmd', eval=FALSE, echo=FALSE}
+```
+
+## Trait matrix visualization
+```{r child = 'trait_matrix_viz.Rmd'}
+```
+
+### Fetch the RVC data from
+[NOAA's Southeast Fisheries Science Center server](https://grunt.sefsc.noaa.gov/rvc_analysis20/) using the [RVC package](https://github.com/jeremiaheb/rvc)
+- Fetched weighted abundance and biomass data by domain, strata, and primary sampling units
+
+### Sample Data Variables
+- PRIMARY_SAMPLE_UNIT: A code indicating the primary sample unit in which a sample was collected.
+- YEAR: A number indicating the calendar year.
+- MONTH: A number indicating the month of the year.
+- DAY: A number indicating the day of the month (EST).
+- STATION_NR: A number indicating the secondary sampling unit within a given primary sample unit.
+- LAT_DEGREES: Latitude of secondary sampling unit in decimal degrees).
+- LON_DEGREES: Longitude of secondary sampling unit in decimal degrees).
+- DEPTH: Average depth, in meters, of secondary sampling unit).
+- UNDERWATER_VISIBILITY: visibility, in meters, at secondary sampling unit.
+- MAPGRID_NR: A number indicating the primary sample unit.  
+- HABITAT_CD: A code indicating the habitat type.
+- ZONE_NR: A code indicating the distance offshore:
++ 1 - Inshore
++ 2 - Midchannel
++ 3 - Offshore
++ 4 - Fore-reef
+- SUBREGION_NR: A number indicating the subregion.
+- MPA_NR: A number identifying the marine protected area in which the sample was collected. Zero indicates unprotected status)
+- SPECIES_NR: A number indicating the species for a sample
+- SPECIES_CD: A code indicating the species for a sample. Consists of the first three letters of the generic name and the first four of the specific name   
+- LEN: The length, in cm, of a sample.      
+- NUM: The number of individuals of a given species and length observed in a secondary sampling unit
+- TIME_SEEN: A number indicating when, during sampling, an individual was observed. 1: In the first five minutes, 2: From 5-10 minutes, 3: After 10 minutes.
+- PROT: A boolean value indicating whether a sample was in a protected area or not
++ 1 - protected area
++ 0 - not protected
+- STRAT: A code indicating the stratum in which a sample was taken. Differs by region.   
++ FMLR
++ FSLR
++ HRRF
++ INPR
++ MCPR
++ OFPR
+- REGION: A code indicating the region in which a sample was taken.
++ FLA KEYS (florida keys)
++ DRY TORT (dry tortugas)
+
+### Stratum Data Variables
+- REGION
+- YEAR
+- PROT
+- STRAT
+- NTOT: The number of possible primary sample units for a given year, region, stratum, and protected status
+- GRID_SIZE: The length (in meters) to a side of a primary sample unit for a given year, region, stratum, and protected status.
+
+### Taxonomic Data Variables
+- SPECIES_CD
+- FAMILY
+- SCINAME
+- COMNAME
+- LC: Minimum length at capture, in centimeters
+- LM: Median length at maturity, in centimeters.
+- WLEN_A: The linear coefficient of the allometric growth equation in grams per millimeter (g/mm)
+- WLEN_B: The exponential coefficient of the allometric growth equation
+
+### Benthic Data Variables
+- REGION: A code indicating the region.
+- YEAR: A number indicating the calendar year.
+- PRIMARY_SAMPLE_UNIT: A code indicating the primary sample unit in which a sample was collected.
+- STATION_NR: A number indicating the secondary sampling unit within a given primary sample unit.
+- DEPTH: Average depth, in meters, of secondary sampling unit.
+- MAX_HARD_RELIEF: The maximum height, in meters, of hard relief (e.g. hard corals, rock).
+- MAX_SOFT_RELIEF: The maximum height, in meters, of soft relief (e.g. soft corals, sponges).
+- AVG_HARD_RELIEF: The average height, in meters, of hard relief.
+- HARD_REL_PCT_0: Percentage of hard relief less than 0.2 meters.
+- HARD_REL_PCT_1: Percentage of hard relief between 0.2 and 0.5 meters.
+- HARD_REL_PCT_2: Percentage of hard relief between 0.5 and 1.0 meters.
+- HARD_REL_PCT_3: Percentage of hard relief between 1.0 and 1.5 meters.
+- HARD_REL_PCT_4: Percentage of hard relief greater than 1.5 meters.
+- PCT_SAND: Percentage of abiotic cover that is sand.
+- PCT_HARD_BOTTOM: Percentage of abiotic cover that is hard bottom.
+- PCT_RUBBLE: Percentage of abiotic cover that is rubble.
+- PCT_CORAL: Percentage of biotic hardbottom that is coral.
+- PCT_OCTO: Percentage of biotic hardbottom that is octocoral.
+- PCT_SPONGE: Percentage of biotic hardbottom that is sponge.
+
+### Function: getDomainDensity
+- YEAR
+- REGION
+- SPECIES_CD
+- density: Domain-wide mean density for a stratified random survey  
+- var: Variance in average density per secondary sampling unit
+- n: Number of primary sampling units sampled
+- nm: Number of secondary sampling units sampled
+- N: Number of total possible primary sample units
+- NM: Number of possible secondary sampling units
+- length_class: The length class or bin. Only present if length_bins is not NULL. The notation, [lower, upper), is inclusive of the lower bound, but exclusive of the upper bound
+- protected_status: The protected status. Only present if merge_protected is FALSE
+
+### Florida Keys Strata
+1. FSLR - Forereef Shallow Linear Reef (<6m)
+2. FMLR - Forereef Midchannel Linear Reef (6-18m)
+3. FDLR - Forereef Deep Linear Reef (18-33m)
+4. INPR - Inshore patch reef
+5. MCPR - Midchannel Patch Reef
+6. OFPR - Offshore Patch Reef
+7. HRRF - High Relief Reef (Spur and Groove)
+
+```{r child = 'strata_by_year.Rmd'}
+```
+
+
+### Florida Keys Primary Sampling Unit
+```{r child = 'fk_psu.Rmd'}
+```
