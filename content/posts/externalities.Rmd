@@ -17,33 +17,26 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 This is a placeholder for an infographic page.
 The infographic here will have clickable elements to the following pages:
 
-- [Temperature]({{< relref "/modals/externalities/temperature" >}})
-- [Storms]({{< relref "/modals/externalities/storms" >}})
-- [Sea Level]({{< relref "/modals/externalities/sea_level" >}})
-- [Acidification]({{< relref "/modals/externalities/acidification" >}})
+- [Temperature](/modals/externalities/temperature)
+- [Storms](/modals/externalities/storms)
+- [Sea Level](/modals/externalities/sea_level)
+- [Acidification](/modals/externalities/acidification)
  
 ```{r}
 library(infographiq) # remotes::install_github("marinebon/infographiq")
 #devtools::load_all("~/github/infographiq")
+#devtools::install_local("~/github/infographiq")
 library(here)
 library(dplyr)
 library(readr)
-
-# svg showing, modal not popping up, JS console:
-# link_modal:acidification
-# r2d3-script-532:56 Uncaught ReferenceError: $ is not defined
-# at SVGGElement.<anonymous> (r2d3-script-532:56)
-# at SVGGElement.<anonymous> (d3.min.js:2)
-
-library(r2d3)
-library(htmltools)
-library(bsplus)
+library(widgetframe)
 
 csv <- here("content/svg_links.csv")
 svg <- "/svg/externalities.svg"
 
-read_csv(csv) %>% 
+w <- read_csv(csv) %>% 
   filter(svg == !!svg) %>% 
   info_svg(svg)
+frameWidget(w)
 ```
  
