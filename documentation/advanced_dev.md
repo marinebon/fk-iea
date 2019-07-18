@@ -22,13 +22,13 @@ Rscript -e 'blogdown::hugo_version()'
 
 ## Advanced Dev Workflow
 1. edit files
-2. test build of the site using [blogdown's RStudio addins](https://bookdown.org/yihui/blogdown/rstudio-ide.html) or by running `blogdown::serve_site()`
+2. test build of the site using [blogdown's RStudio addins](https://bookdown.org/yihui/blogdown/rstudio-ide.html) or by running `blogdown::serve_site(daemon=T)`
 
 NOTE: Because of CORS, need local web server to debug:
 
 ```r
 #setwd(here::here("public"))
-servr::httw("public", baseurl="/fk-iea")
+servr::httw(here::here("public"), baseurl="/fk-iea")
 ```
 
 ## Deployment configuration

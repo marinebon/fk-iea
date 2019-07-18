@@ -35,7 +35,10 @@ csv <- here("content/svg_links.csv")
 svg <- "/svg/externalities.svg"
 
 w <- read_csv(csv) %>% 
-  filter(svg == !!svg) %>% 
+  mutate(svg = recode(
+    svg,
+    `/svg/externalities.svg`="/fk-iea/svg/externalities.svg")) %>% 
+  #filter(svg == !!svg) %>% 
   info_svg(svg)
 frameWidget(w)
 ```
