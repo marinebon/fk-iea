@@ -1,24 +1,30 @@
 ---
 title: "Marine Protected Areas"
 author: ~
-date: '2019-06-12'
+date: '2019-07-19'
 categories: []
 tags: []
 ---
 
 ## Fish and Lobster inside/outside of MPAs (Aug)
-TODO: LM will send formatted Tom Matthews Lobster data to BB and TM
+
+TODO: LM will send formatted Tom Matthews (FWC) Lobster (+other?) data to BB and TM
+
+TODO: Lobster study: MPAs can cover a range of life history reqs/habitat
 
 ### fish in vs out of MPA
 ```{r child="mpa_vs_not.Rmd"}
 ```
 
+### TODO: So consolidate time-series into snapper-grouper complex?
 Eg info-fk/corals -> Exploited Reef Fish (focal)
 
-TODO: So consolidate time-series into snapper-grouper complex?
+### TODO: Alternative infographic data representation? 
+ie big/small icons instead of graphs
 
-TODO: Alternative infographic data representation?
+### TODO: NCRMP Coral Data
+TODO: add content from paper by Jerry Ault showing that the RNA has worked since it's inception in 2007
 
-TODO: Lobster study: MPAs can cover a range of life history reqs/habitat
+TODO: use [NCRMP_benthics R package](https://github.com/shgroves/NCRMP_benthics)
 
-TODO: Tom Matthews (FWC) data
+TODO: awaiting content from Erica Towle, Jay Grove, Jerry Ault, et al.
