@@ -21,6 +21,14 @@ Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](htt
 
 TODO: Raw RVC data used in that analysis is accessible via [sefsc.noaa.gov](https://grunt.sefsc.noaa.gov/rvc_analysis20/).
 
+```{r biodiv_overview_png, echo=FALSE}
+blogdown::shortcode("imgcap",
+    title="Species richness, Shannon diversity, Simpson diversity, and functional diversity across years. The data correspond to all sampling events in a given year including all levels of protection, strata, and subregion. The units are in mean effective number of species and error bars denote +/- SE. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.", src="mhepner_fig12_fish_biodiv.png"
+)
+```
+
+
+
 ### Snapper/grouper vs parrotfish (targeted/non-targeted)
 #### MBON IOOS Portal
 The [MBON IOOS Portal](https://mbon.ioos.us) was used to create a data view comparing [Reef Visual Census data](https://mbon.ioos.us/#metadata/53cb8d58-ae4d-43e1-aea3-640db9491db2/875de156-d933-4373-bb09-486c25eccfb2) for grouper and parrotfish.
