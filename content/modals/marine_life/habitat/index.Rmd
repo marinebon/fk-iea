@@ -56,6 +56,12 @@ In many analyses it makes sense to split the Florida Reef Tract into sub-regions
 The regional subdivision of the reef tract is not well standardized, however.
 The definition of the subregions used here and an explanation of this choice is discussed on the [fk-subdiv page](fk-subidv.md).
 
+```{r region_comparison_png, echo=FALSE}
+blogdown::shortcode("imgcap",
+    title=" Plots of reef fish indices by subregion across years with strata combined. The units for panel A is abundance (number of individuals), panel B is kilograms per 40,000 km2, panel C is units ranging from 0 (maximally uneven) to 1 (maximally even), and panels D-G are in units of effective number of species. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.", src="mhepner_indicies_by_subregion.png"
+)
+```
+
 ----------------------------------------------------------------------------
 
 Florida Fish and Wildlife Conservation Commission's richness of potential habitat for selected focal species in Florida [[ref]](https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8):
