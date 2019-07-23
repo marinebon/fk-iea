@@ -10,6 +10,12 @@ The Florida keys are often split into sub-areas.
 
 ## examples
 Below are some examples subdivisions of the FK region.
+![mhepner split]()
+{{< imgcap
+    title="Map of the Florida Keys domain by geographic subregion (Upper Keys, Middle Keys, Lower Keys) and classified by habitat strata: Forereef Deep Linear Reef (FDLR), Forereef Medium Linear Reef (FMLR), Forereef Shallow Linear Reef (FSLR), High Relief Reef (HRRF), Inshore Patch Reef (INPR), Midchannel Patch Reef (MCPR) and Offshore Patch Reef (OFPR). From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary."  src="/home/tylar/fk-iea/content/posts/fk-subdiv/mhepner_fig3.png"
+>}}
+
+
 ![coral data](coral-assemblages.png)
 Coral reefs and their subregional classification defined by [T. J. T. MurdochR. B. Aronson's *"Scale-dependent spatial variability of coral assemblages along the Florida Reef Tract"*, published
  1999](https://link.springer.com/article/10.1007/s003380050210).
