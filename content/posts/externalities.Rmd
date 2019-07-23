@@ -18,10 +18,10 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F)
 This is a placeholder for an infographic page.
 The infographic here will have clickable elements to the following pages:
 
-- [Temperature](modals/externalities/temperature)
-- [Storms](modals/externalities/storms)
-- [Sea Level](modals/externalities/sea_level)
-- [Acidification](modals/externalities/acidification)
+- [Temperature](/fk-iea/modals/externalities/temperature)
+- [Storms](/fk-iea/modals/externalities/storms)
+- [Sea Level](/fk-iea/modals/externalities/sea_level)
+- [Acidification](/fk-iea/modals/externalities/acidification)
  
 ```{r}
 # devtools::load_all("~/github/infographiq")
