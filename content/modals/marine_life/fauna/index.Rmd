@@ -15,7 +15,7 @@ source("./../obis_cache.R")
 source("./../obis_plot_comparison.R")
 ```
 
-# Indicators:
+# Indicator:
 ## Fish abundance, diversity, size and species
 Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](https://marinebon.github.io/info-fk/corals.html).
 
