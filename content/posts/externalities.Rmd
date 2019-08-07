@@ -33,6 +33,6 @@ library(dplyr)
 library(readr)
 
 read_csv("../svg/svg_links.csv") %>% 
-  info_svg("externalities.svg", "svg/")
+  info_svg("externalities.svg", "/fk-iea/svg/")
 ```
  
