@@ -31,16 +31,8 @@ library(infographiq)
 library(here)
 library(dplyr)
 library(readr)
-#library(widgetframe)
 
-csv     <- here("content/svg_links.csv")
-svg     <- "externalities.svg"
-pfx     <- "/fk-iea/svg/"
-
-w <- read_csv(csv) %>% 
-  filter(svg == !!svg) %>% 
-  info_svg(svg, pfx, modal_html_provided=T)
-w
-#frameWidget(w)
+read_csv("../svg/svg_links.csv") %>% 
+  info_svg("externalities.svg", "svg/")
 ```
  
