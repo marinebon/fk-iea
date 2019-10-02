@@ -47,9 +47,7 @@ install:
   - ./install_python_deps.sh
 
 script:
-  - Rscript -e 'blogdown::install_hugo()'
-  # TODO: add custom infographiq build step here
-  - Rscript -e 'blogdown::build_site()'
+  - Rscript ./render_site.R
 
 # after_success:
 # - Rscript -e 'covr::codecov()'
@@ -63,7 +61,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   on:
     branch: master
-  local_dir: public
+  local_dir: docs
   # fqdn: travis-blogdown.yihui.name  # this sets CNAME for custom DN
 
 notifications:
