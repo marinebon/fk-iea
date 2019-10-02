@@ -1,0 +1,17 @@
+---
+title: "Climate"
+params:
+  svg: "svg/climate.svg"
+---
+
+This is a placeholder for an infographic page.
+The infographic here will have clickable elements to the following pages:
+ 
+- [Temperature](./modals/temperature.html)
+- [Storms](./modals/storms.html)
+- [Sea Level](./modals/sea_level.html)
+- [Acidification](./modals/acidification.html)
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
+

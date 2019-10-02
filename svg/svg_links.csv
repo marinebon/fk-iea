@@ -1,0 +1,17 @@
+svg,id,title,link,not_modal
+fl-keys.svg,people,People,people.html,T
+fl-keys.svg,externalities,Climate,climate.html,T
+fl-keys.svg,marine_life,Biodiversity,biodiversity.html,T
+fl-keys.svg,info,Additional Info,modals/info.html,
+climate.svg,acidification,Ocean Acidification,modals/acidification.html,
+climate.svg,sea_level,Sea Level,modals/sea_level.html,
+climate.svg,storms,Storms,modals/storms.html,
+climate.svg,temperature,Temperature,modals/temperature.html,
+people.svg,fishing,Fishing,modals/fishing.html,
+people.svg,land_use,Land Use,modals/land_use.html,
+people.svg,wastewater,Wastewater,modals/wastewater.html,
+people.svg,info,Additional Info,modals/people_info.html,
+marine_life.svg,mpas,Marine Protected Areas,modals/mpas.html,
+marine_life.svg,benthic_community,Benthic Community,modals/benthic_community.html,
+marine_life.svg,fauna,Marine Fauna,modals/fauna.html,
+marine_life.svg,habitat,Habitat,modals/habitat.html,

@@ -1,0 +1,27 @@
+---
+title: "FKNMS Infographics"
+params:
+  svg: "svg/fl-keys.svg"
+---
+
+<br>
+
+This site is a co-production of the Marine Biodiversity Observation Network (MBON) and Integrated Ecosystem Assessment (IEA) projects.
+
+```{r svg, child = '_svg-html_child.Rmd'}
+```
+
+<!---
+## (Temporary) Technical Development Notes
+
+This site is a temporary demonstration of publishing as an [Rmarkdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html#publishing-websites).
+
+The menu is very easy to update in the [_site.yml]( https://github.com/marinebon/fk-iea_tmp/blob/master/_site.yml).
+
+For example:
+
+- [Climate](./climate.html): see infographic modal popup by clicking on temperature
+
+- Nature > [Protected Areas](n_mpa.html): note use of tabsets and floating toc
+-->
+

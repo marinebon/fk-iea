@@ -1,42 +1,78 @@
-[![Build Status](https://travis-ci.org/marinebon/fk-iea.svg?branch=master)](https://travis-ci.org/marinebon/fk-iea)
+# fk-iea_tmp
+Florida Keys IEA, as Rmarkdown website.
 
-# fk-iea
-Infographic created via collaboration between the Florida Keys National Marine Sanctuary (FKNMS), the Florida Keys Integrated Ecosystem Assessment (IEA), and the Marine Biodiversity Observation Network (MBON).
+This website uses a simple interactive infographics implementation based on JavaScript only (ie not using the R-based [infographiq](https://github.com/marinebon/infographiq)).
 
-![overview](extra_files/fk_zoomed.svg)
+## technical implementation
 
-## Basic Development Workflow
-Don't be afraid to edit!!!
-Git saves *everything* and the github+travis+blogdown stack is very hard to break.
+The illustration in scalable vector graphics (`.svg`) format has individual elements given an identifier (ie `id`) that are linked to popup (ie "modal") windows of content using a simple table in comma-seperated value (`.csv`) format using [d3](https://d3js.org).
 
-Edits can be made directly on the github website so no setup is required.
+### core files: `.svg`, `.csv`
 
-The basic development workflow is:
+These two files are at the core of the infographic construction:
 
-1. edit `.Rmd` (or `.md`) files in `./content/modals/`.
-    1. find the right file. Example: edit [`people/fishing/index.md`](https://github.com/marinebon/fk-iea/blob/master/content/modals/people/fishing/index.md) to change the content of the "People" infographic's [fishing modal popup](https://marinebon.github.io/fk-iea/modals/people/fishing/).
-    1. click the edit button to view the "source code"
-    1. edit the text or copy and paste code from examples
-    1. use "preview" tab at top to review your edits
-    1. click "commit" button at the bottom to save & create a new version
-2. wait for your changes to be built and deployed to the website
-    * NOTE: See the status of recent builds (:heavy_check_mark:, :x:, :full_moon:) on the [commit history page](https://github.com/marinebon/fk-iea/commits/master)
+1. **illustration**: [`svg/fl-keys.svg`](https://github.com/marinebon/fk-iea_tmp/blob/master/svg/fl-keys.svg) 
+1. **table**:        [`svg_links.csv`](https://github.com/marinebon/fk-iea_tmp/blob/master/svg/svg_links.csv) 
 
-This easily-accessible workflow has some drawbacks:
-* :sleepy: waiting for the site to build can be boring
-* :poop: typos and other tiny errors won't be caught until the site builds
-* :octocat: only one file can be edited per commit and the github editor isn't perfect.
+Each `link` in the table per element identified (`id`) is the page of content displayed in the modal popup window when the given element is clicked. The `title` determines the name on hover and title of the modal window.
 
-For these and other reasons, you may want to consider the "advanced dev workflow" in [`./documentation/advanced_dev.md`.](https://github.com/marinebon/fk-iea/tree/master/documentation/advanced_dev.md)
+### html and js/css dependencies
 
-Alternatively: for an even more [WYSiWYG](https://en.wikipedia.org/wiki/WYSIWYG)-style content editor (e.g. google docs) edits can be made using the [prose.io](http://prose.io/) web application.
+The illustration (`.svg`) and table (`.csv`) get rendered with the `link_svg()` function (defined in `infographiq.js`) with the following HTML:
 
-If you are still afraid to edit or have other questions/comments please start a discussion by opening an "issue" in [the fk-iea github issue tracker](https://github.com/marinebon/fk-iea/issues).
+```html
+<!-- load dependencies on JS & CSS -->
+<script src='https://d3js.org/d3.v5.min.js'></script>
+<script src='libs/infographiq.js'></script>
 
-## Documentation
-For advanced users: go beyond this README and into the [documentation folder](https://github.com/marinebon/fk-iea/tree/master/documentation).
+<!-- add placeholder in page for placement of svg -->
+<div id='svg'></div>
 
-## additional links
-* Based on the example at https://github.com/ioos-eco/cinms.
-* List of [hugo-powered IOOS websites on github](https://github.com/ioos?utf8=%E2%9C%93&q=&type=&language=html)
-* List of [hugo-powered GSA websites on github](https://github.com/gsa?utf8=%E2%9C%93&q=&type=&language=html)
+<!-- run function to link the svg -->
+<script>link_svg(svg='svg/fl-keys.svg', csv='svg/svg_links.csv');</script>
+```
+
+The modal popup windows are rendered by [Bootstrap modals](https://getbootstrap.com/docs/3.3/javascript/#modals). This dependency is included with the default Rmarkdown rendering, but if you need to seperately include it then add this HTML:
+
+```html
+<!-- load dependencies on JS & CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+```
+
+## build and view website in R
+
+This website is constructed using [Rmarkdown website](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html) for enabling easy construction of site-wide navigation (see [`_site.yml`](https://github.com/marinebon/iea-ak-info/blob/master/_site.yml)) and embedding of [htmlwidgets](https://www.htmlwidgets.org), which provide interactive maps, time series plots, etc into the html pages to populate the modal window content in [`modals/`](https://github.com/marinebon/iea-ak-info/tree/master/modals). To build the website and view it, here are the commands to run in R:
+
+## develop
+
+### content editing workflow
+
+1. edit .Rmd files in `./docs/modals/`
+2. run `render_site.R`
+
+NOTE: The `.html` files *can* be edited but by default `.html` files are overwritten by content knit from the `Rmd` files of the same name.
+To use html directly set `redo_modals <- T`, but you will need to clear `.html` files manually with this setting.
+
+### testing
+
+Because of [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) restrictions, need local web server to debug:
+
+```r
+# build website
+source("render_site.R")
+
+# serve website
+servr::httd("docs") # http://127.0.0.1:4321
+```
+
+or using Python:
+
+```bash
+cd ~/github/mbnms/docs; python -m SimpleHTTPServer
+```
+
+The [`render_site.R`](https://github.com/marinebon/iea-ak-info/blob/master/render_site.R) script renders the modal and website pages.
+
+Note the actual html content served at [marinebon.github.io/mbnms](https://marinebon.github.io/mbnms) via [Github Pages](https://pages.github.com/) is all the html/jss/csss files copied into the `docs/` folder of this repository.

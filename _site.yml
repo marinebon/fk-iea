@@ -1,21 +1,59 @@
-# _site.yml configures rmarkdown:render_site behavior
-# which converts .Rmd files to .md
-name: FKNMS MBON and IEA Webinized Infographic
-output_dir: "."
-include: ["*.Rmd", "*.md"]
-exclude: ["*.txt", "*.csv", "*.pdf", "*.docx"]
-output: html_document
-    # html_document:
-    #     theme: cosmo
-    #     highlight: textmate
-    #     include:
-    #       after_body: footer.html
-    #     css: styles.css
-
-# navbar:
-#   title: "My Website"
-#   left:
-#     - text: "Home"
-#       href: index.html
-#     - text: "About"
-#       href: about.html
+name: "FK IEA"
+title: "FK IEA"
+output_dir: "docs"
+svg_csv: "svg/svg_links.csv"
+navbar:
+  title: "FK IEA"
+  icon: fa-info
+  left:
+    - text: "Climate"
+      icon: fa-bolt
+      menu:
+        - text: "Climate"
+          href: climate.html
+        - text: "---------"      
+        - text: "Acidification"
+          href: c_acidification.html      
+        - text: "Sea Level Rise"
+          href: c_slr.html      
+        - text: "Storms"
+          href: c_storms.html      
+        - text: "Temperature"
+          href: c_temperature.html      
+    - text: "People"
+      icon: fa-users
+      menu:
+        - text: "People"
+          href: people.html
+        - text: "---------"
+        - text: "Fishing"
+          href: p_fishing.html      
+        - text: "Land Use"
+          href: p_landuse.html      
+        - text: "Wastewater"
+          href: p_wastewater.html      
+    - text: "Biodiversity"
+      icon: fa-leaf
+      menu:
+        - text: "Biodiversity"
+          href: biodiversity.html
+        - text: "---------"
+        - text: "Protected Areas"
+          href: b_mpa.html      
+        - text: "Habitats"
+          href: b_habitats.html      
+        - text: "Species"
+          href: b_species.html      
+  #right:
+  #  - text: "About"
+  #    href: about.html
+output:
+#  distill::distill_article:
+#    includes:
+#      after_body: _includes/tabset-dropdown.html
+  html_document:
+    theme: lumen # https://bootswatch.com
+    highlight: textmate
+    self_contained: no
+    css: libs/styles.css
+    mathjax: null
