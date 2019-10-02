@@ -1,0 +1,1 @@
+-e git://github.com/7yl4r/plo7y.git@master#egg=plo7y
