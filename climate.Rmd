@@ -1,0 +1,26 @@
+---
+title: "Climate"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F, warning = F)
+```
+
+This is a placeholder for an infographic page.
+The infographic here will have clickable elements to the following pages:
+ 
+- [Temperature](/fk-iea/modals/externalities/temperature)
+- [Storms](/fk-iea/modals/externalities/storms)
+- [Sea Level](/fk-iea/modals/externalities/sea_level)
+- [Acidification](/fk-iea/modals/externalities/acidification)
+ 
+```{r}
+library(readr)
+library(dplyr)
+library(infographiq)
+# devtools::load_all("~/github/infographiq")
+# devtools::install_local("~/github/infographiq")
+
+read_csv("svg/svg_links.csv") %>% 
+  info_svg("externalities.svg", "svg/")
+```

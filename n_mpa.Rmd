@@ -1,0 +1,104 @@
+---
+title: "Marine Protected Areas"
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(dygraphs)
+library(xts)
+library(lubridate)
+library(glue)
+
+csv <- "https://raw.githubusercontent.com/marinebon/info-fk/master/prep/data/rvc_exploited_species/exploited_fk_den.csv"
+
+d <- read_csv(csv) %>% 
+  mutate(
+    yr_date = as_date(glue("{YEAR}-06-15")))
+
+rvc_plot <- function(d, name, title){
+  dd <- d %>% 
+    filter(common_name == !!name) %>% 
+    select(yr_date, density_mean, protected_status) %>% 
+    spread(protected_status, density_mean, fill=0)
+  
+  select(dd, -yr_date) %>%
+    as.xts(order.by=dd$yr_date) %>%
+    dygraph(main=title) 
+}
+```
+
+## Overall
+
+The maps and timeseries are from:
+
+Hepner, Megan E., "Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary" (2017). Graduate Theses and Dissertations. https://scholarcommons.usf.edu/etd/7408
+
+See Also:
+
+* [jeremiaheb/rvc: New implementation of the rvcstats package, which produces summary statistics for the South Florida Reef Visual Census](https://github.com/jeremiaheb/rvc)
+* [Marine Biodiversity Observation Network: Florida Keys Reef Fish Visual Census: Loop Current flow variability impacts on species diversity](https://mbon.ioos.us/#default-data/6.1)
+* [Marine Biodiversity Observation Network: Florida Keys Reef Fish Visual Census: Florida Keys Reef Fish Visual Census: Biodiversity Indexing](https://mbon.ioos.us/#metadata/53cb8d58-ae4d-43e1-aea3-640db9491db2/875de156-d933-4373-bb09-486c25eccfb2)
+
+### Maps
+
+![](./img/Hepner-2017_Fig-5a_map-RVC-abundance.png)
+![](./img/Hepner-2017_Fig-5b_map-RVC-biomass.png)
+![](./img/Hepner-2017_Fig-5d_map-RVC-richness.png)
+
+### Time Series
+
+![](./img/Hepner-2017_Fig-6a_time-RVC-abundance.png)
+![](./img/Hepner-2017_Fig-6b_time-RVC-biomass.png)
+![](./img/Hepner-2017_Fig-6d_time-RVC-richness.png)
+
+
+## By Species
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Black_Grouper", "Black Grouper Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Goliath_Grouper", "Goliath Grouper Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Graysby", "Graysby Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Grey_Snapper", " Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Hogfish", "Hogfish Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Mutton_Snapper", "Mutton Snapper Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Nassau_Grouper", "Nassau Grouper Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Red_Grouper", "Red Grouper Density")
+```
+
+```{r, layout="l-screen-inset", fig.height=2.5}
+rvc_plot(d, "Yellowtail_Snapper", "Yellowtail Snapper Density")
+```
+
+

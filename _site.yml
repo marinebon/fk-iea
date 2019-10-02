@@ -1,21 +1,46 @@
-# _site.yml configures rmarkdown:render_site behavior
-# which converts .Rmd files to .md
-name: FKNMS MBON and IEA Webinized Infographic
-output_dir: "."
-include: ["*.Rmd", "*.md"]
-exclude: ["*.txt", "*.csv", "*.pdf", "*.docx"]
-output: html_document
-    # html_document:
-    #     theme: cosmo
-    #     highlight: textmate
-    #     include:
-    #       after_body: footer.html
-    #     css: styles.css
-
-# navbar:
-#   title: "My Website"
-#   left:
-#     - text: "Home"
-#       href: index.html
-#     - text: "About"
-#       href: about.html
+name: "distill"
+title: "FK IEA"
+description: |
+  FK IEA
+output_dir: "docs"
+navbar:
+  left:
+    - text: "Climate"
+      menu:
+        - text: "Climate"
+          href: climate.html
+        - text: "---------"      
+        - text: "Acidification"
+          href: c_acidification.html      
+        - text: "Sea Level Rise"
+          href: c_slr.html      
+        - text: "Storms"
+          href: c_storms.html      
+        - text: "Temperature"
+          href: c_temperature.html      
+    - text: "People"
+      menu:
+        - text: "People"
+          href: people.html
+        - text: "---------"
+        - text: "Fishing"
+          href: p_fishing.html      
+        - text: "Land Use"
+          href: p_landuse.html      
+        - text: "Wastewater"
+          href: p_wastewater.html      
+    - text: "Nature"
+      menu:
+        - text: "Nature"
+          href: nature.html
+        - text: "---------"
+        - text: "Protected Areas"
+          href: n_mpa.html      
+        - text: "Habitats"
+          href: n_habitats.html      
+        - text: "Species"
+          href: n_species.html      
+  right:
+    - text: "About"
+      href: about.html
+output: distill::distill_article

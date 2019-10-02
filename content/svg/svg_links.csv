@@ -1,9 +1,0 @@
-svg,id,title,link_nonmodal,link_modal,status_text,status_color
-fl-keys.svg,people,People,,modals/people.html,,#2b2b2b
-fl-keys.svg,externalities,Externalities,,modals/externalities.html,,#2b2b2b
-fl-keys.svg,marine_life,Marine Life,,modals/marine_life.html,,#2b2b2b
-fl-keys.svg,info,Additional Info,,modals/info.html,,#2b2b2b
-externalities.svg, acidification, Ocean Acidification,,/fk-iea/modals/externalities/acidification/,,
-externalities.svg, sea_level, Sea Level,,/fk-iea/modals/externalities/sea_level/,,
-externalities.svg, storms, Storms,,/fk-iea/modals/externalities/storms/,,
-externalities.svg, temperature, Temperature,,/fk-iea/modals/externalities/temperature/,,
