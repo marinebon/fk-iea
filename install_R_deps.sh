@@ -3,7 +3,7 @@ set -e
 Rscript -e 'if (!requireNamespace("devtools")) install.packages("devtools")'
 
 # install global Imports from DESCRIPTION
-Rscript -e 'devtools::install(pkg=".", quick=TRUE, quiet=TRUE, upgrade=TRUE)'
+Rscript -e 'devtools::install(pkg=".", quick=TRUE, upgrade=TRUE)'
 
 # # install Imports for each content page
 # echo "\n\ninstalling dependencies for content pages with DESCRIPTION files..."
