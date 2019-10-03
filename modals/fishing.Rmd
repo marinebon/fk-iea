@@ -22,7 +22,6 @@ TODO: Prop scar intensity 1995 vs ~2012; talking point only
 <!--
 DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
 -->
-
 # Number of Commercial Fishing Trips
 <iframe
     src="https://drive.google.com/file/d/19It75Ex9YXYpnYLIY1MwGVjlfRbYc23O/preview"
@@ -36,7 +35,7 @@ DOT staff: # of boats passing toll booths (TODO: KM to follow-up)
 </iframe>
 
 # commercial fishing total number of trips rplot
-<img src="./Rplot commercial fishing trips.png">
+<img src="./fishing_Rplot commercial fishing trips.png">
 
 # Pounds landed of identified economically important species
  These are: all grouper, all snapper, all lobster, all stone crab

@@ -32,7 +32,9 @@ A screenshot of the resulting view updated last on 2019-06-19 is below:
 
 ![axiom portal ](fauna_mbon_ioos_portal_grouper_vs_snapper.png)
 
+<!--
 TODO: How to link, share, or embed this data view?
+-->
 
 #### R and python plots data directly from OBIS
 ```{r region vars}
