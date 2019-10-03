@@ -8,7 +8,7 @@ tags: []
 
 NOAA Tide and Currents reports the relative sea level trend for the [Key West Tide Gauge #8724580](https://tidesandcurrents.noaa.gov/sltrends/sltrends_station.shtml?id=8724580) is 2.42 millimeters/year with a 95% confidence interval of +/- 0.14 mm/yr based on monthly mean sea level data from 1913 to 2018 which is equivalent to a change of 0.79 feet in 100 years.
 
-[Relative Sea Level Trend | tide gauge 8724580 | Key West, Florida](https://tidesandcurrents.noaa.gov/sltrends/plots/8724580_meantrend.png)
+![Relative Sea Level Trend | tide gauge 8724580 | Key West, Florida](https://tidesandcurrents.noaa.gov/sltrends/plots/8724580_meantrend.png)
 
 Current relative sea level trends are available from NOAA Tide and Currents ["Sea Level Trends" product](https://tidesandcurrents.noaa.gov/sltrends/sltrends.html):
 

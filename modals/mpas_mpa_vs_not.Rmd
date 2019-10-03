@@ -14,7 +14,7 @@ source("./../R/obis_cache.R")
 ```
 
 
-[Plots of reef fish indices inside (protected) and outside (not protected) no take marine zones across years in the Florida Keys. The units for panel A are abundance (number of individuals), panel B is kilograms per 40,000 km2, panel C is units ranging from 0 (maximally uneven) to 1 (maximally even), and panels D-G are in units of effective number of species. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.](mhepner_fig6.png)
+![Plots of reef fish indices inside (protected) and outside (not protected) no take marine zones across years in the Florida Keys. The units for panel A are abundance (number of individuals), panel B is kilograms per 40,000 km2, panel C is units ranging from 0 (maximally uneven) to 1 (maximally even), and panels D-G are in units of effective number of species. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.](mhepner_fig6.png)
 
 ```{r mpa areas}
 fknms <- "(-83.15 25.65, -80.066667 25.65, -80.066667 24.3, -83.15 24.3, -83.15 25.65)"

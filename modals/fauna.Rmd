@@ -21,7 +21,7 @@ Relevant analysis in 2018 from @mhepner presented in the [FKNMS infographic](htt
 
 Raw RVC data used in that analysis is accessible via [sefsc.noaa.gov](https://grunt.sefsc.noaa.gov/rvc_analysis20/).
 
-[Species richness, Shannon diversity, Simpson diversity, and functional diversity across years. The data correspond to all sampling events in a given year including all levels of protection, strata, and subregion. The units are in mean effective number of species and error bars denote +/- SE. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.](fauna_mhepner_fig12_fish_biodiv.png)
+![Species richness, Shannon diversity, Simpson diversity, and functional diversity across years. The data correspond to all sampling events in a given year including all levels of protection, strata, and subregion. The units are in mean effective number of species and error bars denote +/- SE. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.](fauna_mhepner_fig12_fish_biodiv.png)
 
 
 
