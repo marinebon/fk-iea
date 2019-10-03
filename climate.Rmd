@@ -4,14 +4,10 @@ params:
   svg: "svg/climate.svg"
 ---
 
-This is a placeholder for an infographic page.
-The infographic here will have clickable elements to the following pages:
- 
-- [Temperature](./modals/temperature.html)
-- [Storms](./modals/storms.html)
-- [Sea Level](./modals/sea_level.html)
-- [Acidification](./modals/acidification.html)
+External factors can have major impacts on the Florida Keys ecosystem.
+Storms and climate change factors like rising temparatures, ocean acidification, and sea level rise can cause dramatic shifts without warning.
+
+How can we better prepare for the predicted climate changes coming and improve the resilience of the Florida Keys ecosystems as major storms become increasingly common?
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```
-
