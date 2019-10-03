@@ -43,7 +43,7 @@ before_install:
   - R --version
 
 install:
-  # - travis_wait 40 ./install_R_deps.sh
+  - travis_wait 40 ./install_R_deps.sh
   - ./install_python_deps.sh
 
 script:
