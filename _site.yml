@@ -8,42 +8,13 @@ navbar:
   left:
     - text: "Climate"
       icon: fa-bolt
-      menu:
-        - text: "Climate"
-          href: climate.html
-        - text: "---------"      
-        - text: "Acidification"
-          href: c_acidification.html      
-        - text: "Sea Level Rise"
-          href: c_slr.html      
-        - text: "Storms"
-          href: c_storms.html      
-        - text: "Temperature"
-          href: c_temperature.html      
+      href: climate.html
     - text: "People"
       icon: fa-users
-      menu:
-        - text: "People"
-          href: people.html
-        - text: "---------"
-        - text: "Fishing"
-          href: p_fishing.html      
-        - text: "Land Use"
-          href: p_landuse.html      
-        - text: "Wastewater"
-          href: p_wastewater.html      
+      href: people.html
     - text: "Biodiversity"
       icon: fa-leaf
-      menu:
-        - text: "Biodiversity"
-          href: biodiversity.html
-        - text: "---------"
-        - text: "Protected Areas"
-          href: b_mpa.html      
-        - text: "Habitats"
-          href: b_habitats.html      
-        - text: "Species"
-          href: b_species.html      
+      href: biodiversity.html
   #right:
   #  - text: "About"
   #    href: about.html
