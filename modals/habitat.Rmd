@@ -100,3 +100,14 @@ blogdown::shortcode("esri_map",
 )
 ```
 -->
+
+## Seascapes
+Spring SeaScapes Descending 2019-2009:
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2019-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2017-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2015-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2013-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2011-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2009-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+
+For more see relevant section on the [IMaRS Gulf of Mexico Grafana Dashboard](http://grafana.marine.usf.edu:3000/dashboard/db/gulf-of-mexico?orgId=2&from=now-10y&to=now)
