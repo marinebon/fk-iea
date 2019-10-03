@@ -1,0 +1,51 @@
+---
+title: "Cara Estes MPA Analysis"
+author: ~
+date: '2019-07-23'
+categories: []
+tags: []
+---
+
+<iframe
+    src="mpas_black_group_den.html"
+    width="100%" height="480">
+</iframe>
+
+
+<iframe
+    src="mpas_black_group_den.html"
+    width="100%" height="480">
+</iframe>
+
+<iframe
+    src="mpas_exploit_den_protected.html"
+    width="100%" height="480">
+</iframe>
+<iframe
+    src="mpas_exploited_biomass_protected.html"
+    width="100%" height="480">
+</iframe>
+<iframe
+    src="mpas_goliath_group_den.html"
+    width="100%" height="480">
+</iframe>
+<iframe
+    src="mpas_graysby_den.html"
+    width="100%" height="480">
+</iframe>
+<iframe
+    src="mpas_grey_snapp_den.html"
+    width="100%" height="480">
+</iframe>
+<iframe
+    src="mpas_hogfish_den.html"
+    width="100%" height="480">
+</iframe>
+<iframe
+    src="mpas_nassau_group_den.html"
+    width="100%" height="480">
+</iframe>
+<iframe
+    src="mpas_yellowtail_snap_den.html"
+    width="100%" height="480">
+</iframe>
