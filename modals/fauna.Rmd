@@ -11,8 +11,8 @@ library(tidyverse)
 library(leaflet)
 library(plyr)
 
-source("./../obis_cache.R")
-source("./../obis_plot_comparison.R")
+source("./../R/obis_cache.R")
+source("./../R/obis_plot_comparison.R")
 ```
 
 # Indicator:
