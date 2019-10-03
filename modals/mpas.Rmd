@@ -37,3 +37,7 @@ TODO: use [NCRMP_benthics R package](https://github.com/shgroves/NCRMP_benthics)
 
 TODO: awaiting content from Erica Towle, Jay Grove, Jerry Ault, et al.
 -->
+
+
+```{r child="mpas_fk_subdiv.Rmd"}
+```
