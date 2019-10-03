@@ -11,3 +11,6 @@ How can we better prepare for the predicted climate changes coming and improve t
 
 ```{r svg, child = '_svg-html_child.Rmd'}
 ```
+
+### externalities graphics
+* sea level [ruler CC0 from Chip Carroll via wikimedia commons](https://commons.wikimedia.org/wiki/File:Ruler_-_The_Noun_Project.svg)
