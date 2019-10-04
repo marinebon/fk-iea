@@ -61,7 +61,7 @@ The definition of the subregions used here and an explanation of this choice is 
 Florida Fish and Wildlife Conservation Commission's richness of potential habitat for selected focal species in Florida [[ref]](https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8):
 
 <!-- TODO: make ESRI map work
-```{r FWC richness potential, echo=FALSE}
+```{r FWC richness potential, echo=FALSE, exec=FALSE}
 blogdown::shortcode("esri_map",
     map_id="fwc-map",
     lat="24.8", lon="-81", zoom="8",
@@ -76,7 +76,7 @@ blogdown::shortcode("esri_map",
 Most of FKNMS was classified as "highest priority" by the 2006 [Florida Critical Lands and Waters Identification Project Database](Florida Critical Lands and Waters Identification Project Database)
 
 <!-- TODO: make ESRI map work
-```{r FCLIP map, echo=FALSE}
+```{r FCLIP map, echo=FALSE, exec=FALSE}
 blogdown::shortcode("esri_map",
     map_id="clip-map",
     lat="24.8", lon="-81", zoom="8",
@@ -91,7 +91,7 @@ blogdown::shortcode("esri_map",
 FWC's [Landcover classes for CLIP 1-2 levels](https://flcpa.databasin.org/datasets/4befbffb3ec0492aa890297c4b4abc33):
 
 <!-- TODO: make ESRI map work
-```{r Landcover classes map, echo=FALSE}
+```{r Landcover classes map, echo=FALSE, exec=FALSE}
 blogdown::shortcode("esri_map",
     map_id="landcover-map",
     lat="24.8", lon="-81", zoom="8",
