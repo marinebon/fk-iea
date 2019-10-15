@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/marinebon/fk-iea.svg?branch=master)](https://travis-ci.org/marinebon/fk-iea)
 
-# fk-iea_tmp
+# fk-iea
 Florida Keys IEA, as Rmarkdown website.
 
 This website uses a simple interactive infographics implementation based on JavaScript only (ie not using the R-based [infographiq](https://github.com/marinebon/infographiq)).

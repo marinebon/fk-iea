@@ -1,6 +1,6 @@
 name: "FK IEA"
 title: "FK IEA"
-output_dir: "."
+output_dir: "docs"
 svg_csv: "svg/svg_links.csv"
 navbar:
   title: "FK IEA"
