@@ -1,20 +1,20 @@
 name: "FK IEA"
 title: "FK IEA"
-output_dir: "docs"
+output_dir: "."
 svg_csv: "svg/svg_links.csv"
 navbar:
   title: "FK IEA"
   icon: fa-info
   left:
-    - text: "Climate"
+    - text: "Environmental conditions"
       icon: fa-bolt
-      href: climate.html
-    - text: "People"
+      href: env.html
+    - text: "Human activities"
       icon: fa-users
-      href: people.html
-    - text: "Biodiversity"
+      href: human.html
+    - text: "Key Species and Living Resources"
       icon: fa-leaf
-      href: biodiversity.html
+      href: bio.html
   #right:
   #  - text: "About"
   #    href: about.html

@@ -16,16 +16,19 @@ redo_modals <- F
 # read in links for svg
 d <- read_csv(csv)
 
+site_theme <- site_config()$output$html_document$theme
+site_root  <- site_config()$output_dir
+
 render_modal <- function(rmd){
   
   render(rmd, html_document(
-    theme = site_config()$output$html_document$theme, 
+    theme = site_theme, 
     self_contained=F, lib_dir = here("modals/modal_libs"), 
     mathjax = NULL))
   
   htm <- fs::path_ext_set(rmd, "html")
-  docs_htm <- glue("docs/{htm}")
-  docs_rmd <- glue("docs/{rmd}")
+  docs_htm <- glue("{site_root}/{htm}")
+  docs_rmd <- glue("{site_root}/{rmd}")
   file.copy(rmd, docs_rmd, overwrite = T)
   file.copy(htm, docs_htm, overwrite = T)
 }
@@ -35,9 +38,10 @@ render_modal <- function(rmd){
 # render_modal("modals/mussels.Rmd")
 
 # create/render modals by iterating over svg links in csv ----
-for (i in 1:nrow(d)){ # i=1
+d_m <- d %>% filter(is.na(not_modal) | !not_modal)
+for (i in 1:nrow(d_m)){ # i=1
   # paths
-  htm <- d$link[i]
+  htm <- d_m$link[i]
   rmd <- path_ext_set(htm, "Rmd")
   
   # create Rmd, if doesn't exist
@@ -56,10 +60,10 @@ for (i in 1:nrow(d)){ # i=1
 }
 
 # render website, ie Rmds in root ----
-walk(list.files(".", "*\\.md$"), render_modal)
-walk(
-  list.files(".", "*\\.html$"), 
-  function(x) file.copy(x,path_expand(file.path("docs", x))))
+#walk(list.files(".", "*\\.md$"), render_modal)
+# walk(
+#   list.files(".", "*\\.html$"), 
+#   function(x) file.copy(x, path_expand(file.path(site_root, x))))
 render_site()
 
 # shortcuts w/out full render:

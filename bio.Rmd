@@ -1,5 +1,5 @@
 ---
-title: "Biodiversity"
+title: "Key Species and Living Resources"
 params:
   svg: "svg/marine_life.svg"
 ---
