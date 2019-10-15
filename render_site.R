@@ -2,6 +2,7 @@ library(rmarkdown)
 library(here)
 library(glue)
 library(readr)
+library(dplyr)
 library(fs)
 library(purrr)
 here <- here::here
