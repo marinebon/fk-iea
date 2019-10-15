@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marinebon/fk-iea.svg?branch=master)](https://travis-ci.org/marinebon/fk-iea)
+
 # fk-iea_tmp
 Florida Keys IEA, as Rmarkdown website.
 
