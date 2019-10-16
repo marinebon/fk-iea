@@ -30,7 +30,9 @@ Raw RVC data used in that analysis is accessible via [sefsc.noaa.gov](https://gr
 The [MBON IOOS Portal](https://mbon.ioos.us) was used to create a data view comparing [Reef Visual Census data](https://mbon.ioos.us/#metadata/53cb8d58-ae4d-43e1-aea3-640db9491db2/875de156-d933-4373-bb09-486c25eccfb2) for grouper and parrotfish.
 A screenshot of the resulting view updated last on 2019-06-19 is below:
 
-![axiom portal ](fauna_mbon_ioos_portal_grouper_vs_snapper.png)
+<!-- ![axiom portal ](fauna_mbon_ioos_portal_grouper_vs_snapper.png) -->
+
+<iframe width="100%" height="1000px" style="border:none;box-shadow: 0 0 5px #ccc;" src="https://mbon.ioos.us/?ls=9274c92f-d74f-41ac-da5c-069288e569ed#data/1"></iframe>
 
 <!--
 TODO: How to link, share, or embed this data view?
