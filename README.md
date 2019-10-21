@@ -13,8 +13,8 @@ The illustration in scalable vector graphics (`.svg`) format has individual elem
 
 These two files are at the core of the infographic construction:
 
-1. **illustration**: [`svg/fl-keys.svg`](https://github.com/marinebon/fk-iea_tmp/blob/master/svg/fl-keys.svg) 
-1. **table**:        [`svg_links.csv`](https://github.com/marinebon/fk-iea_tmp/blob/master/svg/svg_links.csv) 
+1. **illustration**: [`svg/fl-keys.svg`](https://github.com/marinebon/fk-iea_tmp/blob/master/svg/fl-keys.svg)
+1. **table**:        [`svg_links.csv`](https://github.com/marinebon/fk-iea_tmp/blob/master/svg/svg_links.csv)
 
 Each `link` in the table per element identified (`id`) is the page of content displayed in the modal popup window when the given element is clicked. The `title` determines the name on hover and title of the modal window.
 
@@ -72,7 +72,7 @@ servr::httd("docs") # http://127.0.0.1:4321
 or using Python:
 
 ```bash
-cd ~/github/mbnms/docs; python -m SimpleHTTPServer
+cd ~/github/mbnms/docs; python3 -m http.server
 ```
 
 The [`render_site.R`](https://github.com/marinebon/iea-ak-info/blob/master/render_site.R) script renders the modal and website pages.
