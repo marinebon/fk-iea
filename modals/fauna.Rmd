@@ -23,7 +23,10 @@ Raw RVC data used in that analysis is accessible via [sefsc.noaa.gov](https://gr
 
 ![Species richness, Shannon diversity, Simpson diversity, and functional diversity across years. The data correspond to all sampling events in a given year including all levels of protection, strata, and subregion. The units are in mean effective number of species and error bars denote +/- SE. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.](fauna_mhepner_fig12_fish_biodiv.png)
 
-
+## Coral Species
+![stony](Stony_coral_17.jpeg)
+![octo](Octocoral_17.jpeg)
+![stony](Macroalgae_17.jpeg)
 
 ### Snapper/grouper vs parrotfish (targeted/non-targeted)
 #### MBON IOOS Portal
