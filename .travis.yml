@@ -1,6 +1,6 @@
 # based on https://bookdown.org/yihui/blogdown/travis-github.html
 language: r
-dist: xenial
+dist: bionic
 latex: false
 
 branches:
@@ -43,8 +43,8 @@ before_install:
   - R --version
 
 install:
-  - travis_wait 40 ./install_R_deps.sh
   - ./install_python_deps.sh
+  - travis_wait 40 ./install_R_deps.sh
 
 script:
   - Rscript ./render_site.R
