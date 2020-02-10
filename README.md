@@ -49,10 +49,13 @@ This website is constructed using [Rmarkdown website](https://bookdown.org/yihui
 
 ## develop
 
+### install
+`Rscript -e 'devtools::install(pkg=".", quick=TRUE, quiet=TRUE, upgrade=TRUE)'`
+
 ### content editing workflow
 
 1. edit .Rmd files in `./docs/modals/`
-2. run `render_site.R`
+2. run `Rscript ./render_site.R`
 
 NOTE: The `.html` files *can* be edited but by default `.html` files are overwritten by content knit from the `Rmd` files of the same name.
 To use html directly set `redo_modals <- T`, but you will need to clear `.html` files manually with this setting.
@@ -72,7 +75,7 @@ servr::httd("docs") # http://127.0.0.1:4321
 or using Python:
 
 ```bash
-cd ~/github/mbnms/docs; python3 -m http.server
+cd ./docs; python3 -m http.server
 ```
 
 The [`render_site.R`](https://github.com/marinebon/iea-ak-info/blob/master/render_site.R) script renders the modal and website pages.

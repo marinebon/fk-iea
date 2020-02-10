@@ -1,0 +1,35 @@
+---
+title: "Grouper"
+author: 'Tylar Murray'
+date: '2020-02-10'
+tags: []
+categories: []
+---
+
+```{r imports, include=FALSE}
+source("./../R/plotIndicatorTimeSeries.R")
+```
+
+## Red Grouper
+
+```{r get latest red grouper data}
+download.file('https://raw.githubusercontent.com/USF-IMARS/obis2index/master/indicies/abundance_Epinephelus_morio.csv', 'abundance_Epinephelus_morio.csv')
+```
+
+```{r make red grouper plot}
+plotIndicatorTimeSeries(
+    'abundance_Epinephelus_morio.csv'
+ )
+```
+
+## Black Grouper
+
+```{r get latest black grouper data}
+download.file('https://raw.githubusercontent.com/USF-IMARS/obis2index/master/indicies/abundance_Mycteroperca_bonaci.csv', 'abundance_Mycteroperca_bonaci.csv')
+```
+
+```{r make black grouper plot}
+plotIndicatorTimeSeries(
+    'abundance_Mycteroperca_bonaci.csv'
+ )
+```

@@ -17,6 +17,7 @@ static
 
 # data files
 *.rds
+*.csv
 
 # other
 .DS_Store

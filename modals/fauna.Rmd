@@ -1,9 +1,9 @@
 ---
 title: "Fauna"
-author: ~
+author: 'null'
 date: '2019-06-19'
-categories: []
 tags: []
+categories: []
 ---
 
 ```{r imports for targeted vs non, include=FALSE}
