@@ -98,7 +98,7 @@ plotIndicatorTimeSeries <-  function(
         rep(c(wid/5, 1), plotcolnum),
         rep(4, plotrownum)
     )
-    layout.show(nf)
+    #layout.show(nf)
 
   # layout for single plots with fewer than 5 data points or no trend analysis
     if (length(coltoplot)==1 & length(tim_all) <= 5 | trendAnalysis==F)  {
@@ -107,7 +107,7 @@ plotIndicatorTimeSeries <-  function(
             rep(c(wid/5), plotcolnum),
             rep(3, plotrownum)
         )
-        layout.show(nf)
+        #layout.show(nf)
     }
 
     # get common y scale
@@ -290,3 +290,5 @@ for (i in coltoplot)  {
     dev.copy(pdf, filnam, width=((wid+10)/7)*plotcolnum2/1.3, height=hgtadj*(3.5*plotrownum2)/1.3)  #, pointsize=12, res=72*4)
     dev.off()                # close graphics device
 }        # end of function
+
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
