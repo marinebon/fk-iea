@@ -1,0 +1,46 @@
+---
+title: Temperature
+author: ~
+date: '2019-10-03'
+categories: []
+tags: []
+---
+
+
+---------------------------------------------------------------------------
+
+<!--
+TODO: (bottom temperatures?). Andy has this.
+-->
+
+---------------------------------------------------------------------------
+
+[ClimateReanalyzer](https://climatereanalyzer.org/) provides analysis of climate change globally.
+
+
+![The climate "anomaly" map above shows areas that are experienced unusually high or low temperatures.](https://climatereanalyzer.org/clim/animations/scycle/World_ERAI_T2_2001-2012_minus_1979-2000_scycle.gif)
+
+ClimateReanalyzer also does time-series visualization of Sea Surface Temperature for various locations.
+The iframe below shows this, but you may have a better experience visiting the website directly by clicking [here](https://climatereanalyzer.org/clim/sst/).
+
+<iframe width="100%" height="2000px"
+    src="https://climatereanalyzer.org/clim/sst/">
+</iframe
+
+---------------------------------------------------------------------------
+
+<!-- TODO: this is not working?
+NASA's PO.DAAC GHRSST anomalies from  SotO:
+
+<iframe width="100%" height="600px" src="https://podaac-tools.jpl.nasa.gov/soto/#b=BlueMarble_ShadedRelief_Bathymetry&l=jpl_l4_mur_ssta___ssta___36000_x_18000___daynight(la=true)&ve=-83.30656167871041,23.689378578859035,-79.08781167871041,25.763597328859035">
+</iframe>
+-->
+
+---------------------------------------------------------------------------
+
+The NOAA CoastWatch program provides raw data access to MUR SST Anomalies via ERDDAP.
+Using this service we can grab images, csv files, and many other formats directly from the data source.
+
+![This image is an example pulled through ERDDAP's RESTful API.](https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.largePng?sstAnom%5B(2018-11-18T09:00:00Z)%5D%5B(18.0):(31.0)%5D%5B(-98.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CsstAnom&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+
+Try viewing the image above in a new tab and changing things in the ERDDAP URL and see what happens.

@@ -1,0 +1,70 @@
+---
+title: "CREMP Richness"
+author: 'Tylar Murray'
+date: '2020-03-22'
+tags: []
+categories: []
+---
+
+```{r imports, include=FALSE}
+source("./../R/plotIndicatorTimeSeries.R")
+```
+
+## Richness
+
+```{r get latest DT richness data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/DT_IEA_richness.csv', 'DT_IEA_richness.csv')
+```
+
+```{r make DT richness plot}
+plotIndicatorTimeSeries(
+    'DT_IEA_richness.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+```{r get latest LK richness data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/LK_IEA_richness.csv', 'LK_IEA_richness.csv')
+```
+
+```{r make LK richness plot}
+plotIndicatorTimeSeries(
+    'LK_IEA_richness.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+```{r get latest MK richness data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/MK_IEA_richness.csv', 'MK_IEA_richness.csv')
+```
+
+```{r make MK richness plot}
+plotIndicatorTimeSeries(
+    'MK_IEA_richness.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+
+```{r get latest SEF richness data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/SEF_IEA_richness.csv', 'SEF_IEA_richness.csv')
+```
+
+```{r make SEF richness plot}
+plotIndicatorTimeSeries(
+    'SEF_IEA_richness.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+
+```{r get latest UK richness data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/UK_IEA_richness.csv', 'UK_IEA_richness.csv')
+```
+
+```{r make UK richness plot}
+plotIndicatorTimeSeries(
+    'UK_IEA_richness.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).

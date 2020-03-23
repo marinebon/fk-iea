@@ -1,0 +1,70 @@
+---
+title: "CREMP Simpson Diversity"
+author: 'Tylar Murray'
+date: '2020-03-22'
+tags: []
+categories: []
+---
+
+```{r imports, include=FALSE}
+source("./../R/plotIndicatorTimeSeries.R")
+```
+
+## simpson
+
+```{r get latest DT simpson data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/DT_IEA_simpson.csv', 'DT_IEA_simpson.csv')
+```
+
+```{r make DT simpson plot}
+plotIndicatorTimeSeries(
+    'DT_IEA_simpson.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+```{r get latest LK simpson data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/LK_IEA_simpson.csv', 'LK_IEA_simpson.csv')
+```
+
+```{r make LK simpson plot}
+plotIndicatorTimeSeries(
+    'LK_IEA_simpson.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+```{r get latest MK simpson data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/MK_IEA_simpson.csv', 'MK_IEA_simpson.csv')
+```
+
+```{r make MK simpson plot}
+plotIndicatorTimeSeries(
+    'MK_IEA_simpson.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+
+```{r get latest SEF simpson data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/SEF_IEA_simpson.csv', 'SEF_IEA_simpson.csv')
+```
+
+```{r make SEF simpson plot}
+plotIndicatorTimeSeries(
+    'SEF_IEA_simpson.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).
+
+
+```{r get latest UK simpson data}
+download.file('https://raw.githubusercontent.com/cestes-19/rvc18/master/CREMP_Reef_code/IEA_output/UK_IEA_simpson.csv', 'UK_IEA_simpson.csv')
+```
+
+```{r make UK simpson plot}
+plotIndicatorTimeSeries(
+    'UK_IEA_simpson.csv'
+ )
+```
+This data extracted from [CREMP](obis.org/) using scripts from [rvc18](https://github.com/cestes-19/rvc18).

@@ -1,0 +1,22 @@
+svg,id,title,link,not_modal
+fl-keys.svg,people,Human activities,human.html,T
+fl-keys.svg,externalities,Environmental conditions,env.html,T
+fl-keys.svg,marine_life,Key Species and Living Resources,bio.html,T
+climate.svg,acidification,Ocean Acidification,modals/acidification.html,
+climate.svg,sea_level,Sea Level,modals/sea_level.html,
+climate.svg,storms,Storms,modals/storms.html,
+climate.svg,temperature,Temperature,modals/temperature.html,
+people.svg,fishing,Fishing,modals/fishing.html,
+people.svg,land_use,Land Use,modals/land_use.html,
+people.svg,wastewater,Wastewater,modals/wastewater.html,
+people.svg,mpas,Management via marine zones,modals/mpas.html,
+marine_life.svg,benthic_community,Benthic community,modals/benthic_community.html,
+marine_life.svg,fauna,Marine species,modals/fauna.html,
+marine_life.svg,habitat,Habitat,modals/habitat.html,
+marine_life.svg,hogfish,Hogfish,modals/hogfish.html,
+marine_life.svg,lionfish,Lionfish,modals/lionfish.html,
+marine_life.svg,grouper,Grouper,modals/grouper.html,
+marine_life.svg,yellowtail_snapper,Yellowtail Snapper,modals/yellowtail_snapper.html,
+marine_life.svg,richness,Richness,modals/cremp_richness.html,
+marine_life.svg,shannon,Shannon Diversity,modals/cremp_shannon.html,
+marine_life.svg,simpson,Simpson Diversity,modals/cremp_simpson.html,

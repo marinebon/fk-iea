@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="null" />
+
+<meta name="date" content="2019-06-19" />
+
+<title>Fauna</title>
+
+<script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="modal_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="modal_libs/navigation-1.1/tabsets.js"></script>
+<link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Fauna</h1>
+<h4 class="author">null</h4>
+<h4 class="date">2019-06-19</h4>
+
+</div>
+
+
+<div id="indicator" class="section level1">
+<h1>Indicator:</h1>
+<div id="fish-abundance-diversity-size-and-species" class="section level2">
+<h2>Fish abundance, diversity, size and species</h2>
+<p>Relevant analysis in 2018 from <span class="citation">@mhepner</span> presented in the <a href="https://marinebon.github.io/info-fk/corals.html">FKNMS infographic</a>.</p>
+<p>Raw RVC data used in that analysis is accessible via <a href="https://grunt.sefsc.noaa.gov/rvc_analysis20/">sefsc.noaa.gov</a>.</p>
+<div class="figure">
+<img src="fauna_mhepner_fig12_fish_biodiv.png" alt="Species richness, Shannon diversity, Simpson diversity, and functional diversity across years. The data correspond to all sampling events in a given year including all levels of protection, strata, and subregion. The units are in mean effective number of species and error bars denote +/- SE. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary." />
+<p class="caption">Species richness, Shannon diversity, Simpson diversity, and functional diversity across years. The data correspond to all sampling events in a given year including all levels of protection, strata, and subregion. The units are in mean effective number of species and error bars denote +/- SE. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.</p>
+</div>
+</div>
+<div id="coral-species" class="section level2">
+<h2>Coral Species</h2>
+<p><img src="Stony_coral_17.jpeg" alt="stony" /> <img src="Octocoral_17.jpeg" alt="octo" /> <img src="Macroalgae_17.jpeg" alt="stony" /></p>
+<div id="snappergrouper-vs-parrotfish-targetednon-targeted" class="section level3">
+<h3>Snapper/grouper vs parrotfish (targeted/non-targeted)</h3>
+<div id="mbon-ioos-portal" class="section level4">
+<h4>MBON IOOS Portal</h4>
+<p>The <a href="https://mbon.ioos.us">MBON IOOS Portal</a> was used to create a data view comparing <a href="https://mbon.ioos.us/#metadata/53cb8d58-ae4d-43e1-aea3-640db9491db2/875de156-d933-4373-bb09-486c25eccfb2">Reef Visual Census data</a> for grouper and parrotfish. A screenshot of the resulting view updated last on 2019-06-19 is below:</p>
+<!-- ![axiom portal ](fauna_mbon_ioos_portal_grouper_vs_snapper.png) -->
+<iframe width="100%" height="1000px" style="border:none;box-shadow: 0 0 5px #ccc;" src="https://mbon.ioos.us/?ls=9274c92f-d74f-41ac-da5c-069288e569ed#data/1">
+</iframe>
+<!--
+TODO: How to link, share, or embed this data view?
+-->
+</div>
+<div id="r-and-python-plots-data-directly-from-obis" class="section level4">
+<h4>R and python plots data directly from OBIS</h4>
+<pre class="r"><code>fk_nms_wkt &lt;- &quot;POLYGON ((-83.15 25.65, -80.066667 25.65, -80.066667 24.3, -83.15 24.3, -83.15 25.65))&quot;</code></pre>
+<pre class="r"><code>scaridae_species &lt;- &quot;Scarus iseri&quot;
+scaridae_name_safe &lt;- sanitize_query_id(scaridae_species)
+if (has_cache(scaridae_name_safe)){
+    scaridae_occurrence &lt;- load_cache(scaridae_name_safe)
+} else {
+    scaridae_occurrence &lt;- robis::occurrence(
+        scaridae_species,
+        geometry = fk_nms_wkt
+    )[c(&#39;eventDate&#39;, &#39;species&#39;, &#39;occurrenceStatus&#39;)]
+    save_cache(scaridae_name_safe, scaridae_occurrence)
+}
+# write.csv(scaridae_occurrence, &quot;scaridae_occurrence.csv&quot;)</code></pre>
+<pre class="r"><code>lutjanidae_species &lt;- &quot;Ocyurus chrysurus&quot;
+lutjanidae_name_safe &lt;- sanitize_query_id(lutjanidae_species)
+if (has_cache(lutjanidae_name_safe)){
+    lutjanidae_occurrence &lt;- load_cache(lutjanidae_name_safe)
+} else {
+    lutjanidae_occurrence &lt;- robis::occurrence(
+        lutjanidae_species,
+        geometry = fk_nms_wkt
+    )[c(&#39;eventDate&#39;, &#39;species&#39;, &#39;occurrenceStatus&#39;)]
+    save_cache(lutjanidae_name_safe, lutjanidae_occurrence)
+}</code></pre>
+<pre class="r"><code># write.csv(lutjanidae_occurrence, &quot;lutjanidae_occurrence.csv&quot;)
+occurrences &lt;- rbind(
+    scaridae_occurrence, lutjanidae_occurrence
+)
+occurrences$occurrenceStatus &lt;- plyr::revalue(
+    occurrences$occurrenceStatus,
+    c(&quot;present&quot;=1)
+)
+write.csv(occurrences, &quot;occurrences.csv&quot;)</code></pre>
+<p><img src="fauna_files/figure-html/timeseries-1.png" width="672" /></p>
+<pre class="python"><code>from plo7y.reporters.ts_compare import ts_compare
+ts_compare(
+    &quot;occurrences.csv&quot;,
+    x_key=&quot;eventDate&quot;,
+    y_key=&quot;occurrenceStatus&quot;,
+    y_group_by_key=&quot;species&quot;,
+)</code></pre>
+<!--
+TODO: Lobster size structure study [Not RVC data; not continuing to be collected so not for automation]
+-->
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+---
+title: "Benthic Community"
+author: ~
+date: '2019-06-12'
+categories: []
+tags: []
+---
+
+## Benthic Community Composition has changed (After Aug)
+
+Benthic habitats in 2007 from [USGS's "*Benthic Ecosystems*"](https://pubs.usgs.gov/pp/2007/1751/professional-paper/figures/benthic-ecosystems.html):
+
+![Benthic Ecosystems map and pie chart](https://pubs.usgs.gov/pp/2007/1751/professional-paper/intro-images/benthic-ecosystemsLG.gif)
+
+### How has this changed?
+#### Coral Cover
+Relevant analysis from @luislizcano: [Coral Cover Change](/posts/coral-cover-change").

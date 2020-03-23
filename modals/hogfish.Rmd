@@ -1,0 +1,22 @@
+---
+title: "Hogfish"
+author: "Tylar Murray"
+date: '2020-02-10'
+tags: []
+categories: []
+---
+
+```{r imports, include=FALSE}
+source("./../R/plotIndicatorTimeSeries.R")
+```
+
+```{r get latest data}
+download.file('https://raw.githubusercontent.com/USF-IMARS/obis2index/master/indicies/abundance_Lachnolaimus_maximus.csv', 'abundance_Lachnolaimus_maximus.csv')
+```
+
+```{r make plot}
+plotIndicatorTimeSeries(
+    'abundance_Lachnolaimus_maximus.csv'
+ )
+```
+This data extracted from [OBIS](obis.org/) using [obis2index](https://github.com/USF-IMARS/obis2index).

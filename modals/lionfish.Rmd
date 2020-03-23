@@ -1,0 +1,22 @@
+---
+title: "Lionfish"
+author: 'Tylar Murray'
+date: '2020-02-10'
+tags: []
+categories: []
+---
+
+```{r imports, include=FALSE}
+source("./../R/plotIndicatorTimeSeries.R")
+```
+
+```{r get latest data}
+download.file('https://raw.githubusercontent.com/USF-IMARS/obis2index/master/indicies/abundance_Pterois_volitans.csv', 'abundance_Pterois_volitans.csv')
+```
+
+```{r make plot}
+plotIndicatorTimeSeries(
+    'abundance_Pterois_volitans.csv'
+ )
+```
+This data extracted from [OBIS](obis.org/) using [obis2index](https://github.com/USF-IMARS/obis2index).

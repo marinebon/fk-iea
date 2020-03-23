@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="" />
+
+<meta name="date" content="2019-06-12" />
+
+<title>Habitat</title>
+
+<script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="modal_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="modal_libs/navigation-1.1/tabsets.js"></script>
+<link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Habitat</h1>
+<h4 class="date">2019-06-12</h4>
+
+</div>
+
+
+<div id="habitat" class="section level2">
+<h2>Habitat</h2>
+<p>Benthic community composition is changing. Disease and bleaching are influential.</p>
+<!--
+TODO: metrics, by taxa, over time, by reef type (i.e., patch, bank)
+-->
+<div id="coral-cover" class="section level3">
+<h3>Coral Cover</h3>
+<p>Coral Cover has been decreasing due to events and is unable to recover due to continuous stressors. This decline over recent decades is easily visible in the following graphs from <a href="https://drive.google.com/open?id=181OYdxt0sXZYVNqz41f6m9KZQMdS2Ex0">9B-Ruzicka WQPP Presentation_ May 2019.pptx</a>:</p>
+<div class="figure">
+<img src="habitat_cremp_cover_irma.png" alt="Overall CREMP Benthic Cover in the Florida Keys – IRMA Effect" />
+<p class="caption">Overall CREMP Benthic Cover in the Florida Keys – IRMA Effect</p>
+</div>
+<div class="figure">
+<img src="habitat_cremp_cover_events.png" alt="&quot;CREMP &amp; SECREMP Coral Cover" />
+<p class="caption">&quot;CREMP &amp; SECREMP Coral Cover</p>
+</div>
+<!--
+
+#### By Reef Type
+TODO: CREMP (LM will categorize sites by reef type):
+
+#### By Coral Type
+TODO: Coral cover by species (Coral decreased)
+
+### Macro-algae
+TODO: Macro-algae cover (Algae increased)
+
+### Gorgonian
+TODO: Gorgonian cover (Gorgonian increased)
+
+### Sponge
+TODO: Sponge (in flux)
+
+### Mangrove
+TODO: Mangrove. data: [Global Mangrove Watch (1996 - 2016)](http://data.unep-wcmc.org/datasets/4)
+
+### Seagrass
+TODO: Seagrass
+
+-->
+</div>
+</div>
+<div id="fknms-sub-regions" class="section level1">
+<h1>FKNMS Sub-regions</h1>
+<p>In many analyses it makes sense to split the Florida Reef Tract into sub-regions [<a href="https://link.springer.com/article/10.1007/s003380050210">T. J. T. MurdochR. B. Aronson 1999</a>]. The regional subdivision of the reef tract is not well standardized, however. The definition of the subregions used here and an explanation of this choice is discussed on the <a href="fk-subidv.md">fk-subdiv page</a>.</p>
+<div class="figure">
+<img src="habitat_mhepner_indicies_by_subregion.png" alt="Plots of reef fish indices by subregion across years with strata combined. The units for panel A is abundance (number of individuals), panel B is kilograms per 40,000 km2, panel C is units ranging from 0 (maximally uneven) to 1 (maximally even), and panels D-G are in units of effective number of species. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary." />
+<p class="caption">Plots of reef fish indices by subregion across years with strata combined. The units for panel A is abundance (number of individuals), panel B is kilograms per 40,000 km2, panel C is units ranging from 0 (maximally uneven) to 1 (maximally even), and panels D-G are in units of effective number of species. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.</p>
+</div>
+<hr />
+<p>Florida Fish and Wildlife Conservation Commission’s richness of potential habitat for selected focal species in Florida <a href="https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8">[ref]</a>:</p>
+<!-- TODO: make ESRI map work
+
+-->
+<hr />
+<p>Most of FKNMS was classified as “highest priority” by the 2006 <a href="Florida%20Critical%20Lands%20and%20Waters%20Identification%20Project%20Database">Florida Critical Lands and Waters Identification Project Database</a></p>
+<!-- TODO: make ESRI map work
+
+-->
+<hr />
+<p>FWC’s <a href="https://flcpa.databasin.org/datasets/4befbffb3ec0492aa890297c4b4abc33">Landcover classes for CLIP 1-2 levels</a>:</p>
+<!-- TODO: make ESRI map work
+
+-->
+<div id="seascapes" class="section level2">
+<h2>Seascapes</h2>
+<p>Spring SeaScapes Descending 2019-2009: <embed src="https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2019-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CCLASS&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" /> <embed src="https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2017-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CCLASS&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" /> <embed src="https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2015-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CCLASS&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" /> <embed src="https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2013-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CCLASS&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" /> <embed src="https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2011-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CCLASS&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" /> <embed src="https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2009-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7CCLASS&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff" /></p>
+<p>For more see relevant section on the <a href="http://grafana.marine.usf.edu:3000/dashboard/db/gulf-of-mexico?orgId=2&amp;from=now-10y&amp;to=now">IMaRS Gulf of Mexico Grafana Dashboard</a></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

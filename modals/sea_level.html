@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="" />
+
+<meta name="date" content="2019-06-12" />
+
+<title>Sea Level Rise</title>
+
+<script src="modal_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="modal_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="modal_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="modal_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="modal_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="modal_libs/navigation-1.1/tabsets.js"></script>
+<link href="modal_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="modal_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Sea Level Rise</h1>
+<h4 class="date">2019-06-12</h4>
+
+</div>
+
+
+<p>NOAA Tide and Currents reports the relative sea level trend for the <a href="https://tidesandcurrents.noaa.gov/sltrends/sltrends_station.shtml?id=8724580">Key West Tide Gauge #8724580</a> is 2.42 millimeters/year with a 95% confidence interval of +/- 0.14 mm/yr based on monthly mean sea level data from 1913 to 2018 which is equivalent to a change of 0.79 feet in 100 years.</p>
+<div class="figure">
+<img src="https://tidesandcurrents.noaa.gov/sltrends/plots/8724580_meantrend.png" alt="Relative Sea Level Trend | tide gauge 8724580 | Key West, Florida" />
+<p class="caption">Relative Sea Level Trend | tide gauge 8724580 | Key West, Florida</p>
+</div>
+<p>Current relative sea level trends are available from NOAA Tide and Currents <a href="https://tidesandcurrents.noaa.gov/sltrends/sltrends.html">“Sea Level Trends” product</a>:</p>
+<hr />
+<p>University of Florida Geoplan Center <a href="https://flcpa.databasin.org/datasets/dd54d301894f4322a7a30832572c4a7e">Sea Level Rise Projections</a> shows the FL Keys are expected to be severely impacted by sea level rise:</p>
+<!--
+# TODO: fix ESRI map
+{{< esri_map
+    lat="24.8" lon="-81" zoom="8"
+    basemap="Gray"
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564c8ab3e4b0ebfbef0d34b8/MapServer/"
+>}}
+-->
+<hr />
+<ul>
+<li><a href="https://flcpa.databasin.org/datasets/dd54d301894f4322a7a30832572c4a7e">Florida Sea Level Rise Projections in Meters | Florida CPA</a></li>
+<li><a href="https://sealevelrise.org/states/florida/">Florida’s Sea Level Rise - Sea Level Rise</a></li>
+<li><a href="https://www.flseagrant.org/climate-change/sea-level-rise/">Sea-Level Rise in Florida-Florida Sea Grant</a></li>
+<li><a href="https://www.theguardian.com/environment/2018/jun/26/rising-seas-florida-climate-change-elizabeth-rush">Rising seas: ‘Florida is about to be wiped off the map’ | Environment | The Guardian</a></li>
+<li><a href="http://sealevel.climatecentral.org/news/floria-and-the-rising-sea">Florida and the Rising Sea | Surging Seas: Sea level rise analysis by Climate</a> Central</li>
+<li><a href="https://www.ocala.com/news/20180513/climate-researchers-estimate-sea-level-rise-impacts-on-florida">Climate researchers estimate sea level rise impacts on Florida - News - Ocala.com -</a> Ocala, FL</li>
+<li><a href="http://southeastfloridaclimatecompact.org/news/southeast-florida-regional-climate-change-compact-provides-update-to-regional-sea-level-rise-projection/">Southeast Florida Regional Climate Change Compact Provides Update to Regional Sea</a> Level Rise Projection - Southeast Florida Regional Climate Compact</li>
+<li><a href="https://coast.noaa.gov/digitalcoast/tools/slr.html">Sea Level Rise Viewer</a></li>
+<li><a href="https://sealevel-nexus.jpl.nasa.gov/flood-projection/">NASA Flooding Days Projection Tool</a></li>
+</ul>
+<p>Sea level rise, tide gauge data referenced in indicators above. King tide pictures of Miami Beach and Florida Keys.</p>
+<!--
+TODO: USFWS salt water intrusion study in Big Pine
+-->
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

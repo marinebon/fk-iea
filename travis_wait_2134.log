@@ -1,0 +1,20 @@
+Loading required namespace: devtools
+
+Running /home/travis/R-bin/lib/R/bin/R CMD INSTALL \
+  /home/travis/build/marinebon/fk-iea --install-tests --no-docs \
+  --no-multiarch --no-demo 
+* installing to library ‘/home/travis/R/Library’
+* installing *source* package ‘placeholder’ ...
+** using staged installation
+** libs
+Warning: no source files found
+** R
+** byte-compile and prepare package for lazy loading
+No man pages found in package  ‘placeholder’ 
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (placeholder)

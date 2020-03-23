@@ -1,0 +1,113 @@
+---
+title: "Habitat"
+author: ~
+date: '2019-06-12'
+categories: []
+tags: []
+---
+
+## Habitat
+Benthic community composition is changing.
+Disease and bleaching are influential.
+
+<!--
+TODO: metrics, by taxa, over time, by reef type (i.e., patch, bank)
+-->
+
+### Coral Cover
+Coral Cover has been decreasing due to events and is unable to recover due to continuous stressors.
+This decline over recent decades is easily visible in the following graphs from
+[9B-Ruzicka WQPP Presentation_ May 2019.pptx](https://drive.google.com/open?id=181OYdxt0sXZYVNqz41f6m9KZQMdS2Ex0):
+
+![Overall CREMP Benthic Cover in the Florida Keys – IRMA Effect](habitat_cremp_cover_irma.png)
+
+!["CREMP & SECREMP Coral Cover](habitat_cremp_cover_events.png)
+
+<!--
+
+#### By Reef Type
+TODO: CREMP (LM will categorize sites by reef type):
+
+#### By Coral Type
+TODO: Coral cover by species (Coral decreased)
+
+### Macro-algae
+TODO: Macro-algae cover (Algae increased)
+
+### Gorgonian
+TODO: Gorgonian cover (Gorgonian increased)
+
+### Sponge
+TODO: Sponge (in flux)
+
+### Mangrove
+TODO: Mangrove. data: [Global Mangrove Watch (1996 - 2016)](http://data.unep-wcmc.org/datasets/4)
+
+### Seagrass
+TODO: Seagrass
+
+-->
+
+# FKNMS Sub-regions
+In many analyses it makes sense to split the Florida Reef Tract into sub-regions [[T. J. T. MurdochR. B. Aronson
+ 1999](https://link.springer.com/article/10.1007/s003380050210)].
+The regional subdivision of the reef tract is not well standardized, however.
+The definition of the subregions used here and an explanation of this choice is discussed on the [fk-subdiv page](fk-subidv.md).
+
+![Plots of reef fish indices by subregion across years with strata combined. The units for panel A is abundance (number of individuals), panel B is kilograms per 40,000 km2, panel C is units ranging from 0 (maximally uneven) to 1 (maximally even), and panels D-G are in units of effective number of species. From Hepner, M. E. (2017). Reef Fish Biodiversity in the Florida Keys National Marine Sanctuary.](habitat_mhepner_indicies_by_subregion.png)
+
+----------------------------------------------------------------------------
+
+Florida Fish and Wildlife Conservation Commission's richness of potential habitat for selected focal species in Florida [[ref]](https://flcpa.databasin.org/datasets/4372d400ff8444719c86175000ed7de8):
+
+<!-- TODO: make ESRI map work
+```{r FWC richness potential, echo=FALSE, eval=FALSE}
+blogdown::shortcode("esri_map",
+    map_id="fwc-map",
+    lat="24.8", lon="-81", zoom="8",
+    basemap="Gray",
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564f49fde4b064dd1d095637/MapServer/"
+)
+```
+-->
+
+----------------------------------------------------------------------------
+
+Most of FKNMS was classified as "highest priority" by the 2006 [Florida Critical Lands and Waters Identification Project Database](Florida Critical Lands and Waters Identification Project Database)
+
+<!-- TODO: make ESRI map work
+```{r FCLIP map, echo=FALSE, eval=FALSE}
+blogdown::shortcode("esri_map",
+    map_id="clip-map",
+    lat="24.8", lon="-81", zoom="8",
+    basemap="Gray",
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/564b4250e4b0ebfbef0d31c1/MapServer/"
+)
+```
+-->
+
+----------------------------------------------------------------------------
+
+FWC's [Landcover classes for CLIP 1-2 levels](https://flcpa.databasin.org/datasets/4befbffb3ec0492aa890297c4b4abc33):
+
+<!-- TODO: make ESRI map work
+```{r Landcover classes map, echo=FALSE, eval=FALSE}
+blogdown::shortcode("esri_map",
+    map_id="landcover-map",
+    lat="24.8", lon="-81", zoom="8",
+    basemap="Gray",
+    feature_url="https://www.sciencebase.gov/arcgis/rest/services/Catalog/57039d72e4b0328dcb81dddf/MapServer/"
+)
+```
+-->
+
+## Seascapes
+Spring SeaScapes Descending 2019-2009:
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2019-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2017-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2015-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2013-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2011-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+![erddap large png](https://cwcgom.aoml.noaa.gov/erddap/griddap/noaa_aoml_seascapes_8day.largePng?CLASS%5B(2009-03-06T12:00:00Z)%5D%5B(22.0):(28.0)%5D%5B(-85.0):(-79.0)%5D&.draw=surface&.vars=longitude%7Clatitude%7CCLASS&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff)
+
+For more see relevant section on the [IMaRS Gulf of Mexico Grafana Dashboard](http://grafana.marine.usf.edu:3000/dashboard/db/gulf-of-mexico?orgId=2&from=now-10y&to=now)
